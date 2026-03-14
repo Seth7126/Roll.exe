@@ -1,58 +1,27 @@
-0058B577    ???
-0058B578    ???
-0058B579    ???
-0058B57A    ???
-0058B57B    ???
-0058B57C    ???
-0058B57D    ???
-0058B57E    ???
-0058B57F    ???
-0058B580    ???
-0058B581    ???
-0058B582    ???
-0058B583    ???
-0058B584    ???
-0058B585    ???
-0058B586    ???
-0058B587    ???
-0058B588    ???
-0058B589    ???
-0058B58A    ???
-0058B58B    ???
-0058B58C    ???
-0058B58D    ???
-0058B58E    ???
-0058B58F    ???
-0058B590    ???
-0058B591    ???
-0058B592    ???
-0058B593    ???
-0058B594    ???
-0058B595    ???
-0058B596    ???
-0058B597    ???
-0058B598    ???
-0058B599    ???
-0058B59A    ???
-0058B59B    ???
-0058B59C    ???
-0058B59D    ???
-0058B59E    ???
-0058B59F    ???
-0058B5A0    ???
-0058B5A1    ???
-0058B5A2    ???
-0058B5A3    ???
-0058B5A4    ???
-0058B5A5    ???
-0058B5A6    ???
-0058B5A7    ???
-0058B5A8    ???
-0058B5A9    ???
-0058B5AA    ???
-0058B5AB    ???
-0058B5AC    ???
-0058B5AD    ???
-0058B5AE    ???
-0058B5AF    ???
-0058B5B0    ???
+0058B577    mov edi, edi
+0058B579    push ebp
+0058B57A    mov ebp, esp
+0058B57C    mov eax, dword ptr ss:[ebp+0x10]
+0058B57F    test eax, eax
+0058B581    jnz 0x0058B585
+0058B583    pop ebp
+0058B584    ret
+0058B585    mov ecx, dword ptr ss:[ebp+0x0C]
+0058B588    mov edx, dword ptr ss:[ebp+0x08]
+0058B58B    push esi
+0058B58C    sub eax, 0x01
+0058B58F    jz 0x0058B5A6
+0058B591    movzx esi, word ptr ds:[edx]
+0058B594    test si, si
+0058B597    jz 0x0058B5A6
+0058B599    cmp si, word ptr ds:[ecx]
+0058B59C    jnz 0x0058B5A6
+0058B59E    add edx, 0x02
+0058B5A1    add ecx, 0x02
+0058B5A4    jmp 0x0058B58C
+0058B5A6    movzx eax, word ptr ds:[edx]
+0058B5A9    movzx ecx, word ptr ds:[ecx]
+0058B5AC    sub eax, ecx
+0058B5AE    pop esi
+0058B5AF    pop ebp
+0058B5B0    ret

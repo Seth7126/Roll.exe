@@ -1,23 +1,11 @@
-004F5BC0    ???
-004F5BC1    ???
-004F5BC2    ???
-004F5BC3    ???
-004F5BC4    ???
-004F5BC5    ???
-004F5BC6    ???
-004F5BC7    ???
-004F5BC8    ???
-004F5BC9    ???
-004F5BCA    ???
-004F5BCB    ???
-004F5BCC    ???
-004F5BCD    ???
-004F5BCE    ???
-004F5BCF    ???
-004F5BD0    ???
-004F5BD1    ???
-004F5BD2    ???
-004F5BD3    ???
-004F5BD4    ???
-004F5BD5    ???
-004F5BD6    ???
+004F5BC0    mov eax, dword ptr ds:[ecx]
+004F5BC2    cmp eax, 0x02
+004F5BC5    jz 0x004F5BD4
+004F5BC7    cmp eax, 0x03
+004F5BCA    jz 0x004F5BD4
+004F5BCC    cmp eax, 0x04
+004F5BCF    jz 0x004F5BD4
+004F5BD1    xor al, al
+004F5BD3    ret
+004F5BD4    mov al, 0x01
+004F5BD6    ret

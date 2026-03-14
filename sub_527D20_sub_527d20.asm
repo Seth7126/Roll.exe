@@ -1,130 +1,62 @@
-00527D20    ???
-00527D21    ???
-00527D22    ???
-00527D23    ???
-00527D24    ???
-00527D25    ???
-00527D26    ???
-00527D27    ???
-00527D28    ???
-00527D29    ???
-00527D2A    ???
-00527D2B    ???
-00527D2C    ???
-00527D2D    ???
-00527D2E    ???
-00527D2F    ???
-00527D30    ???
-00527D31    ???
-00527D32    ???
-00527D33    ???
-00527D34    ???
-00527D35    ???
-00527D36    ???
-00527D37    ???
-00527D38    ???
-00527D39    ???
-00527D3A    ???
-00527D3B    ???
-00527D3C    ???
-00527D3D    ???
-00527D3E    ???
-00527D3F    ???
-00527D40    ???
-00527D41    ???
-00527D42    ???
-00527D43    ???
-00527D44    ???
-00527D45    ???
-00527D46    ???
-00527D47    ???
-00527D48    ???
-00527D49    ???
-00527D4A    ???
-00527D4B    ???
-00527D4C    ???
-00527D4D    ???
-00527D4E    ???
-00527D4F    ???
-00527D50    ???
-00527D51    ???
-00527D52    ???
-00527D53    ???
-00527D54    ???
-00527D55    ???
-00527D56    ???
-00527D57    ???
-00527D58    ???
-00527D59    ???
-00527D5A    ???
-00527D5B    ???
-00527D5C    ???
-00527D5D    ???
-00527D5E    ???
-00527D5F    ???
-00527D60    ???
-00527D61    ???
-00527D62    ???
-00527D63    ???
-00527D64    ???
-00527D65    ???
-00527D66    ???
-00527D67    ???
-00527D68    ???
-00527D69    ???
-00527D6A    ???
-00527D6B    ???
-00527D6C    ???
-00527D6D    ???
-00527D6E    ???
-00527D6F    ???
-00527D70    ???
-00527D71    ???
-00527D72    ???
-00527D73    ???
-00527D74    ???
-00527D75    ???
-00527D76    ???
-00527D77    ???
-00527D78    ???
-00527D79    ???
-00527D7A    ???
-00527D7B    ???
-00527D7C    ???
-00527D7D    ???
-00527D7E    ???
-00527D7F    ???
-00527D80    ???
-00527D81    ???
-00527D82    ???
-00527D83    ???
-00527D84    ???
-00527D85    ???
-00527D86    ???
-00527D87    ???
-00527D88    ???
-00527D89    ???
-00527D8A    ???
-00527D8B    ???
-00527D8C    ???
-00527D8D    ???
-00527D8E    ???
-00527D8F    ???
-00527D90    ???
-00527D91    ???
-00527D92    ???
-00527D93    ???
-00527D94    ???
-00527D95    ???
-00527D96    ???
-00527D97    ???
-00527D98    ???
-00527D99    ???
-00527D9A    ???
-00527D9B    ???
-00527D9C    ???
-00527D9D    ???
-00527D9E    ???
-00527D9F    ???
-00527DA0    ???
-00527DA1    ???
+00527D20    push ebp
+00527D21    mov ebp, esp
+00527D23    push ecx
+00527D24    push ebx
+00527D25    push esi
+00527D26    push edi
+00527D27    mov edi, ecx
+00527D29    mov dword ptr ss:[ebp-0x04], edx
+00527D2C    mov eax, dword ptr ds:[edi]
+00527D2E    mov bl, byte ptr ds:[eax]
+00527D30    lea edx, ds:[eax+0x01]
+00527D33    movzx esi, bl
+00527D36    and esi, 0x7F
+00527D39    mov dword ptr ds:[edi], edx
+00527D3B    test bl, bl
+00527D3D    jns 0x00527D8A
+00527D3F    mov cl, byte ptr ds:[edx]
+00527D41    inc edx
+00527D42    movzx eax, cl
+00527D45    and eax, 0x7F
+00527D48    mov dword ptr ds:[edi], edx
+00527D4A    shl eax, 0x07
+00527D4D    or esi, eax
+00527D4F    test cl, cl
+00527D51    jns 0x00527D8A
+00527D53    mov cl, byte ptr ds:[edx]
+00527D55    inc edx
+00527D56    movzx eax, cl
+00527D59    and eax, 0x7F
+00527D5C    mov dword ptr ds:[edi], edx
+00527D5E    shl eax, 0x0E
+00527D61    or esi, eax
+00527D63    test cl, cl
+00527D65    jns 0x00527D8A
+00527D67    mov cl, byte ptr ds:[edx]
+00527D69    inc edx
+00527D6A    movzx eax, cl
+00527D6D    and eax, 0x7F
+00527D70    mov dword ptr ds:[edi], edx
+00527D72    shl eax, 0x15
+00527D75    or esi, eax
+00527D77    test cl, cl
+00527D79    jns 0x00527D8A
+00527D7B    mov cl, byte ptr ds:[edx]
+00527D7D    lea eax, ds:[edx+0x01]
+00527D80    mov dword ptr ds:[edi], eax
+00527D82    movzx eax, cl
+00527D85    shl eax, 0x1C
+00527D88    or esi, eax
+00527D8A    cmp dword ptr ss:[ebp-0x04], 0x00
+00527D8E    mov eax, esi
+00527D90    jnz 0x00527D9B
+00527D92    and esi, 0x01
+00527D95    shr eax, 0x01
+00527D97    neg esi
+00527D99    xor eax, esi
+00527D9B    pop edi
+00527D9C    pop esi
+00527D9D    pop ebx
+00527D9E    mov esp, ebp
+00527DA0    pop ebp
+00527DA1    ret

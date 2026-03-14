@@ -1,12 +1,5 @@
-0058BFD0    ???
-0058BFD1    ???
-0058BFD2    ???
-0058BFD3    ???
-0058BFD4    ???
-0058BFD5    ???
-0058BFD6    ???
-0058BFD7    ???
-0058BFD8    ???
-0058BFD9    ???
-0058BFDA    ???
-0058BFDB    ???
+0058BFD0    mov eax, dword ptr ss:[ebp+0x10]
+0058BFD3    push dword ptr ds:[eax]
+0058BFD5    call 0x00589EC6
+0058BFDA    pop ecx
+0058BFDB    ret

@@ -1,248 +1,88 @@
-00526D30    ???
-00526D31    ???
-00526D32    ???
-00526D33    ???
-00526D34    ???
-00526D35    ???
-00526D36    ???
-00526D37    ???
-00526D38    ???
-00526D39    ???
-00526D3A    ???
-00526D3B    ???
-00526D3C    ???
-00526D3D    ???
-00526D3E    ???
-00526D3F    ???
-00526D40    ???
-00526D41    ???
-00526D42    ???
-00526D43    ???
-00526D44    ???
-00526D45    ???
-00526D46    ???
-00526D47    ???
-00526D48    ???
-00526D49    ???
-00526D4A    ???
-00526D4B    ???
-00526D4C    ???
-00526D4D    ???
-00526D4E    ???
-00526D4F    ???
-00526D50    ???
-00526D51    ???
-00526D52    ???
-00526D53    ???
-00526D54    ???
-00526D55    ???
-00526D56    ???
-00526D57    ???
-00526D58    ???
-00526D59    ???
-00526D5A    ???
-00526D5B    ???
-00526D5C    ???
-00526D5D    ???
-00526D5E    ???
-00526D5F    ???
-00526D60    ???
-00526D61    ???
-00526D62    ???
-00526D63    ???
-00526D64    ???
-00526D65    ???
-00526D66    ???
-00526D67    ???
-00526D68    ???
-00526D69    ???
-00526D6A    ???
-00526D6B    ???
-00526D6C    ???
-00526D6D    ???
-00526D6E    ???
-00526D6F    ???
-00526D70    ???
-00526D71    ???
-00526D72    ???
-00526D73    ???
-00526D74    ???
-00526D75    ???
-00526D76    ???
-00526D77    ???
-00526D78    ???
-00526D79    ???
-00526D7A    ???
-00526D7B    ???
-00526D7C    ???
-00526D7D    ???
-00526D7E    ???
-00526D7F    ???
-00526D80    ???
-00526D81    ???
-00526D82    ???
-00526D83    ???
-00526D84    ???
-00526D85    ???
-00526D86    ???
-00526D87    ???
-00526D88    ???
-00526D89    ???
-00526D8A    ???
-00526D8B    ???
-00526D8C    ???
-00526D8D    ???
-00526D8E    ???
-00526D8F    ???
-00526D90    ???
-00526D91    ???
-00526D92    ???
-00526D93    ???
-00526D94    ???
-00526D95    ???
-00526D96    ???
-00526D97    ???
-00526D98    ???
-00526D99    ???
-00526D9A    ???
-00526D9B    ???
-00526D9C    ???
-00526D9D    ???
-00526D9E    ???
-00526D9F    ???
-00526DA0    ???
-00526DA1    ???
-00526DA2    ???
-00526DA3    ???
-00526DA4    ???
-00526DA5    ???
-00526DA6    ???
-00526DA7    ???
-00526DA8    ???
-00526DA9    ???
-00526DAA    ???
-00526DAB    ???
-00526DAC    ???
-00526DAD    ???
-00526DAE    ???
-00526DAF    ???
-00526DB0    ???
-00526DB1    ???
-00526DB2    ???
-00526DB3    ???
-00526DB4    ???
-00526DB5    ???
-00526DB6    ???
-00526DB7    ???
-00526DB8    ???
-00526DB9    ???
-00526DBA    ???
-00526DBB    ???
-00526DBC    ???
-00526DBD    ???
-00526DBE    ???
-00526DBF    ???
-00526DC0    ???
-00526DC1    ???
-00526DC2    ???
-00526DC3    ???
-00526DC4    ???
-00526DC5    ???
-00526DC6    ???
-00526DC7    ???
-00526DC8    ???
-00526DC9    ???
-00526DCA    ???
-00526DCB    ???
-00526DCC    ???
-00526DCD    ???
-00526DCE    ???
-00526DCF    ???
-00526DD0    ???
-00526DD1    ???
-00526DD2    ???
-00526DD3    ???
-00526DD4    ???
-00526DD5    ???
-00526DD6    ???
-00526DD7    ???
-00526DD8    ???
-00526DD9    ???
-00526DDA    ???
-00526DDB    ???
-00526DDC    ???
-00526DDD    ???
-00526DDE    ???
-00526DDF    ???
-00526DE0    ???
-00526DE1    ???
-00526DE2    ???
-00526DE3    ???
-00526DE4    ???
-00526DE5    ???
-00526DE6    ???
-00526DE7    ???
-00526DE8    ???
-00526DE9    ???
-00526DEA    ???
-00526DEB    ???
-00526DEC    ???
-00526DED    ???
-00526DEE    ???
-00526DEF    ???
-00526DF0    ???
-00526DF1    ???
-00526DF2    ???
-00526DF3    ???
-00526DF4    ???
-00526DF5    ???
-00526DF6    ???
-00526DF7    ???
-00526DF8    ???
-00526DF9    ???
-00526DFA    ???
-00526DFB    ???
-00526DFC    ???
-00526DFD    ???
-00526DFE    ???
-00526DFF    ???
-00526E00    ???
-00526E01    ???
-00526E02    ???
-00526E03    ???
-00526E04    ???
-00526E05    ???
-00526E06    ???
-00526E07    ???
-00526E08    ???
-00526E09    ???
-00526E0A    ???
-00526E0B    ???
-00526E0C    ???
-00526E0D    ???
-00526E0E    ???
-00526E0F    ???
-00526E10    ???
-00526E11    ???
-00526E12    ???
-00526E13    ???
-00526E14    ???
-00526E15    ???
-00526E16    ???
-00526E17    ???
-00526E18    ???
-00526E19    ???
-00526E1A    ???
-00526E1B    ???
-00526E1C    ???
-00526E1D    ???
-00526E1E    ???
-00526E1F    ???
-00526E20    ???
-00526E21    ???
-00526E22    ???
-00526E23    ???
-00526E24    ???
-00526E25    ???
-00526E26    ???
-00526E27    ???
+00526D30    push ebp
+00526D31    mov ebp, esp
+00526D33    push ebx
+00526D34    push esi
+00526D35    push edi
+00526D36    mov edi, dword ptr ss:[ebp+0x08]
+00526D39    mov ecx, dword ptr ds:[edi]
+00526D3B    call 0x00526E30
+00526D40    mov ecx, dword ptr ds:[edi+0x50]
+00526D43    mov ebx, eax
+00526D45    mov dword ptr ds:[ebx+0x50], ecx
+00526D48    mov ecx, dword ptr ds:[edi+0x54]
+00526D4B    mov dword ptr ds:[ebx+0x54], ecx
+00526D4E    mov ecx, dword ptr ds:[edi+0x48]
+00526D51    mov dword ptr ds:[ebx+0x48], ecx
+00526D54    mov ecx, dword ptr ds:[edi+0x4C]
+00526D57    mov dword ptr ds:[ebx+0x4C], ecx
+00526D5A    mov ecx, dword ptr ds:[edi+0x58]
+00526D5D    mov dword ptr ds:[ebx+0x58], ecx
+00526D60    mov eax, dword ptr ds:[edi+0x5C]
+00526D63    mov dword ptr ds:[ebx+0x5C], eax
+00526D66    mov eax, dword ptr ds:[edi+0x44]
+00526D69    mov dword ptr ds:[ebx+0x44], eax
+00526D6C    mov esi, dword ptr ds:[edi+0x14]
+00526D6F    mov ecx, esi
+00526D71    lea edx, ds:[ecx+0x01]
+00526D74    mov al, byte ptr ds:[ecx]
+00526D76    inc ecx
+00526D77    test al, al
+00526D79    jnz 0x00526D74
+00526D7B    mov eax, dword ptr ds:[0x01151AE0]
+00526D80    sub ecx, edx
+00526D82    inc ecx
+00526D83    test eax, eax
+00526D85    jz 0x00526D96
+00526D87    push 0x36
+00526D89    push 0x608268
+00526D8E    push ecx
+00526D8F    call eax
+00526D91    add esp, 0x0C
+00526D94    jmp 0x00526D9F
+00526D96    push ecx
+00526D97    call 0x00580001
+00526D9C    add esp, 0x04
+00526D9F    mov ecx, eax
+00526DA1    mov dword ptr ds:[ebx+0x14], ecx
+00526DA4    sub ecx, esi
+00526DA6    mov al, byte ptr ds:[esi]
+00526DA8    lea esi, ds:[esi+0x01]
+00526DAB    mov byte ptr ds:[ecx+esi*1-0x01], al
+00526DAF    test al, al
+00526DB1    jnz 0x00526DA6
+00526DB3    mov eax, dword ptr ds:[edi+0x18]
+00526DB6    mov dword ptr ds:[ebx+0x18], eax
+00526DB9    mov eax, dword ptr ds:[edi+0x1C]
+00526DBC    mov dword ptr ds:[ebx+0x1C], eax
+00526DBF    mov eax, dword ptr ds:[edi+0x20]
+00526DC2    mov dword ptr ds:[ebx+0x20], eax
+00526DC5    mov eax, dword ptr ds:[edi+0x24]
+00526DC8    mov dword ptr ds:[ebx+0x24], eax
+00526DCB    mov eax, dword ptr ds:[edi+0x28]
+00526DCE    mov dword ptr ds:[ebx+0x28], eax
+00526DD1    mov eax, dword ptr ds:[edi+0x2C]
+00526DD4    mov dword ptr ds:[ebx+0x2C], eax
+00526DD7    mov eax, dword ptr ds:[edi+0x30]
+00526DDA    mov dword ptr ds:[ebx+0x30], eax
+00526DDD    movups xmm0, xmmword ptr ds:[edi+0x80]
+00526DE4    movups xmmword ptr ds:[ebx+0x80], xmm0
+00526DEB    movups xmm0, xmmword ptr ds:[edi+0x90]
+00526DF2    movups xmmword ptr ds:[ebx+0x90], xmm0
+00526DF9    movups xmm0, xmmword ptr ds:[edi+0x60]
+00526DFD    movups xmmword ptr ds:[ebx+0x60], xmm0
+00526E01    movups xmm0, xmmword ptr ds:[edi+0x70]
+00526E05    movups xmmword ptr ds:[ebx+0x70], xmm0
+00526E09    mov eax, dword ptr ds:[edi+0x34]
+00526E0C    mov dword ptr ds:[ebx+0x34], eax
+00526E0F    mov eax, dword ptr ds:[edi+0x38]
+00526E12    mov dword ptr ds:[ebx+0x38], eax
+00526E15    mov eax, dword ptr ds:[edi+0x3C]
+00526E18    mov dword ptr ds:[ebx+0x3C], eax
+00526E1B    mov eax, dword ptr ds:[edi+0x40]
+00526E1E    pop edi
+00526E1F    mov dword ptr ds:[ebx+0x40], eax
+00526E22    mov eax, ebx
+00526E24    pop esi
+00526E25    pop ebx
+00526E26    pop ebp
+00526E27    ret

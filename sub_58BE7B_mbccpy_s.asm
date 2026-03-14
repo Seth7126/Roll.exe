@@ -1,29 +1,12 @@
-0058BE7B    ???
-0058BE7C    ???
-0058BE7D    ???
-0058BE7E    ???
-0058BE7F    ???
-0058BE80    ???
-0058BE81    ???
-0058BE82    ???
-0058BE83    ???
-0058BE84    ???
-0058BE85    ???
-0058BE86    ???
-0058BE87    ???
-0058BE88    ???
-0058BE89    ???
-0058BE8A    ???
-0058BE8B    ???
-0058BE8C    ???
-0058BE8D    ???
-0058BE8E    ???
-0058BE8F    ???
-0058BE90    ???
-0058BE91    ???
-0058BE92    ???
-0058BE93    ???
-0058BE94    ???
-0058BE95    ???
-0058BE96    ???
-0058BE97    ???
+0058BE7B    mov edi, edi
+0058BE7D    push ebp
+0058BE7E    mov ebp, esp
+0058BE80    push 0x00
+0058BE82    push dword ptr ss:[ebp+0x14]
+0058BE85    push dword ptr ss:[ebp+0x10]
+0058BE88    push dword ptr ss:[ebp+0x0C]
+0058BE8B    push dword ptr ss:[ebp+0x08]
+0058BE8E    call 0x0058BD58
+0058BE93    add esp, 0x14
+0058BE96    pop ebp
+0058BE97    ret

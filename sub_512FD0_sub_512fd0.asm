@@ -1,53 +1,24 @@
-00512FD0    ???
-00512FD1    ???
-00512FD2    ???
-00512FD3    ???
-00512FD4    ???
-00512FD5    ???
-00512FD6    ???
-00512FD7    ???
-00512FD8    ???
-00512FD9    ???
-00512FDA    ???
-00512FDB    ???
-00512FDC    ???
-00512FDD    ???
-00512FDE    ???
-00512FDF    ???
-00512FE0    ???
-00512FE1    ???
-00512FE2    ???
-00512FE3    ???
-00512FE4    ???
-00512FE5    ???
-00512FE6    ???
-00512FE7    ???
-00512FE8    ???
-00512FE9    ???
-00512FEA    ???
-00512FEB    ???
-00512FEC    ???
-00512FED    ???
-00512FEE    ???
-00512FEF    ???
-00512FF0    ???
-00512FF1    ???
-00512FF2    ???
-00512FF3    ???
-00512FF4    ???
-00512FF5    ???
-00512FF6    ???
-00512FF7    ???
-00512FF8    ???
-00512FF9    ???
-00512FFA    ???
-00512FFB    ???
-00512FFC    ???
-00512FFD    ???
-00512FFE    ???
-00512FFF    ???
-00513000    ???
-00513001    ???
-00513002    ???
-00513003    ???
-00513004    ???
+00512FD0    push ebp
+00512FD1    mov ebp, esp
+00512FD3    push esi
+00512FD4    push edi
+00512FD5    mov edi, dword ptr ss:[ebp+0x08]
+00512FD8    mov eax, edx
+00512FDA    push ecx
+00512FDB    mov ecx, eax
+00512FDD    mov edx, dword ptr ds:[edi]
+00512FDF    call 0x004CF950
+00512FE4    mov esi, dword ptr ss:[ebp+0x0C]
+00512FE7    add esp, 0x04
+00512FEA    mov ecx, esi
+00512FEC    push dword ptr ds:[edi]
+00512FEE    call 0x0048A5E0
+00512FF3    mov eax, dword ptr ds:[esi]
+00512FF5    mov ecx, 0x5B2591
+00512FFA    test eax, eax
+00512FFC    cmovnz ecx, eax
+00512FFF    mov dword ptr ds:[edi], ecx
+00513001    pop edi
+00513002    pop esi
+00513003    pop ebp
+00513004    ret

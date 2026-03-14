@@ -1,12 +1,5 @@
-0058AB68    ???
-0058AB69    ???
-0058AB6A    ???
-0058AB6B    ???
-0058AB6C    ???
-0058AB6D    ???
-0058AB6E    ???
-0058AB6F    ???
-0058AB70    ???
-0058AB71    ???
-0058AB72    ???
-0058AB73    ???
+0058AB68    mov eax, dword ptr ss:[ebp+0x10]
+0058AB6B    push dword ptr ds:[eax]
+0058AB6D    call 0x00589EC6
+0058AB72    pop ecx
+0058AB73    ret

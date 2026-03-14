@@ -1,60 +1,30 @@
-00586E94    ???
-00586E95    ???
-00586E96    ???
-00586E97    ???
-00586E98    ???
-00586E99    ???
-00586E9A    ???
-00586E9B    ???
-00586E9C    ???
-00586E9D    ???
-00586E9E    ???
-00586E9F    ???
-00586EA0    ???
-00586EA1    ???
-00586EA2    ???
-00586EA3    ???
-00586EA4    ???
-00586EA5    ???
-00586EA6    ???
-00586EA7    ???
-00586EA8    ???
-00586EA9    ???
-00586EAA    ???
-00586EAB    ???
-00586EAC    ???
-00586EAD    ???
-00586EAE    ???
-00586EAF    ???
-00586EB0    ???
-00586EB1    ???
-00586EB2    ???
-00586EB3    ???
-00586EB4    ???
-00586EB5    ???
-00586EB6    ???
-00586EB7    ???
-00586EB8    ???
-00586EB9    ???
-00586EBA    ???
-00586EBB    ???
-00586EBC    ???
-00586EBD    ???
-00586EBE    ???
-00586EBF    ???
-00586EC0    ???
-00586EC1    ???
-00586EC2    ???
-00586EC3    ???
-00586EC4    ???
-00586EC5    ???
-00586EC6    ???
-00586EC7    ???
-00586EC8    ???
-00586EC9    ???
-00586ECA    ???
-00586ECB    ???
-00586ECC    ???
-00586ECD    ???
-00586ECE    ???
-00586ECF    ???
+00586E94    mov edi, edi
+00586E96    push ebp
+00586E97    mov ebp, esp
+00586E99    push ebx
+00586E9A    push esi
+00586E9B    mov esi, dword ptr ss:[ebp+0x08]
+00586E9E    xor edx, edx
+00586EA0    push edi
+00586EA1    mov edi, dword ptr ss:[ebp+0x0C]
+00586EA4    mov ecx, edx
+00586EA6    mov bl, byte ptr ds:[esi]
+00586EA8    cmp bl, byte ptr ds:[ecx+0x5AA858]
+00586EAE    jz 0x00586EB8
+00586EB0    cmp bl, byte ptr ds:[ecx+0x5AA85C]
+00586EB6    jnz 0x00586EC9
+00586EB8    mov eax, dword ptr ds:[edi]
+00586EBA    mov bl, byte ptr ds:[eax]
+00586EBC    inc eax
+00586EBD    inc ecx
+00586EBE    mov dword ptr ds:[edi], eax
+00586EC0    mov byte ptr ds:[esi], bl
+00586EC2    cmp ecx, 0x04
+00586EC5    jnz 0x00586EA8
+00586EC7    mov dl, 0x01
+00586EC9    pop edi
+00586ECA    pop esi
+00586ECB    mov al, dl
+00586ECD    pop ebx
+00586ECE    pop ebp
+00586ECF    ret

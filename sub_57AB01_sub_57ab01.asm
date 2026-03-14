@@ -1,135 +1,49 @@
-0057AB01    ???
-0057AB02    ???
-0057AB03    ???
-0057AB04    ???
-0057AB05    ???
-0057AB06    ???
-0057AB07    ???
-0057AB08    ???
-0057AB09    ???
-0057AB0A    ???
-0057AB0B    ???
-0057AB0C    ???
-0057AB0D    ???
-0057AB0E    ???
-0057AB0F    ???
-0057AB10    ???
-0057AB11    ???
-0057AB12    ???
-0057AB13    ???
-0057AB14    ???
-0057AB15    ???
-0057AB16    ???
-0057AB17    ???
-0057AB18    ???
-0057AB19    ???
-0057AB1A    ???
-0057AB1B    ???
-0057AB1C    ???
-0057AB1D    ???
-0057AB1E    ???
-0057AB1F    ???
-0057AB20    ???
-0057AB21    ???
-0057AB22    ???
-0057AB23    ???
-0057AB24    ???
-0057AB25    ???
-0057AB26    ???
-0057AB27    ???
-0057AB28    ???
-0057AB29    ???
-0057AB2A    ???
-0057AB2B    ???
-0057AB2C    ???
-0057AB2D    ???
-0057AB2E    ???
-0057AB2F    ???
-0057AB30    ???
-0057AB31    ???
-0057AB32    ???
-0057AB33    ???
-0057AB34    ???
-0057AB35    ???
-0057AB36    ???
-0057AB37    ???
-0057AB38    ???
-0057AB39    ???
-0057AB3A    ???
-0057AB3B    ???
-0057AB3C    ???
-0057AB3D    ???
-0057AB3E    ???
-0057AB3F    ???
-0057AB40    ???
-0057AB41    ???
-0057AB42    ???
-0057AB43    ???
-0057AB44    ???
-0057AB45    ???
-0057AB46    ???
-0057AB47    ???
-0057AB48    ???
-0057AB49    ???
-0057AB4A    ???
-0057AB4B    ???
-0057AB4C    ???
-0057AB4D    ???
-0057AB4E    ???
-0057AB4F    ???
-0057AB50    ???
-0057AB51    ???
-0057AB52    ???
-0057AB53    ???
-0057AB54    ???
-0057AB55    ???
-0057AB56    ???
-0057AB57    ???
-0057AB58    ???
-0057AB59    ???
-0057AB5A    ???
-0057AB5B    ???
-0057AB5C    ???
-0057AB5D    ???
-0057AB5E    ???
-0057AB5F    ???
-0057AB60    ???
-0057AB61    ???
-0057AB62    ???
-0057AB63    ???
-0057AB64    ???
-0057AB65    ???
-0057AB66    ???
-0057AB67    ???
-0057AB68    ???
-0057AB69    ???
-0057AB6A    ???
-0057AB6B    ???
-0057AB6C    ???
-0057AB6D    ???
-0057AB6E    ???
-0057AB6F    ???
-0057AB70    ???
-0057AB71    ???
-0057AB72    ???
-0057AB73    ???
-0057AB74    ???
-0057AB75    ???
-0057AB76    ???
-0057AB77    ???
-0057AB78    ???
-0057AB79    ???
-0057AB7A    ???
-0057AB7B    ???
-0057AB7C    ???
-0057AB7D    ???
-0057AB7E    ???
-0057AB7F    ???
-0057AB80    ???
-0057AB81    ???
-0057AB82    ???
-0057AB83    ???
-0057AB84    ???
-0057AB85    ???
-0057AB86    ???
-0057AB87    ???
+0057AB01    mov esp, dword ptr ss:[ebp-0x18]
+0057AB04    call 0x0057A0A4
+0057AB09    and dword ptr ds:[eax+0x20], 0x00
+0057AB0D    mov edi, dword ptr ss:[ebp+0x14]
+0057AB10    mov eax, dword ptr ds:[edi+0x08]
+0057AB13    mov dword ptr ss:[ebp-0x28], eax
+0057AB16    push edi
+0057AB17    push dword ptr ss:[ebp+0x18]
+0057AB1A    mov ebx, dword ptr ss:[ebp+0x0C]
+0057AB1D    push ebx
+0057AB1E    call 0x0057B3F3
+0057AB23    add esp, 0x0C
+0057AB26    mov dword ptr ss:[ebp-0x20], eax
+0057AB29    mov edx, dword ptr ds:[edi+0x10]
+0057AB2C    xor ecx, ecx
+0057AB2E    mov dword ptr ss:[ebp-0x2C], ecx
+0057AB31    cmp dword ptr ds:[edi+0x0C], ecx
+0057AB34    jbe 0x0057AB70
+0057AB36    imul ebx, ecx, 0x14
+0057AB39    mov dword ptr ss:[ebp-0x24], ebx
+0057AB3C    cmp eax, dword ptr ds:[ebx+edx*1+0x04]
+0057AB40    mov ebx, dword ptr ss:[ebp+0x0C]
+0057AB43    jle 0x0057AB67
+0057AB45    mov edi, dword ptr ss:[ebp-0x24]
+0057AB48    cmp eax, dword ptr ds:[edi+edx*1+0x08]
+0057AB4C    mov edi, dword ptr ss:[ebp+0x14]
+0057AB4F    jnle 0x0057AB67
+0057AB51    imul eax, ecx, 0x14
+0057AB54    mov eax, dword ptr ds:[eax+edx*1+0x04]
+0057AB58    inc eax
+0057AB59    mov dword ptr ss:[ebp-0x20], eax
+0057AB5C    mov ecx, dword ptr ss:[ebp-0x28]
+0057AB5F    mov eax, dword ptr ds:[ecx+eax*8]
+0057AB62    mov dword ptr ss:[ebp-0x20], eax
+0057AB65    jmp 0x0057AB70
+0057AB67    inc ecx
+0057AB68    mov dword ptr ss:[ebp-0x2C], ecx
+0057AB6B    cmp ecx, dword ptr ds:[edi+0x0C]
+0057AB6E    jb 0x0057AB36
+0057AB70    push eax
+0057AB71    push edi
+0057AB72    push 0x00
+0057AB74    push ebx
+0057AB75    call 0x0057ACCB
+0057AB7A    add esp, 0x10
+0057AB7D    xor ebx, ebx
+0057AB7F    mov dword ptr ss:[ebp-0x1C], ebx
+0057AB82    and dword ptr ss:[ebp-0x04], ebx
+0057AB85    mov edi, dword ptr ss:[ebp+0x08]

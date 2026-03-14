@@ -1,42 +1,17 @@
-005825A9    ???
-005825AA    ???
-005825AB    ???
-005825AC    ???
-005825AD    ???
-005825AE    ???
-005825AF    ???
-005825B0    ???
-005825B1    ???
-005825B2    ???
-005825B3    ???
-005825B4    ???
-005825B5    ???
-005825B6    ???
-005825B7    ???
-005825B8    ???
-005825B9    ???
-005825BA    ???
-005825BB    ???
-005825BC    ???
-005825BD    ???
-005825BE    ???
-005825BF    ???
-005825C0    ???
-005825C1    ???
-005825C2    ???
-005825C3    ???
-005825C4    ???
-005825C5    ???
-005825C6    ???
-005825C7    ???
-005825C8    ???
-005825C9    ???
-005825CA    ???
-005825CB    ???
-005825CC    ???
-005825CD    ???
-005825CE    ???
-005825CF    ???
-005825D0    ???
-005825D1    ???
-005825D2    ???
+005825A9    mov edi, edi
+005825AB    push esi
+005825AC    mov esi, ecx
+005825AE    mov eax, dword ptr ds:[esi+0x04]
+005825B1    mov ecx, dword ptr ds:[esi]
+005825B3    movzx eax, byte ptr ds:[eax]
+005825B6    push eax
+005825B7    call 0x00585C98
+005825BC    mov eax, dword ptr ds:[esi+0x04]
+005825BF    mov byte ptr ds:[eax], 0x00
+005825C2    mov eax, dword ptr ds:[esi+0x08]
+005825C5    mov ecx, dword ptr ds:[esi]
+005825C7    push dword ptr ds:[eax+0x04]
+005825CA    push dword ptr ds:[eax]
+005825CC    call 0x005856CC
+005825D1    pop esi
+005825D2    ret

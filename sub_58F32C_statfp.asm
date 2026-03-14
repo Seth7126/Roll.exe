@@ -1,18 +1,10 @@
-0058F32C    ???
-0058F32D    ???
-0058F32E    ???
-0058F32F    ???
-0058F330    ???
-0058F331    ???
-0058F332    ???
-0058F333    ???
-0058F334    ???
-0058F335    ???
-0058F336    ???
-0058F337    ???
-0058F338    ???
-0058F339    ???
-0058F33A    ???
-0058F33B    ???
-0058F33C    ???
-0058F33D    ???
+0058F32C    mov edi, edi
+0058F32E    push ebp
+0058F32F    mov ebp, esp
+0058F331    push ecx
+0058F332    fwait
+0058F333    fnstsw word ptr ss:[ebp-0x04]
+0058F336    movsx eax, word ptr ss:[ebp-0x04]
+0058F33A    mov esp, ebp
+0058F33C    pop ebp
+0058F33D    ret

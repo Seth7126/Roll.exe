@@ -1,30 +1,13 @@
-00585CDF    ???
-00585CE0    ???
-00585CE1    ???
-00585CE2    ???
-00585CE3    ???
-00585CE4    ???
-00585CE5    ???
-00585CE6    ???
-00585CE7    ???
-00585CE8    ???
-00585CE9    ???
-00585CEA    ???
-00585CEB    ???
-00585CEC    ???
-00585CED    ???
-00585CEE    ???
-00585CEF    ???
-00585CF0    ???
-00585CF1    ???
-00585CF2    ???
-00585CF3    ???
-00585CF4    ???
-00585CF5    ???
-00585CF6    ???
-00585CF7    ???
-00585CF8    ???
-00585CF9    ???
-00585CFA    ???
-00585CFB    ???
-00585CFC    ???
+00585CDF    mov edi, edi
+00585CE1    push ebp
+00585CE2    mov ebp, esp
+00585CE4    cmp dword ptr ss:[ebp+0x08], 0xFFFFFFFF
+00585CE8    jz 0x00585CF9
+00585CEA    push dword ptr ds:[ecx]
+00585CEC    dec dword ptr ds:[ecx+0x04]
+00585CEF    push dword ptr ss:[ebp+0x08]
+00585CF2    call 0x0058DC43
+00585CF7    pop ecx
+00585CF8    pop ecx
+00585CF9    pop ebp
+00585CFA    ret 0x04

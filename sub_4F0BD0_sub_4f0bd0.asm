@@ -1,38 +1,22 @@
-004F0BD0    ???
-004F0BD1    ???
-004F0BD2    ???
-004F0BD3    ???
-004F0BD4    ???
-004F0BD5    ???
-004F0BD6    ???
-004F0BD7    ???
-004F0BD8    ???
-004F0BD9    ???
-004F0BDA    ???
-004F0BDB    ???
-004F0BDC    ???
-004F0BDD    ???
-004F0BDE    ???
-004F0BDF    ???
-004F0BE0    ???
-004F0BE1    ???
-004F0BE2    ???
-004F0BE3    ???
-004F0BE4    ???
-004F0BE5    ???
-004F0BE6    ???
-004F0BE7    ???
-004F0BE8    ???
-004F0BE9    ???
-004F0BEA    ???
-004F0BEB    ???
-004F0BEC    ???
-004F0BED    ???
-004F0BEE    ???
-004F0BEF    ???
-004F0BF0    ???
-004F0BF1    ???
-004F0BF2    ???
-004F0BF3    ???
-004F0BF4    ???
-004F0BF5    ???
+004F0BD0    push esi
+004F0BD1    push edi
+004F0BD2    mov edi, dword ptr ds:[ecx]
+004F0BD4    xor esi, esi
+004F0BD6    test edi, edi
+004F0BD8    jle 0x004F0BEC
+004F0BDA    mov eax, dword ptr ds:[ecx+0x08]
+004F0BDD    nop dword ptr ds:[eax], eax
+004F0BE0    cmp dword ptr ds:[eax], edx
+004F0BE2    jz 0x004F0BF1
+004F0BE4    inc esi
+004F0BE5    add eax, 0x10
+004F0BE8    cmp esi, edi
+004F0BEA    jl 0x004F0BE0
+004F0BEC    pop edi
+004F0BED    xor al, al
+004F0BEF    pop esi
+004F0BF0    ret
+004F0BF1    pop edi
+004F0BF2    mov al, 0x01
+004F0BF4    pop esi
+004F0BF5    ret

@@ -1,36 +1,14 @@
-00585FC3    ???
-00585FC4    ???
-00585FC5    ???
-00585FC6    ???
-00585FC7    ???
-00585FC8    ???
-00585FC9    ???
-00585FCA    ???
-00585FCB    ???
-00585FCC    ???
-00585FCD    ???
-00585FCE    ???
-00585FCF    ???
-00585FD0    ???
-00585FD1    ???
-00585FD2    ???
-00585FD3    ???
-00585FD4    ???
-00585FD5    ???
-00585FD6    ???
-00585FD7    ???
-00585FD8    ???
-00585FD9    ???
-00585FDA    ???
-00585FDB    ???
-00585FDC    ???
-00585FDD    ???
-00585FDE    ???
-00585FDF    ???
-00585FE0    ???
-00585FE1    ???
-00585FE2    ???
-00585FE3    ???
-00585FE4    ???
-00585FE5    ???
-00585FE6    ???
+00585FC3    mov edi, edi
+00585FC5    push ebp
+00585FC6    mov ebp, esp
+00585FC8    push dword ptr ss:[ebp+0x20]
+00585FCB    push dword ptr ss:[ebp+0x1C]
+00585FCE    push dword ptr ss:[ebp+0x18]
+00585FD1    push dword ptr ss:[ebp+0x14]
+00585FD4    push dword ptr ss:[ebp+0x10]
+00585FD7    push dword ptr ss:[ebp+0x0C]
+00585FDA    push dword ptr ss:[ebp+0x08]
+00585FDD    call 0x005802A1
+00585FE2    add esp, 0x1C
+00585FE5    pop ebp
+00585FE6    ret

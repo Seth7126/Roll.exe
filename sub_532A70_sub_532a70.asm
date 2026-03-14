@@ -1,190 +1,74 @@
-00532A70    ???
-00532A71    ???
-00532A72    ???
-00532A73    ???
-00532A74    ???
-00532A75    ???
-00532A76    ???
-00532A77    ???
-00532A78    ???
-00532A79    ???
-00532A7A    ???
-00532A7B    ???
-00532A7C    ???
-00532A7D    ???
-00532A7E    ???
-00532A7F    ???
-00532A80    ???
-00532A81    ???
-00532A82    ???
-00532A83    ???
-00532A84    ???
-00532A85    ???
-00532A86    ???
-00532A87    ???
-00532A88    ???
-00532A89    ???
-00532A8A    ???
-00532A8B    ???
-00532A8C    ???
-00532A8D    ???
-00532A8E    ???
-00532A8F    ???
-00532A90    ???
-00532A91    ???
-00532A92    ???
-00532A93    ???
-00532A94    ???
-00532A95    ???
-00532A96    ???
-00532A97    ???
-00532A98    ???
-00532A99    ???
-00532A9A    ???
-00532A9B    ???
-00532A9C    ???
-00532A9D    ???
-00532A9E    ???
-00532A9F    ???
-00532AA0    ???
-00532AA1    ???
-00532AA2    ???
-00532AA3    ???
-00532AA4    ???
-00532AA5    ???
-00532AA6    ???
-00532AA7    ???
-00532AA8    ???
-00532AA9    ???
-00532AAA    ???
-00532AAB    ???
-00532AAC    ???
-00532AAD    ???
-00532AAE    ???
-00532AAF    ???
-00532AB0    ???
-00532AB1    ???
-00532AB2    ???
-00532AB3    ???
-00532AB4    ???
-00532AB5    ???
-00532AB6    ???
-00532AB7    ???
-00532AB8    ???
-00532AB9    ???
-00532ABA    ???
-00532ABB    ???
-00532ABC    ???
-00532ABD    ???
-00532ABE    ???
-00532ABF    ???
-00532AC0    ???
-00532AC1    ???
-00532AC2    ???
-00532AC3    ???
-00532AC4    ???
-00532AC5    ???
-00532AC6    ???
-00532AC7    ???
-00532AC8    ???
-00532AC9    ???
-00532ACA    ???
-00532ACB    ???
-00532ACC    ???
-00532ACD    ???
-00532ACE    ???
-00532ACF    ???
-00532AD0    ???
-00532AD1    ???
-00532AD2    ???
-00532AD3    ???
-00532AD4    ???
-00532AD5    ???
-00532AD6    ???
-00532AD7    ???
-00532AD8    ???
-00532AD9    ???
-00532ADA    ???
-00532ADB    ???
-00532ADC    ???
-00532ADD    ???
-00532ADE    ???
-00532ADF    ???
-00532AE0    ???
-00532AE1    ???
-00532AE2    ???
-00532AE3    ???
-00532AE4    ???
-00532AE5    ???
-00532AE6    ???
-00532AE7    ???
-00532AE8    ???
-00532AE9    ???
-00532AEA    ???
-00532AEB    ???
-00532AEC    ???
-00532AED    ???
-00532AEE    ???
-00532AEF    ???
-00532AF0    ???
-00532AF1    ???
-00532AF2    ???
-00532AF3    ???
-00532AF4    ???
-00532AF5    ???
-00532AF6    ???
-00532AF7    ???
-00532AF8    ???
-00532AF9    ???
-00532AFA    ???
-00532AFB    ???
-00532AFC    ???
-00532AFD    ???
-00532AFE    ???
-00532AFF    ???
-00532B00    ???
-00532B01    ???
-00532B02    ???
-00532B03    ???
-00532B04    ???
-00532B05    ???
-00532B06    ???
-00532B07    ???
-00532B08    ???
-00532B09    ???
-00532B0A    ???
-00532B0B    ???
-00532B0C    ???
-00532B0D    ???
-00532B0E    ???
-00532B0F    ???
-00532B10    ???
-00532B11    ???
-00532B12    ???
-00532B13    ???
-00532B14    ???
-00532B15    ???
-00532B16    ???
-00532B17    ???
-00532B18    ???
-00532B19    ???
-00532B1A    ???
-00532B1B    ???
-00532B1C    ???
-00532B1D    ???
-00532B1E    ???
-00532B1F    ???
-00532B20    ???
-00532B21    ???
-00532B22    ???
-00532B23    ???
-00532B24    ???
-00532B25    ???
-00532B26    ???
-00532B27    ???
-00532B28    ???
-00532B29    ???
-00532B2A    ???
-00532B2B    ???
-00532B2C    ???
-00532B2D    ???
+00532A70    push ebp
+00532A71    mov ebp, esp
+00532A73    sub esp, 0x10
+00532A76    cmp dword ptr ds:[edx+0x04], 0x04
+00532A7A    push edi
+00532A7B    mov edi, ecx
+00532A7D    jnz 0x00532B29
+00532A83    mov ecx, dword ptr ds:[edx+0x18]
+00532A86    mov eax, dword ptr ds:[edx+0x14]
+00532A89    mov dword ptr ss:[ebp-0x04], ecx
+00532A8C    mov dword ptr ss:[ebp-0x10], eax
+00532A8F    test ecx, ecx
+00532A91    jnz 0x00532AA2
+00532A93    mov edx, dword ptr ss:[ebp+0x08]
+00532A96    mov ecx, edi
+00532A98    call 0x00532A10
+00532A9D    pop edi
+00532A9E    mov esp, ebp
+00532AA0    pop ebp
+00532AA1    ret
+00532AA2    mov edx, dword ptr ds:[edi+0x08]
+00532AA5    push esi
+00532AA6    xor esi, esi
+00532AA8    mov dword ptr ss:[ebp-0x08], edx
+00532AAB    test eax, eax
+00532AAD    jle 0x00532B28
+00532AAF    push ebx
+00532AB0    mov eax, dword ptr ds:[ecx+esi*4]
+00532AB3    inc esi
+00532AB4    add eax, esi
+00532AB6    mov dword ptr ss:[ebp-0x0C], eax
+00532AB9    cmp esi, eax
+00532ABB    jnl 0x00532B22
+00532ABD    nop dword ptr ds:[eax], eax
+00532AC0    mov eax, dword ptr ds:[ecx+esi*4]
+00532AC3    mov ebx, dword ptr ds:[edx+eax*4]
+00532AC6    cmp dword ptr ds:[ebx+0x68], 0x00
+00532ACA    jnz 0x00532B1C
+00532ACC    mov edx, dword ptr ds:[ebx+0x08]
+00532ACF    test edx, edx
+00532AD1    jz 0x00532ADA
+00532AD3    mov ecx, edi
+00532AD5    call 0x00532A10
+00532ADA    mov dword ptr ds:[ebx+0x68], 0x01
+00532AE1    mov ecx, dword ptr ds:[edi+0x5C]
+00532AE4    mov eax, dword ptr ds:[edi+0x60]
+00532AE7    cmp ecx, eax
+00532AE9    jnz 0x00532B05
+00532AEB    add eax, eax
+00532AED    mov dword ptr ds:[edi+0x60], eax
+00532AF0    shl eax, 0x03
+00532AF3    push eax
+00532AF4    push dword ptr ds:[edi+0x64]
+00532AF7    call 0x0057FB2F
+00532AFC    mov ecx, dword ptr ds:[edi+0x5C]
+00532AFF    add esp, 0x08
+00532B02    mov dword ptr ds:[edi+0x64], eax
+00532B05    mov eax, dword ptr ds:[edi+0x64]
+00532B08    mov edx, dword ptr ss:[ebp-0x08]
+00532B0B    mov dword ptr ds:[eax+ecx*8], 0x00
+00532B12    mov dword ptr ds:[eax+ecx*8+0x04], ebx
+00532B16    inc dword ptr ds:[edi+0x5C]
+00532B19    mov ecx, dword ptr ss:[ebp-0x04]
+00532B1C    inc esi
+00532B1D    cmp esi, dword ptr ss:[ebp-0x0C]
+00532B20    jl 0x00532AC0
+00532B22    cmp esi, dword ptr ss:[ebp-0x10]
+00532B25    jl 0x00532AB0
+00532B27    pop ebx
+00532B28    pop esi
+00532B29    pop edi
+00532B2A    mov esp, ebp
+00532B2C    pop ebp
+00532B2D    ret

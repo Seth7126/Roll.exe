@@ -1,145 +1,70 @@
-004CFA30    ???
-004CFA31    ???
-004CFA32    ???
-004CFA33    ???
-004CFA34    ???
-004CFA35    ???
-004CFA36    ???
-004CFA37    ???
-004CFA38    ???
-004CFA39    ???
-004CFA3A    ???
-004CFA3B    ???
-004CFA3C    ???
-004CFA3D    ???
-004CFA3E    ???
-004CFA3F    ???
-004CFA40    ???
-004CFA41    ???
-004CFA42    ???
-004CFA43    ???
-004CFA44    ???
-004CFA45    ???
-004CFA46    ???
-004CFA47    ???
-004CFA48    ???
-004CFA49    ???
-004CFA4A    ???
-004CFA4B    ???
-004CFA4C    ???
-004CFA4D    ???
-004CFA4E    ???
-004CFA4F    ???
-004CFA50    ???
-004CFA51    ???
-004CFA52    ???
-004CFA53    ???
-004CFA54    ???
-004CFA55    ???
-004CFA56    ???
-004CFA57    ???
-004CFA58    ???
-004CFA59    ???
-004CFA5A    ???
-004CFA5B    ???
-004CFA5C    ???
-004CFA5D    ???
-004CFA5E    ???
-004CFA5F    ???
-004CFA60    ???
-004CFA61    ???
-004CFA62    ???
-004CFA63    ???
-004CFA64    ???
-004CFA65    ???
-004CFA66    ???
-004CFA67    ???
-004CFA68    ???
-004CFA69    ???
-004CFA6A    ???
-004CFA6B    ???
-004CFA6C    ???
-004CFA6D    ???
-004CFA6E    ???
-004CFA6F    ???
-004CFA70    ???
-004CFA71    ???
-004CFA72    ???
-004CFA73    ???
-004CFA74    ???
-004CFA75    ???
-004CFA76    ???
-004CFA77    ???
-004CFA78    ???
-004CFA79    ???
-004CFA7A    ???
-004CFA7B    ???
-004CFA7C    ???
-004CFA7D    ???
-004CFA7E    ???
-004CFA7F    ???
-004CFA80    ???
-004CFA81    ???
-004CFA82    ???
-004CFA83    ???
-004CFA84    ???
-004CFA85    ???
-004CFA86    ???
-004CFA87    ???
-004CFA88    ???
-004CFA89    ???
-004CFA8A    ???
-004CFA8B    ???
-004CFA8C    ???
-004CFA8D    ???
-004CFA8E    ???
-004CFA8F    ???
-004CFA90    ???
-004CFA91    ???
-004CFA92    ???
-004CFA93    ???
-004CFA94    ???
-004CFA95    ???
-004CFA96    ???
-004CFA97    ???
-004CFA98    ???
-004CFA99    ???
-004CFA9A    ???
-004CFA9B    ???
-004CFA9C    ???
-004CFA9D    ???
-004CFA9E    ???
-004CFA9F    ???
-004CFAA0    ???
-004CFAA1    ???
-004CFAA2    ???
-004CFAA3    ???
-004CFAA4    ???
-004CFAA5    ???
-004CFAA6    ???
-004CFAA7    ???
-004CFAA8    ???
-004CFAA9    ???
-004CFAAA    ???
-004CFAAB    ???
-004CFAAC    ???
-004CFAAD    ???
-004CFAAE    ???
-004CFAAF    ???
-004CFAB0    ???
-004CFAB1    ???
-004CFAB2    ???
-004CFAB3    ???
-004CFAB4    ???
-004CFAB5    ???
-004CFAB6    ???
-004CFAB7    ???
-004CFAB8    ???
-004CFAB9    ???
-004CFABA    ???
-004CFABB    ???
-004CFABC    ???
-004CFABD    ???
-004CFABE    ???
-004CFABF    ???
-004CFAC0    ???
+004CFA30    push ebp
+004CFA31    mov ebp, esp
+004CFA33    sub esp, 0x0C
+004CFA36    push ebx
+004CFA37    mov ebx, edx
+004CFA39    mov dword ptr ss:[ebp-0x04], ecx
+004CFA3C    mov dword ptr ss:[ebp-0x0C], ebx
+004CFA3F    mov edx, ecx
+004CFA41    cmp byte ptr ds:[ebx], 0x00
+004CFA44    jnz 0x004CFA4D
+004CFA46    mov eax, edx
+004CFA48    pop ebx
+004CFA49    mov esp, ebp
+004CFA4B    pop ebp
+004CFA4C    ret
+004CFA4D    mov cl, byte ptr ds:[edx]
+004CFA4F    push esi
+004CFA50    push edi
+004CFA51    test cl, cl
+004CFA53    jz 0x004CFAAC
+004CFA55    mov eax, edx
+004CFA57    sub eax, ebx
+004CFA59    mov dword ptr ss:[ebp-0x08], eax
+004CFA5C    nop dword ptr ds:[eax], eax
+004CFA60    mov esi, ebx
+004CFA62    test cl, cl
+004CFA64    jz 0x004CFA98
+004CFA66    mov bl, byte ptr ds:[esi]
+004CFA68    test bl, bl
+004CFA6A    jz 0x004CFAB5
+004CFA6C    movsx eax, byte ptr ds:[eax+esi*1]
+004CFA70    push eax
+004CFA71    call 0x005872C7
+004CFA76    mov edi, eax
+004CFA78    movsx eax, bl
+004CFA7B    push eax
+004CFA7C    call 0x005872C7
+004CFA81    add esp, 0x08
+004CFA84    cmp edi, eax
+004CFA86    mov eax, dword ptr ss:[ebp-0x08]
+004CFA89    jnz 0x004CFA92
+004CFA8B    inc esi
+004CFA8C    cmp byte ptr ds:[eax+esi*1], 0x00
+004CFA90    jnz 0x004CFA66
+004CFA92    mov ebx, dword ptr ss:[ebp-0x0C]
+004CFA95    mov edx, dword ptr ss:[ebp-0x04]
+004CFA98    cmp byte ptr ds:[esi], 0x00
+004CFA9B    jz 0x004CFAB8
+004CFA9D    mov cl, byte ptr ds:[edx+0x01]
+004CFAA0    inc edx
+004CFAA1    inc eax
+004CFAA2    mov dword ptr ss:[ebp-0x04], edx
+004CFAA5    mov dword ptr ss:[ebp-0x08], eax
+004CFAA8    test cl, cl
+004CFAAA    jnz 0x004CFA60
+004CFAAC    pop edi
+004CFAAD    pop esi
+004CFAAE    xor eax, eax
+004CFAB0    pop ebx
+004CFAB1    mov esp, ebp
+004CFAB3    pop ebp
+004CFAB4    ret
+004CFAB5    mov edx, dword ptr ss:[ebp-0x04]
+004CFAB8    pop edi
+004CFAB9    pop esi
+004CFABA    mov eax, edx
+004CFABC    pop ebx
+004CFABD    mov esp, ebp
+004CFABF    pop ebp
+004CFAC0    ret

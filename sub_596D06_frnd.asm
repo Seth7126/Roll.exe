@@ -1,22 +1,12 @@
-00596D06    ???
-00596D07    ???
-00596D08    ???
-00596D09    ???
-00596D0A    ???
-00596D0B    ???
-00596D0C    ???
-00596D0D    ???
-00596D0E    ???
-00596D0F    ???
-00596D10    ???
-00596D11    ???
-00596D12    ???
-00596D13    ???
-00596D14    ???
-00596D15    ???
-00596D16    ???
-00596D17    ???
-00596D18    ???
-00596D19    ???
-00596D1A    ???
-00596D1B    ???
+00596D06    mov edi, edi
+00596D08    push ebp
+00596D09    mov ebp, esp
+00596D0B    push ecx
+00596D0C    push ecx
+00596D0D    fld qword ptr ss:[ebp+0x08]
+00596D10    frndint
+00596D12    fstp qword ptr ss:[ebp-0x08]
+00596D15    fld qword ptr ss:[ebp-0x08]
+00596D18    mov esp, ebp
+00596D1A    pop ebp
+00596D1B    ret

@@ -1,27 +1,14 @@
-004F78D0    ???
-004F78D1    ???
-004F78D2    ???
-004F78D3    ???
-004F78D4    ???
-004F78D5    ???
-004F78D6    ???
-004F78D7    ???
-004F78D8    ???
-004F78D9    ???
-004F78DA    ???
-004F78DB    ???
-004F78DC    ???
-004F78DD    ???
-004F78DE    ???
-004F78DF    ???
-004F78E0    ???
-004F78E1    ???
-004F78E2    ???
-004F78E3    ???
-004F78E4    ???
-004F78E5    ???
-004F78E6    ???
-004F78E7    ???
-004F78E8    ???
-004F78E9    ???
-004F78EA    ???
+004F78D0    mov eax, dword ptr ds:[ecx+0x04]
+004F78D3    mov al, byte ptr ds:[eax]
+004F78D5    test al, al
+004F78D7    jz 0x004F78E8
+004F78D9    cmp al, 0x5D
+004F78DB    jz 0x004F78E8
+004F78DD    cmp al, 0x2C
+004F78DF    jz 0x004F78E8
+004F78E1    cmp al, 0x24
+004F78E3    jz 0x004F78E8
+004F78E5    xor al, al
+004F78E7    ret
+004F78E8    mov al, 0x01
+004F78EA    ret

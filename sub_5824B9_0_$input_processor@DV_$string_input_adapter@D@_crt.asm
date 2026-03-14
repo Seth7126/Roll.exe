@@ -1,68 +1,32 @@
-005824B9    ???
-005824BA    ???
-005824BB    ???
-005824BC    ???
-005824BD    ???
-005824BE    ???
-005824BF    ???
-005824C0    ???
-005824C1    ???
-005824C2    ???
-005824C3    ???
-005824C4    ???
-005824C5    ???
-005824C6    ???
-005824C7    ???
-005824C8    ???
-005824C9    ???
-005824CA    ???
-005824CB    ???
-005824CC    ???
-005824CD    ???
-005824CE    ???
-005824CF    ???
-005824D0    ???
-005824D1    ???
-005824D2    ???
-005824D3    ???
-005824D4    ???
-005824D5    ???
-005824D6    ???
-005824D7    ???
-005824D8    ???
-005824D9    ???
-005824DA    ???
-005824DB    ???
-005824DC    ???
-005824DD    ???
-005824DE    ???
-005824DF    ???
-005824E0    ???
-005824E1    ???
-005824E2    ???
-005824E3    ???
-005824E4    ???
-005824E5    ???
-005824E6    ???
-005824E7    ???
-005824E8    ???
-005824E9    ???
-005824EA    ???
-005824EB    ???
-005824EC    ???
-005824ED    ???
-005824EE    ???
-005824EF    ???
-005824F0    ???
-005824F1    ???
-005824F2    ???
-005824F3    ???
-005824F4    ???
-005824F5    ???
-005824F6    ???
-005824F7    ???
-005824F8    ???
-005824F9    ???
-005824FA    ???
-005824FB    ???
-005824FC    ???
+005824B9    mov edi, edi
+005824BB    push ebp
+005824BC    mov ebp, esp
+005824BE    mov edx, dword ptr ss:[ebp+0x0C]
+005824C1    mov eax, dword ptr ss:[ebp+0x10]
+005824C4    push ebx
+005824C5    push esi
+005824C6    mov esi, dword ptr ss:[ebp+0x08]
+005824C9    mov ebx, ecx
+005824CB    push edi
+005824CC    push dword ptr ss:[ebp+0x14]
+005824CF    mov dword ptr ds:[ebx], edx
+005824D1    lea edi, ds:[ebx+0x08]
+005824D4    mov dword ptr ds:[ebx+0x04], eax
+005824D7    lea ecx, ds:[ebx+0x18]
+005824DA    movsd
+005824DB    push eax
+005824DC    push edx
+005824DD    movsd
+005824DE    movsd
+005824DF    call 0x005823F5
+005824E4    mov eax, dword ptr ss:[ebp+0x18]
+005824E7    and dword ptr ds:[ebx+0x70], 0x00
+005824EB    mov dword ptr ds:[ebx+0x68], eax
+005824EE    mov eax, dword ptr ss:[ebp+0x1C]
+005824F1    pop edi
+005824F2    mov dword ptr ds:[ebx+0x6C], eax
+005824F5    mov eax, ebx
+005824F7    pop esi
+005824F8    pop ebx
+005824F9    pop ebp
+005824FA    ret 0x18

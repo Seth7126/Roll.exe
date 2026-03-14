@@ -1,124 +1,52 @@
-004A0670    ???
-004A0671    ???
-004A0672    ???
-004A0673    ???
-004A0674    ???
-004A0675    ???
-004A0676    ???
-004A0677    ???
-004A0678    ???
-004A0679    ???
-004A067A    ???
-004A067B    ???
-004A067C    ???
-004A067D    ???
-004A067E    ???
-004A067F    ???
-004A0680    ???
-004A0681    ???
-004A0682    ???
-004A0683    ???
-004A0684    ???
-004A0685    ???
-004A0686    ???
-004A0687    ???
-004A0688    ???
-004A0689    ???
-004A068A    ???
-004A068B    ???
-004A068C    ???
-004A068D    ???
-004A068E    ???
-004A068F    ???
-004A0690    ???
-004A0691    ???
-004A0692    ???
-004A0693    ???
-004A0694    ???
-004A0695    ???
-004A0696    ???
-004A0697    ???
-004A0698    ???
-004A0699    ???
-004A069A    ???
-004A069B    ???
-004A069C    ???
-004A069D    ???
-004A069E    ???
-004A069F    ???
-004A06A0    ???
-004A06A1    ???
-004A06A2    ???
-004A06A3    ???
-004A06A4    ???
-004A06A5    ???
-004A06A6    ???
-004A06A7    ???
-004A06A8    ???
-004A06A9    ???
-004A06AA    ???
-004A06AB    ???
-004A06AC    ???
-004A06AD    ???
-004A06AE    ???
-004A06AF    ???
-004A06B0    ???
-004A06B1    ???
-004A06B2    ???
-004A06B3    ???
-004A06B4    ???
-004A06B5    ???
-004A06B6    ???
-004A06B7    ???
-004A06B8    ???
-004A06B9    ???
-004A06BA    ???
-004A06BB    ???
-004A06BC    ???
-004A06BD    ???
-004A06BE    ???
-004A06BF    ???
-004A06C0    ???
-004A06C1    ???
-004A06C2    ???
-004A06C3    ???
-004A06C4    ???
-004A06C5    ???
-004A06C6    ???
-004A06C7    ???
-004A06C8    ???
-004A06C9    ???
-004A06CA    ???
-004A06CB    ???
-004A06CC    ???
-004A06CD    ???
-004A06CE    ???
-004A06CF    ???
-004A06D0    ???
-004A06D1    ???
-004A06D2    ???
-004A06D3    ???
-004A06D4    ???
-004A06D5    ???
-004A06D6    ???
-004A06D7    ???
-004A06D8    ???
-004A06D9    ???
-004A06DA    ???
-004A06DB    ???
-004A06DC    ???
-004A06DD    ???
-004A06DE    ???
-004A06DF    ???
-004A06E0    ???
-004A06E1    ???
-004A06E2    ???
-004A06E3    ???
-004A06E4    ???
-004A06E5    ???
-004A06E6    ???
-004A06E7    ???
-004A06E8    ???
-004A06E9    ???
-004A06EA    ???
-004A06EB    ???
+004A0670    push ebp
+004A0671    mov ebp, esp
+004A0673    sub esp, 0x08
+004A0676    cmp dword ptr ss:[ebp+0x08], 0x00
+004A067A    push ebx
+004A067B    push esi
+004A067C    push edi
+004A067D    mov edi, ecx
+004A067F    mov esi, edx
+004A0681    mov dword ptr ss:[ebp-0x04], edi
+004A0684    jle 0x004A06E5
+004A0686    mov eax, dword ptr ds:[edi]
+004A0688    xor edx, edx
+004A068A    mov edi, dword ptr ds:[edi+0x04]
+004A068D    test edi, edi
+004A068F    jle 0x004A06B7
+004A0691    mov ebx, dword ptr ds:[esi+0x04]
+004A0694    cmp dword ptr ds:[eax+0x04], ebx
+004A0697    jnz 0x004A069F
+004A0699    mov ecx, dword ptr ds:[eax]
+004A069B    cmp ecx, dword ptr ds:[esi]
+004A069D    jz 0x004A06B3
+004A069F    inc edx
+004A06A0    add eax, 0x1C
+004A06A3    cmp edx, edi
+004A06A5    jl 0x004A0694
+004A06A7    mov edi, dword ptr ss:[ebp-0x04]
+004A06AA    mov ecx, edi
+004A06AC    call 0x004BC680
+004A06B1    jmp 0x004A06C6
+004A06B3    test eax, eax
+004A06B5    jnz 0x004A06C3
+004A06B7    mov edi, dword ptr ss:[ebp-0x04]
+004A06BA    mov ecx, edi
+004A06BC    call 0x004BC680
+004A06C1    jmp 0x004A06C6
+004A06C3    mov edi, dword ptr ss:[ebp-0x04]
+004A06C6    movups xmm0, xmmword ptr ds:[esi]
+004A06C9    movups xmmword ptr ds:[eax], xmm0
+004A06CC    movq xmm0, qword ptr ds:[esi+0x10]
+004A06D1    movq qword ptr ds:[eax+0x10], xmm0
+004A06D6    mov ecx, dword ptr ds:[esi+0x18]
+004A06D9    add esi, 0x1C
+004A06DC    sub dword ptr ss:[ebp+0x08], 0x01
+004A06E0    mov dword ptr ds:[eax+0x18], ecx
+004A06E3    jnz 0x004A0686
+004A06E5    pop edi
+004A06E6    pop esi
+004A06E7    pop ebx
+004A06E8    mov esp, ebp
+004A06EA    pop ebp
+004A06EB    ret

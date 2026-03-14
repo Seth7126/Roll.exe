@@ -1,133 +1,48 @@
-00585F3E    ???
-00585F3F    ???
-00585F40    ???
-00585F41    ???
-00585F42    ???
-00585F43    ???
-00585F44    ???
-00585F45    ???
-00585F46    ???
-00585F47    ???
-00585F48    ???
-00585F49    ???
-00585F4A    ???
-00585F4B    ???
-00585F4C    ???
-00585F4D    ???
-00585F4E    ???
-00585F4F    ???
-00585F50    ???
-00585F51    ???
-00585F52    ???
-00585F53    ???
-00585F54    ???
-00585F55    ???
-00585F56    ???
-00585F57    ???
-00585F58    ???
-00585F59    ???
-00585F5A    ???
-00585F5B    ???
-00585F5C    ???
-00585F5D    ???
-00585F5E    ???
-00585F5F    ???
-00585F60    ???
-00585F61    ???
-00585F62    ???
-00585F63    ???
-00585F64    ???
-00585F65    ???
-00585F66    ???
-00585F67    ???
-00585F68    ???
-00585F69    ???
-00585F6A    ???
-00585F6B    ???
-00585F6C    ???
-00585F6D    ???
-00585F6E    ???
-00585F6F    ???
-00585F70    ???
-00585F71    ???
-00585F72    ???
-00585F73    ???
-00585F74    ???
-00585F75    ???
-00585F76    ???
-00585F77    ???
-00585F78    ???
-00585F79    ???
-00585F7A    ???
-00585F7B    ???
-00585F7C    ???
-00585F7D    ???
-00585F7E    ???
-00585F7F    ???
-00585F80    ???
-00585F81    ???
-00585F82    ???
-00585F83    ???
-00585F84    ???
-00585F85    ???
-00585F86    ???
-00585F87    ???
-00585F88    ???
-00585F89    ???
-00585F8A    ???
-00585F8B    ???
-00585F8C    ???
-00585F8D    ???
-00585F8E    ???
-00585F8F    ???
-00585F90    ???
-00585F91    ???
-00585F92    ???
-00585F93    ???
-00585F94    ???
-00585F95    ???
-00585F96    ???
-00585F97    ???
-00585F98    ???
-00585F99    ???
-00585F9A    ???
-00585F9B    ???
-00585F9C    ???
-00585F9D    ???
-00585F9E    ???
-00585F9F    ???
-00585FA0    ???
-00585FA1    ???
-00585FA2    ???
-00585FA3    ???
-00585FA4    ???
-00585FA5    ???
-00585FA6    ???
-00585FA7    ???
-00585FA8    ???
-00585FA9    ???
-00585FAA    ???
-00585FAB    ???
-00585FAC    ???
-00585FAD    ???
-00585FAE    ???
-00585FAF    ???
-00585FB0    ???
-00585FB1    ???
-00585FB2    ???
-00585FB3    ???
-00585FB4    ???
-00585FB5    ???
-00585FB6    ???
-00585FB7    ???
-00585FB8    ???
-00585FB9    ???
-00585FBA    ???
-00585FBB    ???
-00585FBC    ???
-00585FBD    ???
-00585FBE    ???
-00585FBF    ???
-00585FC0    ???
-00585FC1    ???
-00585FC2    ???
+00585F3E    mov edi, edi
+00585F40    push ebp
+00585F41    mov ebp, esp
+00585F43    sub esp, 0x38
+00585F46    mov eax, dword ptr ss:[ebp+0x1C]
+00585F49    mov ecx, dword ptr ss:[ebp+0x10]
+00585F4C    mov edx, dword ptr ss:[ebp+0x14]
+00585F4F    mov dword ptr ss:[ebp-0x14], eax
+00585F52    mov eax, dword ptr ss:[ebp+0x18]
+00585F55    mov dword ptr ss:[ebp-0x08], eax
+00585F58    mov eax, dword ptr ss:[ebp+0x08]
+00585F5B    mov dword ptr ss:[ebp-0x24], eax
+00585F5E    mov eax, dword ptr ss:[ebp+0x0C]
+00585F61    mov dword ptr ss:[ebp-0x10], edx
+00585F64    mov dword ptr ss:[ebp-0x0C], ecx
+00585F67    mov dword ptr ss:[ebp-0x20], eax
+00585F6A    test ecx, ecx
+00585F6C    jnz 0x00585F83
+00585F6E    call 0x00589E04
+00585F73    mov dword ptr ds:[eax], 0x16
+00585F79    call 0x00589634
+00585F7E    or eax, 0xFFFFFFFF
+00585F81    jmp 0x00585FBF
+00585F83    test edx, edx
+00585F85    jz 0x00585F6E
+00585F87    lea eax, ss:[ebp-0x08]
+00585F8A    mov dword ptr ss:[ebp-0x18], ecx
+00585F8D    mov dword ptr ss:[ebp-0x38], eax
+00585F90    lea eax, ss:[ebp-0x0C]
+00585F93    mov dword ptr ss:[ebp-0x34], eax
+00585F96    lea eax, ss:[ebp-0x24]
+00585F99    mov dword ptr ss:[ebp-0x30], eax
+00585F9C    lea eax, ss:[ebp-0x10]
+00585F9F    mov dword ptr ss:[ebp-0x2C], eax
+00585FA2    lea eax, ss:[ebp-0x14]
+00585FA5    mov dword ptr ss:[ebp-0x28], eax
+00585FA8    lea eax, ss:[ebp-0x18]
+00585FAB    push eax
+00585FAC    lea eax, ss:[ebp-0x38]
+00585FAF    mov dword ptr ss:[ebp-0x1C], ecx
+00585FB2    push eax
+00585FB3    lea eax, ss:[ebp-0x1C]
+00585FB6    push eax
+00585FB7    lea ecx, ss:[ebp-0x01]
+00585FBA    call 0x005801BD
+00585FBF    mov esp, ebp
+00585FC1    pop ebp
+00585FC2    ret

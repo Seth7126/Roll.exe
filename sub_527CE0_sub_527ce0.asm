@@ -1,52 +1,26 @@
-00527CE0    ???
-00527CE1    ???
-00527CE2    ???
-00527CE3    ???
-00527CE4    ???
-00527CE5    ???
-00527CE6    ???
-00527CE7    ???
-00527CE8    ???
-00527CE9    ???
-00527CEA    ???
-00527CEB    ???
-00527CEC    ???
-00527CED    ???
-00527CEE    ???
-00527CEF    ???
-00527CF0    ???
-00527CF1    ???
-00527CF2    ???
-00527CF3    ???
-00527CF4    ???
-00527CF5    ???
-00527CF6    ???
-00527CF7    ???
-00527CF8    ???
-00527CF9    ???
-00527CFA    ???
-00527CFB    ???
-00527CFC    ???
-00527CFD    ???
-00527CFE    ???
-00527CFF    ???
-00527D00    ???
-00527D01    ???
-00527D02    ???
-00527D03    ???
-00527D04    ???
-00527D05    ???
-00527D06    ???
-00527D07    ???
-00527D08    ???
-00527D09    ???
-00527D0A    ???
-00527D0B    ???
-00527D0C    ???
-00527D0D    ???
-00527D0E    ???
-00527D0F    ???
-00527D10    ???
-00527D11    ???
-00527D12    ???
-00527D13    ???
+00527CE0    mov eax, dword ptr ds:[ecx]
+00527CE2    push ebx
+00527CE3    mov bh, byte ptr ds:[eax]
+00527CE5    inc eax
+00527CE6    mov dword ptr ds:[ecx], eax
+00527CE8    mov dh, byte ptr ds:[eax]
+00527CEA    inc eax
+00527CEB    mov dword ptr ds:[ecx], eax
+00527CED    mov dl, byte ptr ds:[eax]
+00527CEF    inc eax
+00527CF0    mov dword ptr ds:[ecx], eax
+00527CF2    mov bl, byte ptr ds:[eax]
+00527CF4    inc eax
+00527CF5    mov dword ptr ds:[ecx], eax
+00527CF7    movzx eax, bh
+00527CFA    shl eax, 0x08
+00527CFD    movzx ecx, dh
+00527D00    or eax, ecx
+00527D02    movzx ecx, dl
+00527D05    shl eax, 0x08
+00527D08    or eax, ecx
+00527D0A    movzx ecx, bl
+00527D0D    shl eax, 0x08
+00527D10    or eax, ecx
+00527D12    pop ebx
+00527D13    ret

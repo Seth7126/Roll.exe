@@ -1,88 +1,45 @@
-0056DA60    ???
-0056DA61    ???
-0056DA62    ???
-0056DA63    ???
-0056DA64    ???
-0056DA65    ???
-0056DA66    ???
-0056DA67    ???
-0056DA68    ???
-0056DA69    ???
-0056DA6A    ???
-0056DA6B    ???
-0056DA6C    ???
-0056DA6D    ???
-0056DA6E    ???
-0056DA6F    ???
-0056DA70    ???
-0056DA71    ???
-0056DA72    ???
-0056DA73    ???
-0056DA74    ???
-0056DA75    ???
-0056DA76    ???
-0056DA77    ???
-0056DA78    ???
-0056DA79    ???
-0056DA7A    ???
-0056DA7B    ???
-0056DA7C    ???
-0056DA7D    ???
-0056DA7E    ???
-0056DA7F    ???
-0056DA80    ???
-0056DA81    ???
-0056DA82    ???
-0056DA83    ???
-0056DA84    ???
-0056DA85    ???
-0056DA86    ???
-0056DA87    ???
-0056DA88    ???
-0056DA89    ???
-0056DA8A    ???
-0056DA8B    ???
-0056DA8C    ???
-0056DA8D    ???
-0056DA8E    ???
-0056DA8F    ???
-0056DA90    ???
-0056DA91    ???
-0056DA92    ???
-0056DA93    ???
-0056DA94    ???
-0056DA95    ???
-0056DA96    ???
-0056DA97    ???
-0056DA98    ???
-0056DA99    ???
-0056DA9A    ???
-0056DA9B    ???
-0056DA9C    ???
-0056DA9D    ???
-0056DA9E    ???
-0056DA9F    ???
-0056DAA0    ???
-0056DAA1    ???
-0056DAA2    ???
-0056DAA3    ???
-0056DAA4    ???
-0056DAA5    ???
-0056DAA6    ???
-0056DAA7    ???
-0056DAA8    ???
-0056DAA9    ???
-0056DAAA    ???
-0056DAAB    ???
-0056DAAC    ???
-0056DAAD    ???
-0056DAAE    ???
-0056DAAF    ???
-0056DAB0    ???
-0056DAB1    ???
-0056DAB2    ???
-0056DAB3    ???
-0056DAB4    ???
-0056DAB5    ???
-0056DAB6    ???
-0056DAB7    ???
+0056DA60    push ebp
+0056DA61    mov ebp, esp
+0056DA63    push ecx
+0056DA64    mov eax, edx
+0056DA66    mov dword ptr ss:[ebp-0x04], ecx
+0056DA69    push ebx
+0056DA6A    mov ebx, dword ptr ss:[ebp+0x08]
+0056DA6D    cdq
+0056DA6E    idiv ebx
+0056DA70    push esi
+0056DA71    push edi
+0056DA72    mov esi, eax
+0056DA74    xor edi, edi
+0056DA76    sub esi, 0x02
+0056DA79    jnz 0x0056DA84
+0056DA7B    pop edi
+0056DA7C    pop esi
+0056DA7D    mov eax, ebx
+0056DA7F    pop ebx
+0056DA80    mov esp, ebp
+0056DA82    pop ebp
+0056DA83    ret
+0056DA84    mov edx, esi
+0056DA86    sar edx, 0x01
+0056DA88    lea ecx, ds:[edx+0x01]
+0056DA8B    mov eax, ecx
+0056DA8D    imul eax, ebx
+0056DA90    mov ebx, dword ptr ss:[ebp-0x04]
+0056DA93    comiss xmm2, dword ptr ds:[ebx+eax*4]
+0056DA97    mov ebx, dword ptr ss:[ebp+0x08]
+0056DA9A    cmovb ecx, edi
+0056DA9D    cmovb esi, edx
+0056DAA0    mov edi, ecx
+0056DAA2    cmp edi, esi
+0056DAA4    jz 0x0056DAAB
+0056DAA6    lea edx, ds:[edi+esi*1]
+0056DAA9    jmp 0x0056DA86
+0056DAAB    lea eax, ds:[edi+0x01]
+0056DAAE    pop edi
+0056DAAF    pop esi
+0056DAB0    imul eax, ebx
+0056DAB3    pop ebx
+0056DAB4    mov esp, ebp
+0056DAB6    pop ebp
+0056DAB7    ret

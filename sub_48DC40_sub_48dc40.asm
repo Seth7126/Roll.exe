@@ -1,1 +1,1 @@
-0048DC40    ???
+0048DC40    dword CCCCCCC3

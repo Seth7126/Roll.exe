@@ -1,37 +1,18 @@
-0057F1C7    ???
-0057F1C8    ???
-0057F1C9    ???
-0057F1CA    ???
-0057F1CB    ???
-0057F1CC    ???
-0057F1CD    ???
-0057F1CE    ???
-0057F1CF    ???
-0057F1D0    ???
-0057F1D1    ???
-0057F1D2    ???
-0057F1D3    ???
-0057F1D4    ???
-0057F1D5    ???
-0057F1D6    ???
-0057F1D7    ???
-0057F1D8    ???
-0057F1D9    ???
-0057F1DA    ???
-0057F1DB    ???
-0057F1DC    ???
-0057F1DD    ???
-0057F1DE    ???
-0057F1DF    ???
-0057F1E0    ???
-0057F1E1    ???
-0057F1E2    ???
-0057F1E3    ???
-0057F1E4    ???
-0057F1E5    ???
-0057F1E6    ???
-0057F1E7    ???
-0057F1E8    ???
-0057F1E9    ???
-0057F1EA    ???
-0057F1EB    ???
+0057F1C7    mov edi, edi
+0057F1C9    push ebp
+0057F1CA    mov ebp, esp
+0057F1CC    push ecx
+0057F1CD    mov eax, dword ptr ss:[ebp+0x08]
+0057F1D0    push 0x01
+0057F1D2    push 0x0A
+0057F1D4    push ecx
+0057F1D5    push ecx
+0057F1D6    mov ecx, esp
+0057F1D8    push 0x00
+0057F1DA    and dword ptr ds:[ecx+0x04], 0x00
+0057F1DE    mov dword ptr ds:[ecx], eax
+0057F1E0    call 0x0057EC75
+0057F1E5    add esp, 0x14
+0057F1E8    mov esp, ebp
+0057F1EA    pop ebp
+0057F1EB    ret

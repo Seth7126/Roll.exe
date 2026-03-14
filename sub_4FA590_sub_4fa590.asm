@@ -1,84 +1,42 @@
-004FA590    ???
-004FA591    ???
-004FA592    ???
-004FA593    ???
-004FA594    ???
-004FA595    ???
-004FA596    ???
-004FA597    ???
-004FA598    ???
-004FA599    ???
-004FA59A    ???
-004FA59B    ???
-004FA59C    ???
-004FA59D    ???
-004FA59E    ???
-004FA59F    ???
-004FA5A0    ???
-004FA5A1    ???
-004FA5A2    ???
-004FA5A3    ???
-004FA5A4    ???
-004FA5A5    ???
-004FA5A6    ???
-004FA5A7    ???
-004FA5A8    ???
-004FA5A9    ???
-004FA5AA    ???
-004FA5AB    ???
-004FA5AC    ???
-004FA5AD    ???
-004FA5AE    ???
-004FA5AF    ???
-004FA5B0    ???
-004FA5B1    ???
-004FA5B2    ???
-004FA5B3    ???
-004FA5B4    ???
-004FA5B5    ???
-004FA5B6    ???
-004FA5B7    ???
-004FA5B8    ???
-004FA5B9    ???
-004FA5BA    ???
-004FA5BB    ???
-004FA5BC    ???
-004FA5BD    ???
-004FA5BE    ???
-004FA5BF    ???
-004FA5C0    ???
-004FA5C1    ???
-004FA5C2    ???
-004FA5C3    ???
-004FA5C4    ???
-004FA5C5    ???
-004FA5C6    ???
-004FA5C7    ???
-004FA5C8    ???
-004FA5C9    ???
-004FA5CA    ???
-004FA5CB    ???
-004FA5CC    ???
-004FA5CD    ???
-004FA5CE    ???
-004FA5CF    ???
-004FA5D0    ???
-004FA5D1    ???
-004FA5D2    ???
-004FA5D3    ???
-004FA5D4    ???
-004FA5D5    ???
-004FA5D6    ???
-004FA5D7    ???
-004FA5D8    ???
-004FA5D9    ???
-004FA5DA    ???
-004FA5DB    ???
-004FA5DC    ???
-004FA5DD    ???
-004FA5DE    ???
-004FA5DF    ???
-004FA5E0    ???
-004FA5E1    ???
-004FA5E2    ???
-004FA5E3    ???
+004FA590    push ebp
+004FA591    mov ebp, esp
+004FA593    sub esp, 0x08
+004FA596    push ebx
+004FA597    mov eax, ecx
+004FA599    mov dword ptr ss:[ebp-0x08], edx
+004FA59C    push esi
+004FA59D    xor esi, esi
+004FA59F    mov dword ptr ss:[ebp-0x04], eax
+004FA5A2    push edi
+004FA5A3    cmp dword ptr ds:[eax+0x08], esi
+004FA5A6    jle 0x004FA5D2
+004FA5A8    xor edi, edi
+004FA5AA    nop word ptr ds:[eax+eax*1], ax
+004FA5B0    mov ebx, dword ptr ds:[eax]
+004FA5B2    add ebx, edi
+004FA5B4    push dword ptr ds:[ebx]
+004FA5B6    push edx
+004FA5B7    call 0x0057EB20
+004FA5BC    add esp, 0x08
+004FA5BF    test eax, eax
+004FA5C1    jz 0x004FA5DB
+004FA5C3    mov eax, dword ptr ss:[ebp-0x04]
+004FA5C6    inc esi
+004FA5C7    mov edx, dword ptr ss:[ebp-0x08]
+004FA5CA    add edi, 0x18
+004FA5CD    cmp esi, dword ptr ds:[eax+0x08]
+004FA5D0    jl 0x004FA5B0
+004FA5D2    pop edi
+004FA5D3    pop esi
+004FA5D4    xor eax, eax
+004FA5D6    pop ebx
+004FA5D7    mov esp, ebp
+004FA5D9    pop ebp
+004FA5DA    ret
+004FA5DB    pop edi
+004FA5DC    pop esi
+004FA5DD    mov eax, ebx
+004FA5DF    pop ebx
+004FA5E0    mov esp, ebp
+004FA5E2    pop ebp
+004FA5E3    ret

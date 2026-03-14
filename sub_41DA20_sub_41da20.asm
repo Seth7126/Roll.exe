@@ -1,27 +1,12 @@
-0041DA20    ???
-0041DA21    ???
-0041DA22    ???
-0041DA23    ???
-0041DA24    ???
-0041DA25    ???
-0041DA26    ???
-0041DA27    ???
-0041DA28    ???
-0041DA29    ???
-0041DA2A    ???
-0041DA2B    ???
-0041DA2C    ???
-0041DA2D    ???
-0041DA2E    ???
-0041DA2F    ???
-0041DA30    ???
-0041DA31    ???
-0041DA32    ???
-0041DA33    ???
-0041DA34    ???
-0041DA35    ???
-0041DA36    ???
-0041DA37    ???
-0041DA38    ???
-0041DA39    ???
-0041DA3A    ???
+0041DA20    push ebp
+0041DA21    mov ebp, esp
+0041DA23    lea eax, ss:[ebp+0x10]
+0041DA26    or edx, 0xFFFFFFFF
+0041DA29    push eax
+0041DA2A    push ecx
+0041DA2B    push dword ptr ss:[ebp+0x0C]
+0041DA2E    mov ecx, dword ptr ss:[ebp+0x08]
+0041DA31    call 0x0041D9E0
+0041DA36    add esp, 0x0C
+0041DA39    pop ebp
+0041DA3A    ret

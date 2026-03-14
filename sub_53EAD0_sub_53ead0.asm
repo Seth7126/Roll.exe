@@ -1,33 +1,16 @@
-0053EAD0    ???
-0053EAD1    ???
-0053EAD2    ???
-0053EAD3    ???
-0053EAD4    ???
-0053EAD5    ???
-0053EAD6    ???
-0053EAD7    ???
-0053EAD8    ???
-0053EAD9    ???
-0053EADA    ???
-0053EADB    ???
-0053EADC    ???
-0053EADD    ???
-0053EADE    ???
-0053EADF    ???
-0053EAE0    ???
-0053EAE1    ???
-0053EAE2    ???
-0053EAE3    ???
-0053EAE4    ???
-0053EAE5    ???
-0053EAE6    ???
-0053EAE7    ???
-0053EAE8    ???
-0053EAE9    ???
-0053EAEA    ???
-0053EAEB    ???
-0053EAEC    ???
-0053EAED    ???
-0053EAEE    ???
-0053EAEF    ???
-0053EAF0    ???
+0053EAD0    push ebp
+0053EAD1    mov ebp, esp
+0053EAD3    mov eax, dword ptr ss:[ebp+0x08]
+0053EAD6    mov ecx, dword ptr ds:[eax+0x0C]
+0053EAD9    mov eax, dword ptr ss:[ebp+0x0C]
+0053EADC    mov edx, dword ptr ds:[eax+0x0C]
+0053EADF    cmp ecx, edx
+0053EAE1    jnl 0x0053EAE8
+0053EAE3    or eax, 0xFFFFFFFF
+0053EAE6    pop ebp
+0053EAE7    ret
+0053EAE8    xor eax, eax
+0053EAEA    cmp ecx, edx
+0053EAEC    setnle al
+0053EAEF    pop ebp
+0053EAF0    ret

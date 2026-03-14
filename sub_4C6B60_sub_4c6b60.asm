@@ -1,92 +1,47 @@
-004C6B60    ???
-004C6B61    ???
-004C6B62    ???
-004C6B63    ???
-004C6B64    ???
-004C6B65    ???
-004C6B66    ???
-004C6B67    ???
-004C6B68    ???
-004C6B69    ???
-004C6B6A    ???
-004C6B6B    ???
-004C6B6C    ???
-004C6B6D    ???
-004C6B6E    ???
-004C6B6F    ???
-004C6B70    ???
-004C6B71    ???
-004C6B72    ???
-004C6B73    ???
-004C6B74    ???
-004C6B75    ???
-004C6B76    ???
-004C6B77    ???
-004C6B78    ???
-004C6B79    ???
-004C6B7A    ???
-004C6B7B    ???
-004C6B7C    ???
-004C6B7D    ???
-004C6B7E    ???
-004C6B7F    ???
-004C6B80    ???
-004C6B81    ???
-004C6B82    ???
-004C6B83    ???
-004C6B84    ???
-004C6B85    ???
-004C6B86    ???
-004C6B87    ???
-004C6B88    ???
-004C6B89    ???
-004C6B8A    ???
-004C6B8B    ???
-004C6B8C    ???
-004C6B8D    ???
-004C6B8E    ???
-004C6B8F    ???
-004C6B90    ???
-004C6B91    ???
-004C6B92    ???
-004C6B93    ???
-004C6B94    ???
-004C6B95    ???
-004C6B96    ???
-004C6B97    ???
-004C6B98    ???
-004C6B99    ???
-004C6B9A    ???
-004C6B9B    ???
-004C6B9C    ???
-004C6B9D    ???
-004C6B9E    ???
-004C6B9F    ???
-004C6BA0    ???
-004C6BA1    ???
-004C6BA2    ???
-004C6BA3    ???
-004C6BA4    ???
-004C6BA5    ???
-004C6BA6    ???
-004C6BA7    ???
-004C6BA8    ???
-004C6BA9    ???
-004C6BAA    ???
-004C6BAB    ???
-004C6BAC    ???
-004C6BAD    ???
-004C6BAE    ???
-004C6BAF    ???
-004C6BB0    ???
-004C6BB1    ???
-004C6BB2    ???
-004C6BB3    ???
-004C6BB4    ???
-004C6BB5    ???
-004C6BB6    ???
-004C6BB7    ???
-004C6BB8    ???
-004C6BB9    ???
-004C6BBA    ???
-004C6BBB    ???
+004C6B60    push ebp
+004C6B61    mov ebp, esp
+004C6B63    push esi
+004C6B64    mov esi, edx
+004C6B66    push edi
+004C6B67    cmp dword ptr ds:[esi], 0x00
+004C6B6A    jnz 0x004C6B78
+004C6B6C    mov dword ptr ds:[esi], 0x00
+004C6B72    mov al, 0x01
+004C6B74    pop edi
+004C6B75    pop esi
+004C6B76    pop ebp
+004C6B77    ret
+004C6B78    push dword ptr ss:[ebp+0x08]
+004C6B7B    call 0x004C6B00
+004C6B80    add esp, 0x04
+004C6B83    test al, al
+004C6B85    jnz 0x004C6B8B
+004C6B87    pop edi
+004C6B88    pop esi
+004C6B89    pop ebp
+004C6B8A    ret
+004C6B8B    mov eax, dword ptr ss:[ebp+0x0C]
+004C6B8E    mov edi, dword ptr ds:[esi]
+004C6B90    test eax, eax
+004C6B92    jnz 0x004C6BAB
+004C6B94    cmp byte ptr ds:[edi], al
+004C6B96    jnz 0x004C6BA0
+004C6B98    mov dword ptr ds:[esi], eax
+004C6B9A    mov al, 0x01
+004C6B9C    pop edi
+004C6B9D    pop esi
+004C6B9E    pop ebp
+004C6B9F    ret
+004C6BA0    test eax, eax
+004C6BA2    jnz 0x004C6BAB
+004C6BA4    mov ecx, edi
+004C6BA6    call 0x004DFC80
+004C6BAB    mov edx, eax
+004C6BAD    mov ecx, edi
+004C6BAF    call 0x004D0B50
+004C6BB4    mov dword ptr ds:[esi], eax
+004C6BB6    mov al, 0x01
+004C6BB8    pop edi
+004C6BB9    pop esi
+004C6BBA    pop ebp
+004C6BBB    ret

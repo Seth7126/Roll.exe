@@ -1,113 +1,53 @@
-0053FD20    ???
-0053FD21    ???
-0053FD22    ???
-0053FD23    ???
-0053FD24    ???
-0053FD25    ???
-0053FD26    ???
-0053FD27    ???
-0053FD28    ???
-0053FD29    ???
-0053FD2A    ???
-0053FD2B    ???
-0053FD2C    ???
-0053FD2D    ???
-0053FD2E    ???
-0053FD2F    ???
-0053FD30    ???
-0053FD31    ???
-0053FD32    ???
-0053FD33    ???
-0053FD34    ???
-0053FD35    ???
-0053FD36    ???
-0053FD37    ???
-0053FD38    ???
-0053FD39    ???
-0053FD3A    ???
-0053FD3B    ???
-0053FD3C    ???
-0053FD3D    ???
-0053FD3E    ???
-0053FD3F    ???
-0053FD40    ???
-0053FD41    ???
-0053FD42    ???
-0053FD43    ???
-0053FD44    ???
-0053FD45    ???
-0053FD46    ???
-0053FD47    ???
-0053FD48    ???
-0053FD49    ???
-0053FD4A    ???
-0053FD4B    ???
-0053FD4C    ???
-0053FD4D    ???
-0053FD4E    ???
-0053FD4F    ???
-0053FD50    ???
-0053FD51    ???
-0053FD52    ???
-0053FD53    ???
-0053FD54    ???
-0053FD55    ???
-0053FD56    ???
-0053FD57    ???
-0053FD58    ???
-0053FD59    ???
-0053FD5A    ???
-0053FD5B    ???
-0053FD5C    ???
-0053FD5D    ???
-0053FD5E    ???
-0053FD5F    ???
-0053FD60    ???
-0053FD61    ???
-0053FD62    ???
-0053FD63    ???
-0053FD64    ???
-0053FD65    ???
-0053FD66    ???
-0053FD67    ???
-0053FD68    ???
-0053FD69    ???
-0053FD6A    ???
-0053FD6B    ???
-0053FD6C    ???
-0053FD6D    ???
-0053FD6E    ???
-0053FD6F    ???
-0053FD70    ???
-0053FD71    ???
-0053FD72    ???
-0053FD73    ???
-0053FD74    ???
-0053FD75    ???
-0053FD76    ???
-0053FD77    ???
-0053FD78    ???
-0053FD79    ???
-0053FD7A    ???
-0053FD7B    ???
-0053FD7C    ???
-0053FD7D    ???
-0053FD7E    ???
-0053FD7F    ???
-0053FD80    ???
-0053FD81    ???
-0053FD82    ???
-0053FD83    ???
-0053FD84    ???
-0053FD85    ???
-0053FD86    ???
-0053FD87    ???
-0053FD88    ???
-0053FD89    ???
-0053FD8A    ???
-0053FD8B    ???
-0053FD8C    ???
-0053FD8D    ???
-0053FD8E    ???
-0053FD8F    ???
-0053FD90    ???
+0053FD20    push ebp
+0053FD21    mov ebp, esp
+0053FD23    sub esp, 0x0C
+0053FD26    push ebx
+0053FD27    push esi
+0053FD28    mov dword ptr ss:[ebp-0x04], ecx
+0053FD2B    mov ecx, dword ptr ds:[ecx+0x10]
+0053FD2E    push edi
+0053FD2F    call 0x005233D0
+0053FD34    mov ebx, dword ptr ss:[ebp+0x0C]
+0053FD37    mov ecx, eax
+0053FD39    mov dword ptr ss:[ebp-0x08], ecx
+0053FD3C    cmp ebx, dword ptr ss:[ebp+0x14]
+0053FD3F    jnl 0x0053FD7F
+0053FD41    mov eax, dword ptr ss:[ebp+0x10]
+0053FD44    mov esi, dword ptr ss:[ebp+0x08]
+0053FD47    cmp esi, eax
+0053FD49    jnl 0x0053FD79
+0053FD4B    mov edi, ecx
+0053FD4D    imul edi, esi
+0053FD50    mov eax, dword ptr ss:[ebp-0x04]
+0053FD53    mov ecx, dword ptr ds:[eax+0x0C]
+0053FD56    mov edx, dword ptr ds:[eax+0x10]
+0053FD59    imul ecx, ebx
+0053FD5C    add ecx, edi
+0053FD5E    add ecx, dword ptr ds:[eax]
+0053FD60    call 0x00523670
+0053FD65    shr eax, 0x18
+0053FD68    cmp al, 0x01
+0053FD6A    jnbe 0x0053FD88
+0053FD6C    mov ecx, dword ptr ss:[ebp-0x08]
+0053FD6F    inc esi
+0053FD70    mov eax, dword ptr ss:[ebp+0x10]
+0053FD73    add edi, ecx
+0053FD75    cmp esi, eax
+0053FD77    jl 0x0053FD50
+0053FD79    inc ebx
+0053FD7A    cmp ebx, dword ptr ss:[ebp+0x14]
+0053FD7D    jl 0x0053FD44
+0053FD7F    mov al, 0x01
+0053FD81    pop edi
+0053FD82    pop esi
+0053FD83    pop ebx
+0053FD84    mov esp, ebp
+0053FD86    pop ebp
+0053FD87    ret
+0053FD88    pop edi
+0053FD89    pop esi
+0053FD8A    xor al, al
+0053FD8C    pop ebx
+0053FD8D    mov esp, ebp
+0053FD8F    pop ebp
+0053FD90    ret

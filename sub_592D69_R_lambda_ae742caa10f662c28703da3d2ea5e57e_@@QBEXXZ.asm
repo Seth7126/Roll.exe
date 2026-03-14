@@ -1,131 +1,49 @@
-00592D69    ???
-00592D6A    ???
-00592D6B    ???
-00592D6C    ???
-00592D6D    ???
-00592D6E    ???
-00592D6F    ???
-00592D70    ???
-00592D71    ???
-00592D72    ???
-00592D73    ???
-00592D74    ???
-00592D75    ???
-00592D76    ???
-00592D77    ???
-00592D78    ???
-00592D79    ???
-00592D7A    ???
-00592D7B    ???
-00592D7C    ???
-00592D7D    ???
-00592D7E    ???
-00592D7F    ???
-00592D80    ???
-00592D81    ???
-00592D82    ???
-00592D83    ???
-00592D84    ???
-00592D85    ???
-00592D86    ???
-00592D87    ???
-00592D88    ???
-00592D89    ???
-00592D8A    ???
-00592D8B    ???
-00592D8C    ???
-00592D8D    ???
-00592D8E    ???
-00592D8F    ???
-00592D90    ???
-00592D91    ???
-00592D92    ???
-00592D93    ???
-00592D94    ???
-00592D95    ???
-00592D96    ???
-00592D97    ???
-00592D98    ???
-00592D99    ???
-00592D9A    ???
-00592D9B    ???
-00592D9C    ???
-00592D9D    ???
-00592D9E    ???
-00592D9F    ???
-00592DA0    ???
-00592DA1    ???
-00592DA2    ???
-00592DA3    ???
-00592DA4    ???
-00592DA5    ???
-00592DA6    ???
-00592DA7    ???
-00592DA8    ???
-00592DA9    ???
-00592DAA    ???
-00592DAB    ???
-00592DAC    ???
-00592DAD    ???
-00592DAE    ???
-00592DAF    ???
-00592DB0    ???
-00592DB1    ???
-00592DB2    ???
-00592DB3    ???
-00592DB4    ???
-00592DB5    ???
-00592DB6    ???
-00592DB7    ???
-00592DB8    ???
-00592DB9    ???
-00592DBA    ???
-00592DBB    ???
-00592DBC    ???
-00592DBD    ???
-00592DBE    ???
-00592DBF    ???
-00592DC0    ???
-00592DC1    ???
-00592DC2    ???
-00592DC3    ???
-00592DC4    ???
-00592DC5    ???
-00592DC6    ???
-00592DC7    ???
-00592DC8    ???
-00592DC9    ???
-00592DCA    ???
-00592DCB    ???
-00592DCC    ???
-00592DCD    ???
-00592DCE    ???
-00592DCF    ???
-00592DD0    ???
-00592DD1    ???
-00592DD2    ???
-00592DD3    ???
-00592DD4    ???
-00592DD5    ???
-00592DD6    ???
-00592DD7    ???
-00592DD8    ???
-00592DD9    ???
-00592DDA    ???
-00592DDB    ???
-00592DDC    ???
-00592DDD    ???
-00592DDE    ???
-00592DDF    ???
-00592DE0    ???
-00592DE1    ???
-00592DE2    ???
-00592DE3    ???
-00592DE4    ???
-00592DE5    ???
-00592DE6    ???
-00592DE7    ???
-00592DE8    ???
-00592DE9    ???
-00592DEA    ???
-00592DEB    ???
+00592D69    mov edi, edi
+00592D6B    push esi
+00592D6C    mov esi, ecx
+00592D6E    mov ecx, 0x101
+00592D73    push ecx
+00592D74    mov eax, dword ptr ds:[esi]
+00592D76    mov eax, dword ptr ds:[eax]
+00592D78    mov eax, dword ptr ds:[eax+0x48]
+00592D7B    add eax, 0x18
+00592D7E    push eax
+00592D7F    push ecx
+00592D80    push dword ptr ds:[0x006CFDF0]
+00592D86    call 0x00585FE7
+00592D8B    mov eax, dword ptr ds:[esi]
+00592D8D    mov ecx, 0x100
+00592D92    push ecx
+00592D93    mov eax, dword ptr ds:[eax]
+00592D95    mov eax, dword ptr ds:[eax+0x48]
+00592D98    add eax, 0x119
+00592D9D    push eax
+00592D9E    push ecx
+00592D9F    push dword ptr ds:[0x006CFDF4]
+00592DA5    call 0x00585FE7
+00592DAA    mov eax, dword ptr ds:[esi+0x04]
+00592DAD    add esp, 0x20
+00592DB0    or ecx, 0xFFFFFFFF
+00592DB3    mov eax, dword ptr ds:[eax]
+00592DB5    mov eax, dword ptr ds:[eax]
+00592DB7    lock xadd dword ptr ds:[eax], ecx
+00592DBB    jnz 0x00592DD2
+00592DBD    mov eax, dword ptr ds:[esi+0x04]
+00592DC0    mov eax, dword ptr ds:[eax]
+00592DC2    cmp dword ptr ds:[eax], 0x61F478
+00592DC8    jz 0x00592DD2
+00592DCA    push dword ptr ds:[eax]
+00592DCC    call 0x0058BB72
+00592DD1    pop ecx
+00592DD2    mov eax, dword ptr ds:[esi]
+00592DD4    mov edx, dword ptr ds:[eax]
+00592DD6    mov eax, dword ptr ds:[esi+0x04]
+00592DD9    mov ecx, dword ptr ds:[eax]
+00592DDB    mov eax, dword ptr ds:[edx+0x48]
+00592DDE    mov dword ptr ds:[ecx], eax
+00592DE0    mov eax, dword ptr ds:[esi]
+00592DE2    mov eax, dword ptr ds:[eax]
+00592DE4    mov eax, dword ptr ds:[eax+0x48]
+00592DE7    lock inc dword ptr ds:[eax]
+00592DEA    pop esi
+00592DEB    ret

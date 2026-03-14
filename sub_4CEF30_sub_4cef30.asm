@@ -1,75 +1,34 @@
-004CEF30    ???
-004CEF31    ???
-004CEF32    ???
-004CEF33    ???
-004CEF34    ???
-004CEF35    ???
-004CEF36    ???
-004CEF37    ???
-004CEF38    ???
-004CEF39    ???
-004CEF3A    ???
-004CEF3B    ???
-004CEF3C    ???
-004CEF3D    ???
-004CEF3E    ???
-004CEF3F    ???
-004CEF40    ???
-004CEF41    ???
-004CEF42    ???
-004CEF43    ???
-004CEF44    ???
-004CEF45    ???
-004CEF46    ???
-004CEF47    ???
-004CEF48    ???
-004CEF49    ???
-004CEF4A    ???
-004CEF4B    ???
-004CEF4C    ???
-004CEF4D    ???
-004CEF4E    ???
-004CEF4F    ???
-004CEF50    ???
-004CEF51    ???
-004CEF52    ???
-004CEF53    ???
-004CEF54    ???
-004CEF55    ???
-004CEF56    ???
-004CEF57    ???
-004CEF58    ???
-004CEF59    ???
-004CEF5A    ???
-004CEF5B    ???
-004CEF5C    ???
-004CEF5D    ???
-004CEF5E    ???
-004CEF5F    ???
-004CEF60    ???
-004CEF61    ???
-004CEF62    ???
-004CEF63    ???
-004CEF64    ???
-004CEF65    ???
-004CEF66    ???
-004CEF67    ???
-004CEF68    ???
-004CEF69    ???
-004CEF6A    ???
-004CEF6B    ???
-004CEF6C    ???
-004CEF6D    ???
-004CEF6E    ???
-004CEF6F    ???
-004CEF70    ???
-004CEF71    ???
-004CEF72    ???
-004CEF73    ???
-004CEF74    ???
-004CEF75    ???
-004CEF76    ???
-004CEF77    ???
-004CEF78    ???
-004CEF79    ???
-004CEF7A    ???
+004CEF30    push ebp
+004CEF31    mov ebp, esp
+004CEF33    and esp, 0xFFFFFFF8
+004CEF36    push ecx
+004CEF37    push ebx
+004CEF38    push esi
+004CEF39    push edi
+004CEF3A    mov edi, edx
+004CEF3C    mov ebx, ecx
+004CEF3E    cmp dword ptr ds:[edi+0x08], 0x00
+004CEF42    jz 0x004CEF74
+004CEF44    xor esi, esi
+004CEF46    mov eax, dword ptr ds:[edi+0x04]
+004CEF49    mov ecx, esi
+004CEF4B    push dword ptr ss:[ebp+0x0C]
+004CEF4E    shl ecx, 0x04
+004CEF51    push dword ptr ss:[ebp+0x08]
+004CEF54    sub ecx, esi
+004CEF56    inc esi
+004CEF57    cmp esi, dword ptr ds:[edi+0x08]
+004CEF5A    lea edx, ds:[eax+ecx*4]
+004CEF5D    mov eax, 0xFFFFFFFF
+004CEF62    mov ecx, ebx
+004CEF64    cmovnl esi, eax
+004CEF67    call 0x004CED20
+004CEF6C    add esp, 0x08
+004CEF6F    cmp esi, 0xFFFFFFFF
+004CEF72    jnz 0x004CEF46
+004CEF74    pop edi
+004CEF75    pop esi
+004CEF76    pop ebx
+004CEF77    mov esp, ebp
+004CEF79    pop ebp
+004CEF7A    ret

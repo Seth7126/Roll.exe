@@ -1,63 +1,33 @@
-004D64F0    ???
-004D64F1    ???
-004D64F2    ???
-004D64F3    ???
-004D64F4    ???
-004D64F5    ???
-004D64F6    ???
-004D64F7    ???
-004D64F8    ???
-004D64F9    ???
-004D64FA    ???
-004D64FB    ???
-004D64FC    ???
-004D64FD    ???
-004D64FE    ???
-004D64FF    ???
-004D6500    ???
-004D6501    ???
-004D6502    ???
-004D6503    ???
-004D6504    ???
-004D6505    ???
-004D6506    ???
-004D6507    ???
-004D6508    ???
-004D6509    ???
-004D650A    ???
-004D650B    ???
-004D650C    ???
-004D650D    ???
-004D650E    ???
-004D650F    ???
-004D6510    ???
-004D6511    ???
-004D6512    ???
-004D6513    ???
-004D6514    ???
-004D6515    ???
-004D6516    ???
-004D6517    ???
-004D6518    ???
-004D6519    ???
-004D651A    ???
-004D651B    ???
-004D651C    ???
-004D651D    ???
-004D651E    ???
-004D651F    ???
-004D6520    ???
-004D6521    ???
-004D6522    ???
-004D6523    ???
-004D6524    ???
-004D6525    ???
-004D6526    ???
-004D6527    ???
-004D6528    ???
-004D6529    ???
-004D652A    ???
-004D652B    ???
-004D652C    ???
-004D652D    ???
-004D652E    ???
+004D64F0    push ebx
+004D64F1    mov ebx, edx
+004D64F3    push esi
+004D64F4    push edi
+004D64F5    test ecx, ecx
+004D64F7    jz 0x004D6523
+004D64F9    mov esi, dword ptr ds:[ecx+0x04]
+004D64FC    test esi, esi
+004D64FE    jz 0x004D6523
+004D6500    mov edi, dword ptr ds:[esi]
+004D6502    mov ecx, 0x5B2591
+004D6507    mov esi, dword ptr ds:[esi+0x04]
+004D650A    push ebx
+004D650B    mov eax, dword ptr ds:[edi]
+004D650D    test eax, eax
+004D650F    cmovnz ecx, eax
+004D6512    push ecx
+004D6513    call 0x0057EB20
+004D6518    add esp, 0x08
+004D651B    test eax, eax
+004D651D    jz 0x004D6529
+004D651F    test esi, esi
+004D6521    jnz 0x004D6500
+004D6523    xor eax, eax
+004D6525    pop edi
+004D6526    pop esi
+004D6527    pop ebx
+004D6528    ret
+004D6529    mov eax, edi
+004D652B    pop edi
+004D652C    pop esi
+004D652D    pop ebx
+004D652E    ret

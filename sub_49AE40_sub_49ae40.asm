@@ -1,36 +1,16 @@
-0049AE40    ???
-0049AE41    ???
-0049AE42    ???
-0049AE43    ???
-0049AE44    ???
-0049AE45    ???
-0049AE46    ???
-0049AE47    ???
-0049AE48    ???
-0049AE49    ???
-0049AE4A    ???
-0049AE4B    ???
-0049AE4C    ???
-0049AE4D    ???
-0049AE4E    ???
-0049AE4F    ???
-0049AE50    ???
-0049AE51    ???
-0049AE52    ???
-0049AE53    ???
-0049AE54    ???
-0049AE55    ???
-0049AE56    ???
-0049AE57    ???
-0049AE58    ???
-0049AE59    ???
-0049AE5A    ???
-0049AE5B    ???
-0049AE5C    ???
-0049AE5D    ???
-0049AE5E    ???
-0049AE5F    ???
-0049AE60    ???
-0049AE61    ???
-0049AE62    ???
-0049AE63    ???
+0049AE40    push ebp
+0049AE41    mov ebp, esp
+0049AE43    sub esp, 0x14
+0049AE46    lea eax, ss:[ebp-0x14]
+0049AE49    xor edx, edx
+0049AE4B    push ecx
+0049AE4C    push 0x00
+0049AE4E    push eax
+0049AE4F    call 0x0049AD10
+0049AE54    add esp, 0x0C
+0049AE57    movups xmm0, xmmword ptr ds:[eax]
+0049AE5A    mov eax, dword ptr ss:[ebp+0x08]
+0049AE5D    movups xmmword ptr ds:[eax], xmm0
+0049AE60    mov esp, ebp
+0049AE62    pop ebp
+0049AE63    ret

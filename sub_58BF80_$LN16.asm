@@ -1,12 +1,5 @@
-0058BF80    ???
-0058BF81    ???
-0058BF82    ???
-0058BF83    ???
-0058BF84    ???
-0058BF85    ???
-0058BF86    ???
-0058BF87    ???
-0058BF88    ???
-0058BF89    ???
-0058BF8A    ???
-0058BF8B    ???
+0058BF80    mov eax, dword ptr ss:[ebp+0x10]
+0058BF83    push dword ptr ds:[eax]
+0058BF85    call 0x00589EC6
+0058BF8A    pop ecx
+0058BF8B    ret

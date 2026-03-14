@@ -1,53 +1,21 @@
-0057B5EE    ???
-0057B5EF    ???
-0057B5F0    ???
-0057B5F1    ???
-0057B5F2    ???
-0057B5F3    ???
-0057B5F4    ???
-0057B5F5    ???
-0057B5F6    ???
-0057B5F7    ???
-0057B5F8    ???
-0057B5F9    ???
-0057B5FA    ???
-0057B5FB    ???
-0057B5FC    ???
-0057B5FD    ???
-0057B5FE    ???
-0057B5FF    ???
-0057B600    ???
-0057B601    ???
-0057B602    ???
-0057B603    ???
-0057B604    ???
-0057B605    ???
-0057B606    ???
-0057B607    ???
-0057B608    ???
-0057B609    ???
-0057B60A    ???
-0057B60B    ???
-0057B60C    ???
-0057B60D    ???
-0057B60E    ???
-0057B60F    ???
-0057B610    ???
-0057B611    ???
-0057B612    ???
-0057B613    ???
-0057B614    ???
-0057B615    ???
-0057B616    ???
-0057B617    ???
-0057B618    ???
-0057B619    ???
-0057B61A    ???
-0057B61B    ???
-0057B61C    ???
-0057B61D    ???
-0057B61E    ???
-0057B61F    ???
-0057B620    ???
-0057B621    ???
-0057B622    ???
+0057B5EE    mov edi, edi
+0057B5F0    push ebp
+0057B5F1    mov ebp, esp
+0057B5F3    mov eax, dword ptr ss:[ebp+0x18]
+0057B5F6    push esi
+0057B5F7    mov esi, ecx
+0057B5F9    push dword ptr ds:[eax]
+0057B5FB    mov eax, dword ptr ss:[ebp+0x14]
+0057B5FE    push dword ptr ds:[eax]
+0057B600    mov eax, dword ptr ss:[ebp+0x10]
+0057B603    push dword ptr ds:[eax]
+0057B605    mov eax, dword ptr ss:[ebp+0x0C]
+0057B608    push dword ptr ds:[eax+0x04]
+0057B60B    push dword ptr ds:[eax]
+0057B60D    push dword ptr ss:[ebp+0x08]
+0057B610    call 0x0057C1BB
+0057B615    and dword ptr ds:[esi+0x450], 0x00
+0057B61C    mov eax, esi
+0057B61E    pop esi
+0057B61F    pop ebp
+0057B620    ret 0x14

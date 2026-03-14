@@ -1,60 +1,23 @@
-0057C1BB    ???
-0057C1BC    ???
-0057C1BD    ???
-0057C1BE    ???
-0057C1BF    ???
-0057C1C0    ???
-0057C1C1    ???
-0057C1C2    ???
-0057C1C3    ???
-0057C1C4    ???
-0057C1C5    ???
-0057C1C6    ???
-0057C1C7    ???
-0057C1C8    ???
-0057C1C9    ???
-0057C1CA    ???
-0057C1CB    ???
-0057C1CC    ???
-0057C1CD    ???
-0057C1CE    ???
-0057C1CF    ???
-0057C1D0    ???
-0057C1D1    ???
-0057C1D2    ???
-0057C1D3    ???
-0057C1D4    ???
-0057C1D5    ???
-0057C1D6    ???
-0057C1D7    ???
-0057C1D8    ???
-0057C1D9    ???
-0057C1DA    ???
-0057C1DB    ???
-0057C1DC    ???
-0057C1DD    ???
-0057C1DE    ???
-0057C1DF    ???
-0057C1E0    ???
-0057C1E1    ???
-0057C1E2    ???
-0057C1E3    ???
-0057C1E4    ???
-0057C1E5    ???
-0057C1E6    ???
-0057C1E7    ???
-0057C1E8    ???
-0057C1E9    ???
-0057C1EA    ???
-0057C1EB    ???
-0057C1EC    ???
-0057C1ED    ???
-0057C1EE    ???
-0057C1EF    ???
-0057C1F0    ???
-0057C1F1    ???
-0057C1F2    ???
-0057C1F3    ???
-0057C1F4    ???
-0057C1F5    ???
-0057C1F6    ???
+0057C1BB    mov edi, edi
+0057C1BD    push ebp
+0057C1BE    mov ebp, esp
+0057C1C0    push esi
+0057C1C1    mov esi, ecx
+0057C1C3    call 0x0057C174
+0057C1C8    mov eax, dword ptr ss:[ebp+0x08]
+0057C1CB    mov eax, dword ptr ds:[eax]
+0057C1CD    mov dword ptr ds:[esi+0x448], eax
+0057C1D3    mov eax, dword ptr ss:[ebp+0x0C]
+0057C1D6    mov dword ptr ds:[esi], eax
+0057C1D8    mov eax, dword ptr ss:[ebp+0x10]
+0057C1DB    mov dword ptr ds:[esi+0x04], eax
+0057C1DE    mov eax, dword ptr ss:[ebp+0x18]
+0057C1E1    mov dword ptr ds:[esi+0x08], eax
+0057C1E4    mov eax, dword ptr ss:[ebp+0x14]
+0057C1E7    mov dword ptr ds:[esi+0x10], eax
+0057C1EA    mov eax, dword ptr ss:[ebp+0x1C]
+0057C1ED    mov dword ptr ds:[esi+0x14], eax
+0057C1F0    mov eax, esi
+0057C1F2    pop esi
+0057C1F3    pop ebp
+0057C1F4    ret 0x18

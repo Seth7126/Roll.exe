@@ -1,19 +1,8 @@
-004C60C0    ???
-004C60C1    ???
-004C60C2    ???
-004C60C3    ???
-004C60C4    ???
-004C60C5    ???
-004C60C6    ???
-004C60C7    ???
-004C60C8    ???
-004C60C9    ???
-004C60CA    ???
-004C60CB    ???
-004C60CC    ???
-004C60CD    ???
-004C60CE    ???
-004C60CF    ???
-004C60D0    ???
-004C60D1    ???
-004C60D2    ???
+004C60C0    push ebp
+004C60C1    mov ebp, esp
+004C60C3    mov ecx, dword ptr ds:[0x0114E834]
+004C60C9    push dword ptr ss:[ebp+0x08]
+004C60CC    mov eax, dword ptr ds:[ecx]
+004C60CE    call dword ptr ds:[eax+0x34]
+004C60D1    pop ebp
+004C60D2    ret

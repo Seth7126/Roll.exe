@@ -1,141 +1,62 @@
-0058C9BA    ???
-0058C9BB    ???
-0058C9BC    ???
-0058C9BD    ???
-0058C9BE    ???
-0058C9BF    ???
-0058C9C0    ???
-0058C9C1    ???
-0058C9C2    ???
-0058C9C3    ???
-0058C9C4    ???
-0058C9C5    ???
-0058C9C6    ???
-0058C9C7    ???
-0058C9C8    ???
-0058C9C9    ???
-0058C9CA    ???
-0058C9CB    ???
-0058C9CC    ???
-0058C9CD    ???
-0058C9CE    ???
-0058C9CF    ???
-0058C9D0    ???
-0058C9D1    ???
-0058C9D2    ???
-0058C9D3    ???
-0058C9D4    ???
-0058C9D5    ???
-0058C9D6    ???
-0058C9D7    ???
-0058C9D8    ???
-0058C9D9    ???
-0058C9DA    ???
-0058C9DB    ???
-0058C9DC    ???
-0058C9DD    ???
-0058C9DE    ???
-0058C9DF    ???
-0058C9E0    ???
-0058C9E1    ???
-0058C9E2    ???
-0058C9E3    ???
-0058C9E4    ???
-0058C9E5    ???
-0058C9E6    ???
-0058C9E7    ???
-0058C9E8    ???
-0058C9E9    ???
-0058C9EA    ???
-0058C9EB    ???
-0058C9EC    ???
-0058C9ED    ???
-0058C9EE    ???
-0058C9EF    ???
-0058C9F0    ???
-0058C9F1    ???
-0058C9F2    ???
-0058C9F3    ???
-0058C9F4    ???
-0058C9F5    ???
-0058C9F6    ???
-0058C9F7    ???
-0058C9F8    ???
-0058C9F9    ???
-0058C9FA    ???
-0058C9FB    ???
-0058C9FC    ???
-0058C9FD    ???
-0058C9FE    ???
-0058C9FF    ???
-0058CA00    ???
-0058CA01    ???
-0058CA02    ???
-0058CA03    ???
-0058CA04    ???
-0058CA05    ???
-0058CA06    ???
-0058CA07    ???
-0058CA08    ???
-0058CA09    ???
-0058CA0A    ???
-0058CA0B    ???
-0058CA0C    ???
-0058CA0D    ???
-0058CA0E    ???
-0058CA0F    ???
-0058CA10    ???
-0058CA11    ???
-0058CA12    ???
-0058CA13    ???
-0058CA14    ???
-0058CA15    ???
-0058CA16    ???
-0058CA17    ???
-0058CA18    ???
-0058CA19    ???
-0058CA1A    ???
-0058CA1B    ???
-0058CA1C    ???
-0058CA1D    ???
-0058CA1E    ???
-0058CA1F    ???
-0058CA20    ???
-0058CA21    ???
-0058CA22    ???
-0058CA23    ???
-0058CA24    ???
-0058CA25    ???
-0058CA26    ???
-0058CA27    ???
-0058CA28    ???
-0058CA29    ???
-0058CA2A    ???
-0058CA2B    ???
-0058CA2C    ???
-0058CA2D    ???
-0058CA2E    ???
-0058CA2F    ???
-0058CA30    ???
-0058CA31    ???
-0058CA32    ???
-0058CA33    ???
-0058CA34    ???
-0058CA35    ???
-0058CA36    ???
-0058CA37    ???
-0058CA38    ???
-0058CA39    ???
-0058CA3A    ???
-0058CA3B    ???
-0058CA3C    ???
-0058CA3D    ???
-0058CA3E    ???
-0058CA3F    ???
-0058CA40    ???
-0058CA41    ???
-0058CA42    ???
-0058CA43    ???
-0058CA44    ???
-0058CA45    ???
-0058CA46    ???
+0058C9BA    mov edi, edi
+0058C9BC    push ebp
+0058C9BD    mov ebp, esp
+0058C9BF    sub esp, 0x0C
+0058C9C2    xor eax, eax
+0058C9C4    push esi
+0058C9C5    push edi
+0058C9C6    push dword ptr ss:[ebp+0x18]
+0058C9C9    lea edi, ss:[ebp-0x0C]
+0058C9CC    push dword ptr ss:[ebp+0x14]
+0058C9CF    stosd
+0058C9D0    stosd
+0058C9D1    stosd
+0058C9D2    lea eax, ss:[ebp-0x0C]
+0058C9D5    mov edi, dword ptr ss:[ebp+0x1C]
+0058C9D8    push eax
+0058C9D9    mov eax, dword ptr ss:[ebp+0x08]
+0058C9DC    push edi
+0058C9DD    push dword ptr ds:[eax+0x04]
+0058C9E0    push dword ptr ds:[eax]
+0058C9E2    call 0x005947EE
+0058C9E7    or ecx, 0xFFFFFFFF
+0058C9EA    add esp, 0x18
+0058C9ED    cmp dword ptr ss:[ebp+0x10], ecx
+0058C9F0    jz 0x0058CA00
+0058C9F2    mov ecx, dword ptr ss:[ebp+0x10]
+0058C9F5    xor eax, eax
+0058C9F7    cmp dword ptr ss:[ebp-0x0C], 0x2D
+0058C9FB    setz al
+0058C9FE    sub ecx, eax
+0058CA00    mov esi, dword ptr ss:[ebp+0x0C]
+0058CA03    lea eax, ss:[ebp-0x0C]
+0058CA06    push eax
+0058CA07    mov eax, dword ptr ss:[ebp-0x08]
+0058CA0A    add eax, edi
+0058CA0C    push eax
+0058CA0D    xor eax, eax
+0058CA0F    cmp dword ptr ss:[ebp-0x0C], 0x2D
+0058CA13    push ecx
+0058CA14    setz al
+0058CA17    add eax, esi
+0058CA19    push eax
+0058CA1A    call 0x0059472E
+0058CA1F    add esp, 0x10
+0058CA22    test eax, eax
+0058CA24    jz 0x0058CA2B
+0058CA26    mov byte ptr ds:[esi], 0x00
+0058CA29    jmp 0x0058CA41
+0058CA2B    push dword ptr ss:[ebp+0x20]
+0058CA2E    lea eax, ss:[ebp-0x0C]
+0058CA31    push 0x00
+0058CA33    push eax
+0058CA34    push edi
+0058CA35    push dword ptr ss:[ebp+0x10]
+0058CA38    push esi
+0058CA39    call 0x0058CA47
+0058CA3E    add esp, 0x18
+0058CA41    pop edi
+0058CA42    pop esi
+0058CA43    mov esp, ebp
+0058CA45    pop ebp
+0058CA46    ret

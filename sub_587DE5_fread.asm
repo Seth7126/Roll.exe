@@ -1,29 +1,12 @@
-00587DE5    ???
-00587DE6    ???
-00587DE7    ???
-00587DE8    ???
-00587DE9    ???
-00587DEA    ???
-00587DEB    ???
-00587DEC    ???
-00587DED    ???
-00587DEE    ???
-00587DEF    ???
-00587DF0    ???
-00587DF1    ???
-00587DF2    ???
-00587DF3    ???
-00587DF4    ???
-00587DF5    ???
-00587DF6    ???
-00587DF7    ???
-00587DF8    ???
-00587DF9    ???
-00587DFA    ???
-00587DFB    ???
-00587DFC    ???
-00587DFD    ???
-00587DFE    ???
-00587DFF    ???
-00587E00    ???
-00587E01    ???
+00587DE5    mov edi, edi
+00587DE7    push ebp
+00587DE8    mov ebp, esp
+00587DEA    push dword ptr ss:[ebp+0x14]
+00587DED    push dword ptr ss:[ebp+0x10]
+00587DF0    push dword ptr ss:[ebp+0x0C]
+00587DF3    push 0xFFFFFFFF
+00587DF5    push dword ptr ss:[ebp+0x08]
+00587DF8    call 0x00587E02
+00587DFD    add esp, 0x14
+00587E00    pop ebp
+00587E01    ret

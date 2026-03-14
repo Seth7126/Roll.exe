@@ -1,24 +1,10 @@
-0057ACB3    ???
-0057ACB4    ???
-0057ACB5    ???
-0057ACB6    ???
-0057ACB7    ???
-0057ACB8    ???
-0057ACB9    ???
-0057ACBA    ???
-0057ACBB    ???
-0057ACBC    ???
-0057ACBD    ???
-0057ACBE    ???
-0057ACBF    ???
-0057ACC0    ???
-0057ACC1    ???
-0057ACC2    ???
-0057ACC3    ???
-0057ACC4    ???
-0057ACC5    ???
-0057ACC6    ???
-0057ACC7    ???
-0057ACC8    ???
-0057ACC9    ???
-0057ACCA    ???
+0057ACB3    push ebp
+0057ACB4    mov ebp, esp
+0057ACB6    push 0xFFFFFFFF
+0057ACB8    push dword ptr ss:[ebp+0x10]
+0057ACBB    push dword ptr ss:[ebp+0x0C]
+0057ACBE    push dword ptr ss:[ebp+0x08]
+0057ACC1    call 0x0057ACCB
+0057ACC6    add esp, 0x10
+0057ACC9    pop ebp
+0057ACCA    ret

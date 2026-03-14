@@ -1,135 +1,64 @@
-004F0B40    ???
-004F0B41    ???
-004F0B42    ???
-004F0B43    ???
-004F0B44    ???
-004F0B45    ???
-004F0B46    ???
-004F0B47    ???
-004F0B48    ???
-004F0B49    ???
-004F0B4A    ???
-004F0B4B    ???
-004F0B4C    ???
-004F0B4D    ???
-004F0B4E    ???
-004F0B4F    ???
-004F0B50    ???
-004F0B51    ???
-004F0B52    ???
-004F0B53    ???
-004F0B54    ???
-004F0B55    ???
-004F0B56    ???
-004F0B57    ???
-004F0B58    ???
-004F0B59    ???
-004F0B5A    ???
-004F0B5B    ???
-004F0B5C    ???
-004F0B5D    ???
-004F0B5E    ???
-004F0B5F    ???
-004F0B60    ???
-004F0B61    ???
-004F0B62    ???
-004F0B63    ???
-004F0B64    ???
-004F0B65    ???
-004F0B66    ???
-004F0B67    ???
-004F0B68    ???
-004F0B69    ???
-004F0B6A    ???
-004F0B6B    ???
-004F0B6C    ???
-004F0B6D    ???
-004F0B6E    ???
-004F0B6F    ???
-004F0B70    ???
-004F0B71    ???
-004F0B72    ???
-004F0B73    ???
-004F0B74    ???
-004F0B75    ???
-004F0B76    ???
-004F0B77    ???
-004F0B78    ???
-004F0B79    ???
-004F0B7A    ???
-004F0B7B    ???
-004F0B7C    ???
-004F0B7D    ???
-004F0B7E    ???
-004F0B7F    ???
-004F0B80    ???
-004F0B81    ???
-004F0B82    ???
-004F0B83    ???
-004F0B84    ???
-004F0B85    ???
-004F0B86    ???
-004F0B87    ???
-004F0B88    ???
-004F0B89    ???
-004F0B8A    ???
-004F0B8B    ???
-004F0B8C    ???
-004F0B8D    ???
-004F0B8E    ???
-004F0B8F    ???
-004F0B90    ???
-004F0B91    ???
-004F0B92    ???
-004F0B93    ???
-004F0B94    ???
-004F0B95    ???
-004F0B96    ???
-004F0B97    ???
-004F0B98    ???
-004F0B99    ???
-004F0B9A    ???
-004F0B9B    ???
-004F0B9C    ???
-004F0B9D    ???
-004F0B9E    ???
-004F0B9F    ???
-004F0BA0    ???
-004F0BA1    ???
-004F0BA2    ???
-004F0BA3    ???
-004F0BA4    ???
-004F0BA5    ???
-004F0BA6    ???
-004F0BA7    ???
-004F0BA8    ???
-004F0BA9    ???
-004F0BAA    ???
-004F0BAB    ???
-004F0BAC    ???
-004F0BAD    ???
-004F0BAE    ???
-004F0BAF    ???
-004F0BB0    ???
-004F0BB1    ???
-004F0BB2    ???
-004F0BB3    ???
-004F0BB4    ???
-004F0BB5    ???
-004F0BB6    ???
-004F0BB7    ???
-004F0BB8    ???
-004F0BB9    ???
-004F0BBA    ???
-004F0BBB    ???
-004F0BBC    ???
-004F0BBD    ???
-004F0BBE    ???
-004F0BBF    ???
-004F0BC0    ???
-004F0BC1    ???
-004F0BC2    ???
-004F0BC3    ???
-004F0BC4    ???
-004F0BC5    ???
-004F0BC6    ???
+004F0B40    push ebp
+004F0B41    mov ebp, esp
+004F0B43    push ebx
+004F0B44    push esi
+004F0B45    push edi
+004F0B46    mov edi, edx
+004F0B48    xor eax, eax
+004F0B4A    mov ebx, ecx
+004F0B4C    mov edx, dword ptr ds:[edi]
+004F0B4E    test edx, edx
+004F0B50    jle 0x004F0B64
+004F0B52    mov esi, dword ptr ds:[edi+0x08]
+004F0B55    mov ecx, dword ptr ss:[ebp+0x08]
+004F0B58    cmp dword ptr ds:[esi], ecx
+004F0B5A    jz 0x004F0B6B
+004F0B5C    inc eax
+004F0B5D    add esi, 0x10
+004F0B60    cmp eax, edx
+004F0B62    jl 0x004F0B58
+004F0B64    xor al, al
+004F0B66    pop edi
+004F0B67    pop esi
+004F0B68    pop ebx
+004F0B69    pop ebp
+004F0B6A    ret
+004F0B6B    lea eax, ds:[esi+0x08]
+004F0B6E    mov edx, ecx
+004F0B70    push eax
+004F0B71    mov ecx, ebx
+004F0B73    call 0x004F0880
+004F0B78    mov edx, dword ptr ds:[edi]
+004F0B7A    add esp, 0x04
+004F0B7D    mov eax, dword ptr ds:[edi+0x08]
+004F0B80    mov ecx, edx
+004F0B82    shl ecx, 0x04
+004F0B85    add eax, 0xFFFFFFF0
+004F0B88    sub ecx, esi
+004F0B8A    add eax, ecx
+004F0B8C    test eax, eax
+004F0B8E    jle 0x004F0BA0
+004F0B90    push eax
+004F0B91    lea eax, ds:[esi+0x10]
+004F0B94    push eax
+004F0B95    push esi
+004F0B96    call 0x00579300
+004F0B9B    mov edx, dword ptr ds:[edi]
+004F0B9D    add esp, 0x0C
+004F0BA0    lea eax, ds:[edx-0x01]
+004F0BA3    mov dword ptr ds:[edi], eax
+004F0BA5    test eax, eax
+004F0BA7    jnz 0x004F0BC0
+004F0BA9    mov eax, dword ptr ds:[edi+0x08]
+004F0BAC    test eax, eax
+004F0BAE    jz 0x004F0BB9
+004F0BB0    push eax
+004F0BB1    call 0x00586F45
+004F0BB6    add esp, 0x04
+004F0BB9    mov dword ptr ds:[edi+0x08], 0x00
+004F0BC0    pop edi
+004F0BC1    pop esi
+004F0BC2    mov al, 0x01
+004F0BC4    pop ebx
+004F0BC5    pop ebp
+004F0BC6    ret

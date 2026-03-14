@@ -1,15 +1,7 @@
-0058B049    ???
-0058B04A    ???
-0058B04B    ???
-0058B04C    ???
-0058B04D    ???
-0058B04E    ???
-0058B04F    ???
-0058B050    ???
-0058B051    ???
-0058B052    ???
-0058B053    ???
-0058B054    ???
-0058B055    ???
-0058B056    ???
-0058B057    ???
+0058B049    mov edi, edi
+0058B04B    push ebp
+0058B04C    mov ebp, esp
+0058B04E    mov eax, dword ptr ss:[ebp+0x08]
+0058B051    mov dword ptr ds:[0x006CF9FC], eax
+0058B056    pop ebp
+0058B057    ret

@@ -1,12 +1,5 @@
-0057F4E8    ???
-0057F4E9    ???
-0057F4EA    ???
-0057F4EB    ???
-0057F4EC    ???
-0057F4ED    ???
-0057F4EE    ???
-0057F4EF    ???
-0057F4F0    ???
-0057F4F1    ???
-0057F4F2    ???
-0057F4F3    ???
+0057F4E8    mov eax, dword ptr ss:[ebp+0x10]
+0057F4EB    push dword ptr ds:[eax]
+0057F4ED    call 0x00589EC6
+0057F4F2    pop ecx
+0057F4F3    ret

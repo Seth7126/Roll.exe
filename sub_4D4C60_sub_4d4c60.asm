@@ -1,76 +1,34 @@
-004D4C60    ???
-004D4C61    ???
-004D4C62    ???
-004D4C63    ???
-004D4C64    ???
-004D4C65    ???
-004D4C66    ???
-004D4C67    ???
-004D4C68    ???
-004D4C69    ???
-004D4C6A    ???
-004D4C6B    ???
-004D4C6C    ???
-004D4C6D    ???
-004D4C6E    ???
-004D4C6F    ???
-004D4C70    ???
-004D4C71    ???
-004D4C72    ???
-004D4C73    ???
-004D4C74    ???
-004D4C75    ???
-004D4C76    ???
-004D4C77    ???
-004D4C78    ???
-004D4C79    ???
-004D4C7A    ???
-004D4C7B    ???
-004D4C7C    ???
-004D4C7D    ???
-004D4C7E    ???
-004D4C7F    ???
-004D4C80    ???
-004D4C81    ???
-004D4C82    ???
-004D4C83    ???
-004D4C84    ???
-004D4C85    ???
-004D4C86    ???
-004D4C87    ???
-004D4C88    ???
-004D4C89    ???
-004D4C8A    ???
-004D4C8B    ???
-004D4C8C    ???
-004D4C8D    ???
-004D4C8E    ???
-004D4C8F    ???
-004D4C90    ???
-004D4C91    ???
-004D4C92    ???
-004D4C93    ???
-004D4C94    ???
-004D4C95    ???
-004D4C96    ???
-004D4C97    ???
-004D4C98    ???
-004D4C99    ???
-004D4C9A    ???
-004D4C9B    ???
-004D4C9C    ???
-004D4C9D    ???
-004D4C9E    ???
-004D4C9F    ???
-004D4CA0    ???
-004D4CA1    ???
-004D4CA2    ???
-004D4CA3    ???
-004D4CA4    ???
-004D4CA5    ???
-004D4CA6    ???
-004D4CA7    ???
-004D4CA8    ???
-004D4CA9    ???
-004D4CAA    ???
-004D4CAB    ???
+004D4C60    mov eax, dword ptr ds:[ecx+0x04]
+004D4C63    push ebx
+004D4C64    mov ebx, edx
+004D4C66    push esi
+004D4C67    push edi
+004D4C68    lea edi, ds:[ecx+0x04]
+004D4C6B    test eax, eax
+004D4C6D    jz 0x004D4C80
+004D4C6F    cmp byte ptr ds:[eax], 0x00
+004D4C72    jz 0x004D4C80
+004D4C74    mov ecx, edi
+004D4C76    call 0x0048A080
+004D4C7B    mov ecx, dword ptr ds:[eax+0x08]
+004D4C7E    jmp 0x004D4C82
+004D4C80    xor ecx, ecx
+004D4C82    inc ecx
+004D4C83    call 0x004C2E40
+004D4C88    mov esi, eax
+004D4C8A    mov ecx, 0x5B2591
+004D4C8F    mov dword ptr ds:[ebx], esi
+004D4C91    mov edx, dword ptr ds:[edi]
+004D4C93    test edx, edx
+004D4C95    cmovnz ecx, edx
+004D4C98    mov al, byte ptr ds:[ecx]
+004D4C9A    lea ecx, ds:[ecx+0x01]
+004D4C9D    mov byte ptr ds:[esi], al
+004D4C9F    lea esi, ds:[esi+0x01]
+004D4CA2    test al, al
+004D4CA4    jnz 0x004D4C98
+004D4CA6    pop edi
+004D4CA7    pop esi
+004D4CA8    mov al, 0x01
+004D4CAA    pop ebx
+004D4CAB    ret

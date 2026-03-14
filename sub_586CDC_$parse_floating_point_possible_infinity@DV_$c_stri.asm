@@ -1,164 +1,75 @@
-00586CDC    ???
-00586CDD    ???
-00586CDE    ???
-00586CDF    ???
-00586CE0    ???
-00586CE1    ???
-00586CE2    ???
-00586CE3    ???
-00586CE4    ???
-00586CE5    ???
-00586CE6    ???
-00586CE7    ???
-00586CE8    ???
-00586CE9    ???
-00586CEA    ???
-00586CEB    ???
-00586CEC    ???
-00586CED    ???
-00586CEE    ???
-00586CEF    ???
-00586CF0    ???
-00586CF1    ???
-00586CF2    ???
-00586CF3    ???
-00586CF4    ???
-00586CF5    ???
-00586CF6    ???
-00586CF7    ???
-00586CF8    ???
-00586CF9    ???
-00586CFA    ???
-00586CFB    ???
-00586CFC    ???
-00586CFD    ???
-00586CFE    ???
-00586CFF    ???
-00586D00    ???
-00586D01    ???
-00586D02    ???
-00586D03    ???
-00586D04    ???
-00586D05    ???
-00586D06    ???
-00586D07    ???
-00586D08    ???
-00586D09    ???
-00586D0A    ???
-00586D0B    ???
-00586D0C    ???
-00586D0D    ???
-00586D0E    ???
-00586D0F    ???
-00586D10    ???
-00586D11    ???
-00586D12    ???
-00586D13    ???
-00586D14    ???
-00586D15    ???
-00586D16    ???
-00586D17    ???
-00586D18    ???
-00586D19    ???
-00586D1A    ???
-00586D1B    ???
-00586D1C    ???
-00586D1D    ???
-00586D1E    ???
-00586D1F    ???
-00586D20    ???
-00586D21    ???
-00586D22    ???
-00586D23    ???
-00586D24    ???
-00586D25    ???
-00586D26    ???
-00586D27    ???
-00586D28    ???
-00586D29    ???
-00586D2A    ???
-00586D2B    ???
-00586D2C    ???
-00586D2D    ???
-00586D2E    ???
-00586D2F    ???
-00586D30    ???
-00586D31    ???
-00586D32    ???
-00586D33    ???
-00586D34    ???
-00586D35    ???
-00586D36    ???
-00586D37    ???
-00586D38    ???
-00586D39    ???
-00586D3A    ???
-00586D3B    ???
-00586D3C    ???
-00586D3D    ???
-00586D3E    ???
-00586D3F    ???
-00586D40    ???
-00586D41    ???
-00586D42    ???
-00586D43    ???
-00586D44    ???
-00586D45    ???
-00586D46    ???
-00586D47    ???
-00586D48    ???
-00586D49    ???
-00586D4A    ???
-00586D4B    ???
-00586D4C    ???
-00586D4D    ???
-00586D4E    ???
-00586D4F    ???
-00586D50    ???
-00586D51    ???
-00586D52    ???
-00586D53    ???
-00586D54    ???
-00586D55    ???
-00586D56    ???
-00586D57    ???
-00586D58    ???
-00586D59    ???
-00586D5A    ???
-00586D5B    ???
-00586D5C    ???
-00586D5D    ???
-00586D5E    ???
-00586D5F    ???
-00586D60    ???
-00586D61    ???
-00586D62    ???
-00586D63    ???
-00586D64    ???
-00586D65    ???
-00586D66    ???
-00586D67    ???
-00586D68    ???
-00586D69    ???
-00586D6A    ???
-00586D6B    ???
-00586D6C    ???
-00586D6D    ???
-00586D6E    ???
-00586D6F    ???
-00586D70    ???
-00586D71    ???
-00586D72    ???
-00586D73    ???
-00586D74    ???
-00586D75    ???
-00586D76    ???
-00586D77    ???
-00586D78    ???
-00586D79    ???
-00586D7A    ???
-00586D7B    ???
-00586D7C    ???
-00586D7D    ???
-00586D7E    ???
-00586D7F    ???
+00586CDC    mov edi, edi
+00586CDE    push ebp
+00586CDF    mov ebp, esp
+00586CE1    push ecx
+00586CE2    push ebx
+00586CE3    mov ebx, dword ptr ss:[ebp+0x08]
+00586CE6    xor edx, edx
+00586CE8    push esi
+00586CE9    mov esi, dword ptr ss:[ebp+0x0C]
+00586CEC    push edi
+00586CED    mov cl, byte ptr ds:[ebx]
+00586CEF    push 0x03
+00586CF1    mov al, cl
+00586CF3    pop edi
+00586CF4    cmp cl, byte ptr ds:[edx+0x5AA828]
+00586CFA    jz 0x00586D04
+00586CFC    cmp cl, byte ptr ds:[edx+0x5AA82C]
+00586D02    jnz 0x00586D5E
+00586D04    mov eax, dword ptr ds:[esi]
+00586D06    mov cl, byte ptr ds:[eax]
+00586D08    inc eax
+00586D09    inc edx
+00586D0A    mov dword ptr ds:[esi], eax
+00586D0C    mov byte ptr ds:[ebx], cl
+00586D0E    mov al, cl
+00586D10    cmp edx, edi
+00586D12    jnz 0x00586CF4
+00586D14    push ecx
+00586D15    mov ecx, esi
+00586D17    call 0x0057F145
+00586D1C    mov eax, dword ptr ds:[esi]
+00586D1E    mov dword ptr ss:[ebp-0x04], eax
+00586D21    mov cl, byte ptr ds:[eax]
+00586D23    inc eax
+00586D24    mov dword ptr ds:[esi], eax
+00586D26    xor edx, edx
+00586D28    mov byte ptr ds:[ebx], cl
+00586D2A    mov al, cl
+00586D2C    cmp cl, byte ptr ds:[edx+0x5AA830]
+00586D32    jz 0x00586D3C
+00586D34    cmp cl, byte ptr ds:[edx+0x5AA838]
+00586D3A    jnz 0x00586D6E
+00586D3C    mov eax, dword ptr ds:[esi]
+00586D3E    mov cl, byte ptr ds:[eax]
+00586D40    inc eax
+00586D41    inc edx
+00586D42    mov dword ptr ds:[esi], eax
+00586D44    mov byte ptr ds:[ebx], cl
+00586D46    mov al, cl
+00586D48    cmp edx, 0x05
+00586D4B    jnz 0x00586D2C
+00586D4D    push ecx
+00586D4E    mov ecx, esi
+00586D50    call 0x0057F145
+00586D55    mov eax, edi
+00586D57    pop edi
+00586D58    pop esi
+00586D59    pop ebx
+00586D5A    mov esp, ebp
+00586D5C    pop ebp
+00586D5D    ret
+00586D5E    push eax
+00586D5F    mov ecx, esi
+00586D61    call 0x0057F145
+00586D66    mov eax, dword ptr ss:[ebp+0x10]
+00586D69    push 0x07
+00586D6B    pop edi
+00586D6C    jmp 0x00586D79
+00586D6E    push eax
+00586D6F    mov ecx, esi
+00586D71    call 0x0057F145
+00586D76    mov eax, dword ptr ss:[ebp-0x04]
+00586D79    mov byte ptr ds:[ebx], 0x00
+00586D7C    mov dword ptr ds:[esi], eax
+00586D7E    jmp 0x00586D55

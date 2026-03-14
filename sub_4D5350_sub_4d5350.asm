@@ -1,98 +1,46 @@
-004D5350    ???
-004D5351    ???
-004D5352    ???
-004D5353    ???
-004D5354    ???
-004D5355    ???
-004D5356    ???
-004D5357    ???
-004D5358    ???
-004D5359    ???
-004D535A    ???
-004D535B    ???
-004D535C    ???
-004D535D    ???
-004D535E    ???
-004D535F    ???
-004D5360    ???
-004D5361    ???
-004D5362    ???
-004D5363    ???
-004D5364    ???
-004D5365    ???
-004D5366    ???
-004D5367    ???
-004D5368    ???
-004D5369    ???
-004D536A    ???
-004D536B    ???
-004D536C    ???
-004D536D    ???
-004D536E    ???
-004D536F    ???
-004D5370    ???
-004D5371    ???
-004D5372    ???
-004D5373    ???
-004D5374    ???
-004D5375    ???
-004D5376    ???
-004D5377    ???
-004D5378    ???
-004D5379    ???
-004D537A    ???
-004D537B    ???
-004D537C    ???
-004D537D    ???
-004D537E    ???
-004D537F    ???
-004D5380    ???
-004D5381    ???
-004D5382    ???
-004D5383    ???
-004D5384    ???
-004D5385    ???
-004D5386    ???
-004D5387    ???
-004D5388    ???
-004D5389    ???
-004D538A    ???
-004D538B    ???
-004D538C    ???
-004D538D    ???
-004D538E    ???
-004D538F    ???
-004D5390    ???
-004D5391    ???
-004D5392    ???
-004D5393    ???
-004D5394    ???
-004D5395    ???
-004D5396    ???
-004D5397    ???
-004D5398    ???
-004D5399    ???
-004D539A    ???
-004D539B    ???
-004D539C    ???
-004D539D    ???
-004D539E    ???
-004D539F    ???
-004D53A0    ???
-004D53A1    ???
-004D53A2    ???
-004D53A3    ???
-004D53A4    ???
-004D53A5    ???
-004D53A6    ???
-004D53A7    ???
-004D53A8    ???
-004D53A9    ???
-004D53AA    ???
-004D53AB    ???
-004D53AC    ???
-004D53AD    ???
-004D53AE    ???
-004D53AF    ???
-004D53B0    ???
-004D53B1    ???
+004D5350    push ebp
+004D5351    mov ebp, esp
+004D5353    sub esp, 0x08
+004D5356    push ebx
+004D5357    push esi
+004D5358    mov esi, dword ptr ds:[ecx+0x04]
+004D535B    push edi
+004D535C    mov dword ptr ss:[ebp-0x04], edx
+004D535F    mov edi, 0x5B2591
+004D5364    test esi, esi
+004D5366    jz 0x004D53A9
+004D5368    mov ebx, dword ptr ds:[esi]
+004D536A    mov ecx, edi
+004D536C    mov esi, dword ptr ds:[esi+0x04]
+004D536F    push edx
+004D5370    mov eax, dword ptr ds:[ebx]
+004D5372    test eax, eax
+004D5374    cmovnz ecx, eax
+004D5377    push ecx
+004D5378    call 0x0057EB20
+004D537D    mov edx, dword ptr ss:[ebp-0x04]
+004D5380    add esp, 0x08
+004D5383    test eax, eax
+004D5385    jnz 0x004D5364
+004D5387    mov eax, dword ptr ds:[ebx+0x04]
+004D538A    test eax, eax
+004D538C    push dword ptr ss:[ebp+0x08]
+004D538F    cmovnz edi, eax
+004D5392    push 0x5EFC90
+004D5397    push edi
+004D5398    call 0x0048D8D0
+004D539D    add esp, 0x0C
+004D53A0    mov al, 0x01
+004D53A2    pop edi
+004D53A3    pop esi
+004D53A4    pop ebx
+004D53A5    mov esp, ebp
+004D53A7    pop ebp
+004D53A8    ret
+004D53A9    pop edi
+004D53AA    pop esi
+004D53AB    xor al, al
+004D53AD    pop ebx
+004D53AE    mov esp, ebp
+004D53B0    pop ebp
+004D53B1    ret

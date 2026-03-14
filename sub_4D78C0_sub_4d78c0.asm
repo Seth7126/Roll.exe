@@ -1,27 +1,12 @@
-004D78C0    ???
-004D78C1    ???
-004D78C2    ???
-004D78C3    ???
-004D78C4    ???
-004D78C5    ???
-004D78C6    ???
-004D78C7    ???
-004D78C8    ???
-004D78C9    ???
-004D78CA    ???
-004D78CB    ???
-004D78CC    ???
-004D78CD    ???
-004D78CE    ???
-004D78CF    ???
-004D78D0    ???
-004D78D1    ???
-004D78D2    ???
-004D78D3    ???
-004D78D4    ???
-004D78D5    ???
-004D78D6    ???
-004D78D7    ???
-004D78D8    ???
-004D78D9    ???
-004D78DA    ???
+004D78C0    push ebp
+004D78C1    mov ebp, esp
+004D78C3    and esp, 0xFFFFFFF8
+004D78C6    mov eax, dword ptr ss:[ebp+0x08]
+004D78C9    push dword ptr ss:[ebp+0x0C]
+004D78CC    push dword ptr ds:[eax]
+004D78CE    push eax
+004D78CF    call 0x004D7860
+004D78D4    add esp, 0x0C
+004D78D7    mov esp, ebp
+004D78D9    pop ebp
+004D78DA    ret

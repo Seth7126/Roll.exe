@@ -1,59 +1,28 @@
-0057C10D    ???
-0057C10E    ???
-0057C10F    ???
-0057C110    ???
-0057C111    ???
-0057C112    ???
-0057C113    ???
-0057C114    ???
-0057C115    ???
-0057C116    ???
-0057C117    ???
-0057C118    ???
-0057C119    ???
-0057C11A    ???
-0057C11B    ???
-0057C11C    ???
-0057C11D    ???
-0057C11E    ???
-0057C11F    ???
-0057C120    ???
-0057C121    ???
-0057C122    ???
-0057C123    ???
-0057C124    ???
-0057C125    ???
-0057C126    ???
-0057C127    ???
-0057C128    ???
-0057C129    ???
-0057C12A    ???
-0057C12B    ???
-0057C12C    ???
-0057C12D    ???
-0057C12E    ???
-0057C12F    ???
-0057C130    ???
-0057C131    ???
-0057C132    ???
-0057C133    ???
-0057C134    ???
-0057C135    ???
-0057C136    ???
-0057C137    ???
-0057C138    ???
-0057C139    ???
-0057C13A    ???
-0057C13B    ???
-0057C13C    ???
-0057C13D    ???
-0057C13E    ???
-0057C13F    ???
-0057C140    ???
-0057C141    ???
-0057C142    ???
-0057C143    ???
-0057C144    ???
-0057C145    ???
-0057C146    ???
-0057C147    ???
+0057C10D    mov edi, edi
+0057C10F    push ebp
+0057C110    mov ebp, esp
+0057C112    push esi
+0057C113    xor esi, esi
+0057C115    cmp dword ptr ss:[ebp+0x10], esi
+0057C118    jle 0x0057C145
+0057C11A    push edi
+0057C11B    mov edi, dword ptr ss:[ebp+0x14]
+0057C11E    push dword ptr ss:[ebp+0x0C]
+0057C121    mov ecx, dword ptr ss:[ebp+0x08]
+0057C124    call 0x0057E75F
+0057C129    test al, al
+0057C12B    jz 0x0057C133
+0057C12D    inc dword ptr ds:[edi]
+0057C12F    mov eax, dword ptr ds:[edi]
+0057C131    jmp 0x0057C139
+0057C133    or dword ptr ds:[edi], 0xFFFFFFFF
+0057C136    or eax, 0xFFFFFFFF
+0057C139    cmp eax, 0xFFFFFFFF
+0057C13C    jz 0x0057C144
+0057C13E    inc esi
+0057C13F    cmp esi, dword ptr ss:[ebp+0x10]
+0057C142    jl 0x0057C11E
+0057C144    pop edi
+0057C145    pop esi
+0057C146    pop ebp
+0057C147    ret

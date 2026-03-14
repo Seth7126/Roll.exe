@@ -1,38 +1,17 @@
-00586F0C    ???
-00586F0D    ???
-00586F0E    ???
-00586F0F    ???
-00586F10    ???
-00586F11    ???
-00586F12    ???
-00586F13    ???
-00586F14    ???
-00586F15    ???
-00586F16    ???
-00586F17    ???
-00586F18    ???
-00586F19    ???
-00586F1A    ???
-00586F1B    ???
-00586F1C    ???
-00586F1D    ???
-00586F1E    ???
-00586F1F    ???
-00586F20    ???
-00586F21    ???
-00586F22    ???
-00586F23    ???
-00586F24    ???
-00586F25    ???
-00586F26    ???
-00586F27    ???
-00586F28    ???
-00586F29    ???
-00586F2A    ???
-00586F2B    ???
-00586F2C    ???
-00586F2D    ???
-00586F2E    ???
-00586F2F    ???
-00586F30    ???
-00586F31    ???
+00586F0C    mov edi, edi
+00586F0E    push esi
+00586F0F    mov esi, ecx
+00586F11    mov eax, dword ptr ds:[esi+0x04]
+00586F14    mov ecx, dword ptr ds:[esi]
+00586F16    movzx eax, byte ptr ds:[eax]
+00586F19    push eax
+00586F1A    call 0x0057F145
+00586F1F    mov eax, dword ptr ds:[esi+0x04]
+00586F22    mov byte ptr ds:[eax], 0x00
+00586F25    mov eax, dword ptr ds:[esi+0x08]
+00586F28    mov ecx, dword ptr ds:[esi]
+00586F2A    pop esi
+00586F2B    mov eax, dword ptr ds:[eax]
+00586F2D    mov dword ptr ds:[ecx], eax
+00586F2F    mov al, 0x01
+00586F31    ret

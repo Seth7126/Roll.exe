@@ -1,431 +1,202 @@
-00544890    ???
-00544891    ???
-00544892    ???
-00544893    ???
-00544894    ???
-00544895    ???
-00544896    ???
-00544897    ???
-00544898    ???
-00544899    ???
-0054489A    ???
-0054489B    ???
-0054489C    ???
-0054489D    ???
-0054489E    ???
-0054489F    ???
-005448A0    ???
-005448A1    ???
-005448A2    ???
-005448A3    ???
-005448A4    ???
-005448A5    ???
-005448A6    ???
-005448A7    ???
-005448A8    ???
-005448A9    ???
-005448AA    ???
-005448AB    ???
-005448AC    ???
-005448AD    ???
-005448AE    ???
-005448AF    ???
-005448B0    ???
-005448B1    ???
-005448B2    ???
-005448B3    ???
-005448B4    ???
-005448B5    ???
-005448B6    ???
-005448B7    ???
-005448B8    ???
-005448B9    ???
-005448BA    ???
-005448BB    ???
-005448BC    ???
-005448BD    ???
-005448BE    ???
-005448BF    ???
-005448C0    ???
-005448C1    ???
-005448C2    ???
-005448C3    ???
-005448C4    ???
-005448C5    ???
-005448C6    ???
-005448C7    ???
-005448C8    ???
-005448C9    ???
-005448CA    ???
-005448CB    ???
-005448CC    ???
-005448CD    ???
-005448CE    ???
-005448CF    ???
-005448D0    ???
-005448D1    ???
-005448D2    ???
-005448D3    ???
-005448D4    ???
-005448D5    ???
-005448D6    ???
-005448D7    ???
-005448D8    ???
-005448D9    ???
-005448DA    ???
-005448DB    ???
-005448DC    ???
-005448DD    ???
-005448DE    ???
-005448DF    ???
-005448E0    ???
-005448E1    ???
-005448E2    ???
-005448E3    ???
-005448E4    ???
-005448E5    ???
-005448E6    ???
-005448E7    ???
-005448E8    ???
-005448E9    ???
-005448EA    ???
-005448EB    ???
-005448EC    ???
-005448ED    ???
-005448EE    ???
-005448EF    ???
-005448F0    ???
-005448F1    ???
-005448F2    ???
-005448F3    ???
-005448F4    ???
-005448F5    ???
-005448F6    ???
-005448F7    ???
-005448F8    ???
-005448F9    ???
-005448FA    ???
-005448FB    ???
-005448FC    ???
-005448FD    ???
-005448FE    ???
-005448FF    ???
-00544900    ???
-00544901    ???
-00544902    ???
-00544903    ???
-00544904    ???
-00544905    ???
-00544906    ???
-00544907    ???
-00544908    ???
-00544909    ???
-0054490A    ???
-0054490B    ???
-0054490C    ???
-0054490D    ???
-0054490E    ???
-0054490F    ???
-00544910    ???
-00544911    ???
-00544912    ???
-00544913    ???
-00544914    ???
-00544915    ???
-00544916    ???
-00544917    ???
-00544918    ???
-00544919    ???
-0054491A    ???
-0054491B    ???
-0054491C    ???
-0054491D    ???
-0054491E    ???
-0054491F    ???
-00544920    ???
-00544921    ???
-00544922    ???
-00544923    ???
-00544924    ???
-00544925    ???
-00544926    ???
-00544927    ???
-00544928    ???
-00544929    ???
-0054492A    ???
-0054492B    ???
-0054492C    ???
-0054492D    ???
-0054492E    ???
-0054492F    ???
-00544930    ???
-00544931    ???
-00544932    ???
-00544933    ???
-00544934    ???
-00544935    ???
-00544936    ???
-00544937    ???
-00544938    ???
-00544939    ???
-0054493A    ???
-0054493B    ???
-0054493C    ???
-0054493D    ???
-0054493E    ???
-0054493F    ???
-00544940    ???
-00544941    ???
-00544942    ???
-00544943    ???
-00544944    ???
-00544945    ???
-00544946    ???
-00544947    ???
-00544948    ???
-00544949    ???
-0054494A    ???
-0054494B    ???
-0054494C    ???
-0054494D    ???
-0054494E    ???
-0054494F    ???
-00544950    ???
-00544951    ???
-00544952    ???
-00544953    ???
-00544954    ???
-00544955    ???
-00544956    ???
-00544957    ???
-00544958    ???
-00544959    ???
-0054495A    ???
-0054495B    ???
-0054495C    ???
-0054495D    ???
-0054495E    ???
-0054495F    ???
-00544960    ???
-00544961    ???
-00544962    ???
-00544963    ???
-00544964    ???
-00544965    ???
-00544966    ???
-00544967    ???
-00544968    ???
-00544969    ???
-0054496A    ???
-0054496B    ???
-0054496C    ???
-0054496D    ???
-0054496E    ???
-0054496F    ???
-00544970    ???
-00544971    ???
-00544972    ???
-00544973    ???
-00544974    ???
-00544975    ???
-00544976    ???
-00544977    ???
-00544978    ???
-00544979    ???
-0054497A    ???
-0054497B    ???
-0054497C    ???
-0054497D    ???
-0054497E    ???
-0054497F    ???
-00544980    ???
-00544981    ???
-00544982    ???
-00544983    ???
-00544984    ???
-00544985    ???
-00544986    ???
-00544987    ???
-00544988    ???
-00544989    ???
-0054498A    ???
-0054498B    ???
-0054498C    ???
-0054498D    ???
-0054498E    ???
-0054498F    ???
-00544990    ???
-00544991    ???
-00544992    ???
-00544993    ???
-00544994    ???
-00544995    ???
-00544996    ???
-00544997    ???
-00544998    ???
-00544999    ???
-0054499A    ???
-0054499B    ???
-0054499C    ???
-0054499D    ???
-0054499E    ???
-0054499F    ???
-005449A0    ???
-005449A1    ???
-005449A2    ???
-005449A3    ???
-005449A4    ???
-005449A5    ???
-005449A6    ???
-005449A7    ???
-005449A8    ???
-005449A9    ???
-005449AA    ???
-005449AB    ???
-005449AC    ???
-005449AD    ???
-005449AE    ???
-005449AF    ???
-005449B0    ???
-005449B1    ???
-005449B2    ???
-005449B3    ???
-005449B4    ???
-005449B5    ???
-005449B6    ???
-005449B7    ???
-005449B8    ???
-005449B9    ???
-005449BA    ???
-005449BB    ???
-005449BC    ???
-005449BD    ???
-005449BE    ???
-005449BF    ???
-005449C0    ???
-005449C1    ???
-005449C2    ???
-005449C3    ???
-005449C4    ???
-005449C5    ???
-005449C6    ???
-005449C7    ???
-005449C8    ???
-005449C9    ???
-005449CA    ???
-005449CB    ???
-005449CC    ???
-005449CD    ???
-005449CE    ???
-005449CF    ???
-005449D0    ???
-005449D1    ???
-005449D2    ???
-005449D3    ???
-005449D4    ???
-005449D5    ???
-005449D6    ???
-005449D7    ???
-005449D8    ???
-005449D9    ???
-005449DA    ???
-005449DB    ???
-005449DC    ???
-005449DD    ???
-005449DE    ???
-005449DF    ???
-005449E0    ???
-005449E1    ???
-005449E2    ???
-005449E3    ???
-005449E4    ???
-005449E5    ???
-005449E6    ???
-005449E7    ???
-005449E8    ???
-005449E9    ???
-005449EA    ???
-005449EB    ???
-005449EC    ???
-005449ED    ???
-005449EE    ???
-005449EF    ???
-005449F0    ???
-005449F1    ???
-005449F2    ???
-005449F3    ???
-005449F4    ???
-005449F5    ???
-005449F6    ???
-005449F7    ???
-005449F8    ???
-005449F9    ???
-005449FA    ???
-005449FB    ???
-005449FC    ???
-005449FD    ???
-005449FE    ???
-005449FF    ???
-00544A00    ???
-00544A01    ???
-00544A02    ???
-00544A03    ???
-00544A04    ???
-00544A05    ???
-00544A06    ???
-00544A07    ???
-00544A08    ???
-00544A09    ???
-00544A0A    ???
-00544A0B    ???
-00544A0C    ???
-00544A0D    ???
-00544A0E    ???
-00544A0F    ???
-00544A10    ???
-00544A11    ???
-00544A12    ???
-00544A13    ???
-00544A14    ???
-00544A15    ???
-00544A16    ???
-00544A17    ???
-00544A18    ???
-00544A19    ???
-00544A1A    ???
-00544A1B    ???
-00544A1C    ???
-00544A1D    ???
-00544A1E    ???
-00544A1F    ???
-00544A20    ???
-00544A21    ???
-00544A22    ???
-00544A23    ???
-00544A24    ???
-00544A25    ???
-00544A26    ???
-00544A27    ???
-00544A28    ???
-00544A29    ???
-00544A2A    ???
-00544A2B    ???
-00544A2C    ???
-00544A2D    ???
-00544A2E    ???
-00544A2F    ???
-00544A30    ???
-00544A31    ???
-00544A32    ???
-00544A33    ???
-00544A34    ???
-00544A35    ???
-00544A36    ???
-00544A37    ???
-00544A38    ???
-00544A39    ???
-00544A3A    ???
-00544A3B    ???
-00544A3C    ???
-00544A3D    ???
-00544A3E    ???
+00544890    push ebp
+00544891    mov ebp, esp
+00544893    sub esp, 0x0C
+00544896    push ebx
+00544897    mov ebx, dword ptr ss:[ebp+0x08]
+0054489A    mov eax, ebx
+0054489C    push esi
+0054489D    push edi
+0054489E    mov edi, ecx
+005448A0    mov esi, edx
+005448A2    sub eax, edi
+005448A4    sar eax, 0x02
+005448A7    push edi
+005448A8    cmp eax, 0x28
+005448AB    jle 0x005449FD
+005448B1    inc eax
+005448B2    sar eax, 0x03
+005448B5    lea ecx, ds:[eax*8]
+005448BC    shl eax, 0x02
+005448BF    mov dword ptr ss:[ebp-0x0C], ecx
+005448C2    mov dword ptr ss:[ebp-0x04], eax
+005448C5    lea ebx, ds:[eax+edi*1]
+005448C8    push ebx
+005448C9    call dword ptr ss:[ebp+0x0C]
+005448CC    add esp, 0x08
+005448CF    test al, al
+005448D1    jz 0x005448DB
+005448D3    mov ecx, dword ptr ds:[ebx]
+005448D5    mov eax, dword ptr ds:[edi]
+005448D7    mov dword ptr ds:[ebx], eax
+005448D9    mov dword ptr ds:[edi], ecx
+005448DB    mov eax, dword ptr ss:[ebp-0x0C]
+005448DE    add eax, edi
+005448E0    push ebx
+005448E1    push eax
+005448E2    call dword ptr ss:[ebp+0x0C]
+005448E5    add esp, 0x08
+005448E8    test al, al
+005448EA    jz 0x0054490D
+005448EC    mov edx, dword ptr ss:[ebp-0x0C]
+005448EF    mov eax, dword ptr ds:[ebx]
+005448F1    push edi
+005448F2    push ebx
+005448F3    mov ecx, dword ptr ds:[edx+edi*1]
+005448F6    mov dword ptr ds:[edx+edi*1], eax
+005448F9    mov dword ptr ds:[ebx], ecx
+005448FB    call dword ptr ss:[ebp+0x0C]
+005448FE    add esp, 0x08
+00544901    test al, al
+00544903    jz 0x0054490D
+00544905    mov ecx, dword ptr ds:[ebx]
+00544907    mov eax, dword ptr ds:[edi]
+00544909    mov dword ptr ds:[ebx], eax
+0054490B    mov dword ptr ds:[edi], ecx
+0054490D    mov edi, dword ptr ss:[ebp+0x0C]
+00544910    mov eax, esi
+00544912    sub eax, dword ptr ss:[ebp-0x04]
+00544915    push eax
+00544916    push esi
+00544917    mov dword ptr ss:[ebp-0x08], eax
+0054491A    call edi
+0054491C    add esp, 0x08
+0054491F    test al, al
+00544921    jz 0x0054492E
+00544923    mov edx, dword ptr ss:[ebp-0x08]
+00544926    mov ecx, dword ptr ds:[esi]
+00544928    mov eax, dword ptr ds:[edx]
+0054492A    mov dword ptr ds:[esi], eax
+0054492C    mov dword ptr ds:[edx], ecx
+0054492E    mov eax, dword ptr ss:[ebp-0x04]
+00544931    add eax, esi
+00544933    push esi
+00544934    push eax
+00544935    call edi
+00544937    add esp, 0x08
+0054493A    test al, al
+0054493C    jz 0x00544963
+0054493E    mov edx, dword ptr ss:[ebp-0x04]
+00544941    mov eax, dword ptr ds:[esi]
+00544943    push dword ptr ss:[ebp-0x08]
+00544946    mov ecx, dword ptr ds:[edx+esi*1]
+00544949    mov dword ptr ds:[edx+esi*1], eax
+0054494C    push esi
+0054494D    mov dword ptr ds:[esi], ecx
+0054494F    call edi
+00544951    add esp, 0x08
+00544954    test al, al
+00544956    jz 0x00544963
+00544958    mov edx, dword ptr ss:[ebp-0x08]
+0054495B    mov ecx, dword ptr ds:[esi]
+0054495D    mov eax, dword ptr ds:[edx]
+0054495F    mov dword ptr ds:[esi], eax
+00544961    mov dword ptr ds:[edx], ecx
+00544963    mov eax, dword ptr ss:[ebp+0x08]
+00544966    mov edi, eax
+00544968    sub eax, dword ptr ss:[ebp-0x0C]
+0054496B    sub edi, dword ptr ss:[ebp-0x04]
+0054496E    push eax
+0054496F    push edi
+00544970    mov dword ptr ss:[ebp-0x0C], eax
+00544973    call dword ptr ss:[ebp+0x0C]
+00544976    add esp, 0x08
+00544979    test al, al
+0054497B    jz 0x00544988
+0054497D    mov edx, dword ptr ss:[ebp-0x0C]
+00544980    mov ecx, dword ptr ds:[edi]
+00544982    mov eax, dword ptr ds:[edx]
+00544984    mov dword ptr ds:[edi], eax
+00544986    mov dword ptr ds:[edx], ecx
+00544988    push edi
+00544989    push dword ptr ss:[ebp+0x08]
+0054498C    call dword ptr ss:[ebp+0x0C]
+0054498F    add esp, 0x08
+00544992    test al, al
+00544994    jz 0x005449BA
+00544996    mov edx, dword ptr ss:[ebp+0x08]
+00544999    mov eax, dword ptr ds:[edi]
+0054499B    push dword ptr ss:[ebp-0x0C]
+0054499E    mov ecx, dword ptr ds:[edx]
+005449A0    mov dword ptr ds:[edx], eax
+005449A2    push edi
+005449A3    mov dword ptr ds:[edi], ecx
+005449A5    call dword ptr ss:[ebp+0x0C]
+005449A8    add esp, 0x08
+005449AB    test al, al
+005449AD    jz 0x005449BA
+005449AF    mov edx, dword ptr ss:[ebp-0x0C]
+005449B2    mov ecx, dword ptr ds:[edi]
+005449B4    mov eax, dword ptr ds:[edx]
+005449B6    mov dword ptr ds:[edi], eax
+005449B8    mov dword ptr ds:[edx], ecx
+005449BA    push ebx
+005449BB    push esi
+005449BC    call dword ptr ss:[ebp+0x0C]
+005449BF    add esp, 0x08
+005449C2    test al, al
+005449C4    jz 0x005449CE
+005449C6    mov ecx, dword ptr ds:[esi]
+005449C8    mov eax, dword ptr ds:[ebx]
+005449CA    mov dword ptr ds:[esi], eax
+005449CC    mov dword ptr ds:[ebx], ecx
+005449CE    push esi
+005449CF    push edi
+005449D0    call dword ptr ss:[ebp+0x0C]
+005449D3    add esp, 0x08
+005449D6    test al, al
+005449D8    jz 0x00544A38
+005449DA    mov ecx, dword ptr ds:[edi]
+005449DC    mov eax, dword ptr ds:[esi]
+005449DE    push ebx
+005449DF    mov dword ptr ds:[edi], eax
+005449E1    push esi
+005449E2    mov dword ptr ds:[esi], ecx
+005449E4    call dword ptr ss:[ebp+0x0C]
+005449E7    add esp, 0x08
+005449EA    test al, al
+005449EC    jz 0x00544A38
+005449EE    mov ecx, dword ptr ds:[esi]
+005449F0    mov eax, dword ptr ds:[ebx]
+005449F2    pop edi
+005449F3    mov dword ptr ds:[esi], eax
+005449F5    pop esi
+005449F6    mov dword ptr ds:[ebx], ecx
+005449F8    pop ebx
+005449F9    mov esp, ebp
+005449FB    pop ebp
+005449FC    ret
+005449FD    push esi
+005449FE    call dword ptr ss:[ebp+0x0C]
+00544A01    add esp, 0x08
+00544A04    test al, al
+00544A06    jz 0x00544A10
+00544A08    mov ecx, dword ptr ds:[esi]
+00544A0A    mov eax, dword ptr ds:[edi]
+00544A0C    mov dword ptr ds:[esi], eax
+00544A0E    mov dword ptr ds:[edi], ecx
+00544A10    push esi
+00544A11    push ebx
+00544A12    call dword ptr ss:[ebp+0x0C]
+00544A15    add esp, 0x08
+00544A18    test al, al
+00544A1A    jz 0x00544A38
+00544A1C    mov ecx, dword ptr ds:[ebx]
+00544A1E    mov eax, dword ptr ds:[esi]
+00544A20    push edi
+00544A21    mov dword ptr ds:[ebx], eax
+00544A23    push esi
+00544A24    mov dword ptr ds:[esi], ecx
+00544A26    call dword ptr ss:[ebp+0x0C]
+00544A29    add esp, 0x08
+00544A2C    test al, al
+00544A2E    jz 0x00544A38
+00544A30    mov ecx, dword ptr ds:[esi]
+00544A32    mov eax, dword ptr ds:[edi]
+00544A34    mov dword ptr ds:[esi], eax
+00544A36    mov dword ptr ds:[edi], ecx
+00544A38    pop edi
+00544A39    pop esi
+00544A3A    pop ebx
+00544A3B    mov esp, ebp
+00544A3D    pop ebp
+00544A3E    ret

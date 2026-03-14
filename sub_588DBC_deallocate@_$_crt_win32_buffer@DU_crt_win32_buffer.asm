@@ -1,26 +1,11 @@
-00588DBC    ???
-00588DBD    ???
-00588DBE    ???
-00588DBF    ???
-00588DC0    ???
-00588DC1    ???
-00588DC2    ???
-00588DC3    ???
-00588DC4    ???
-00588DC5    ???
-00588DC6    ???
-00588DC7    ???
-00588DC8    ???
-00588DC9    ???
-00588DCA    ???
-00588DCB    ???
-00588DCC    ???
-00588DCD    ???
-00588DCE    ???
-00588DCF    ???
-00588DD0    ???
-00588DD1    ???
-00588DD2    ???
-00588DD3    ???
-00588DD4    ???
-00588DD5    ???
+00588DBC    mov edi, edi
+00588DBE    push esi
+00588DBF    mov esi, ecx
+00588DC1    cmp byte ptr ds:[esi+0x14], 0x00
+00588DC5    jz 0x00588DD4
+00588DC7    push dword ptr ds:[esi+0x08]
+00588DCA    call 0x0057FFE4
+00588DCF    pop ecx
+00588DD0    mov byte ptr ds:[esi+0x14], 0x00
+00588DD4    pop esi
+00588DD5    ret

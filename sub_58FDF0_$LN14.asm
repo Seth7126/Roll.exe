@@ -1,8 +1,4 @@
-0058FDF0    ???
-0058FDF1    ???
-0058FDF2    ???
-0058FDF3    ???
-0058FDF4    ???
-0058FDF5    ???
-0058FDF6    ???
-0058FDF7    ???
+0058FDF0    push esi
+0058FDF1    call 0x005938EF
+0058FDF6    pop ecx
+0058FDF7    ret

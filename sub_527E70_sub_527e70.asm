@@ -1,136 +1,67 @@
-00527E70    ???
-00527E71    ???
-00527E72    ???
-00527E73    ???
-00527E74    ???
-00527E75    ???
-00527E76    ???
-00527E77    ???
-00527E78    ???
-00527E79    ???
-00527E7A    ???
-00527E7B    ???
-00527E7C    ???
-00527E7D    ???
-00527E7E    ???
-00527E7F    ???
-00527E80    ???
-00527E81    ???
-00527E82    ???
-00527E83    ???
-00527E84    ???
-00527E85    ???
-00527E86    ???
-00527E87    ???
-00527E88    ???
-00527E89    ???
-00527E8A    ???
-00527E8B    ???
-00527E8C    ???
-00527E8D    ???
-00527E8E    ???
-00527E8F    ???
-00527E90    ???
-00527E91    ???
-00527E92    ???
-00527E93    ???
-00527E94    ???
-00527E95    ???
-00527E96    ???
-00527E97    ???
-00527E98    ???
-00527E99    ???
-00527E9A    ???
-00527E9B    ???
-00527E9C    ???
-00527E9D    ???
-00527E9E    ???
-00527E9F    ???
-00527EA0    ???
-00527EA1    ???
-00527EA2    ???
-00527EA3    ???
-00527EA4    ???
-00527EA5    ???
-00527EA6    ???
-00527EA7    ???
-00527EA8    ???
-00527EA9    ???
-00527EAA    ???
-00527EAB    ???
-00527EAC    ???
-00527EAD    ???
-00527EAE    ???
-00527EAF    ???
-00527EB0    ???
-00527EB1    ???
-00527EB2    ???
-00527EB3    ???
-00527EB4    ???
-00527EB5    ???
-00527EB6    ???
-00527EB7    ???
-00527EB8    ???
-00527EB9    ???
-00527EBA    ???
-00527EBB    ???
-00527EBC    ???
-00527EBD    ???
-00527EBE    ???
-00527EBF    ???
-00527EC0    ???
-00527EC1    ???
-00527EC2    ???
-00527EC3    ???
-00527EC4    ???
-00527EC5    ???
-00527EC6    ???
-00527EC7    ???
-00527EC8    ???
-00527EC9    ???
-00527ECA    ???
-00527ECB    ???
-00527ECC    ???
-00527ECD    ???
-00527ECE    ???
-00527ECF    ???
-00527ED0    ???
-00527ED1    ???
-00527ED2    ???
-00527ED3    ???
-00527ED4    ???
-00527ED5    ???
-00527ED6    ???
-00527ED7    ???
-00527ED8    ???
-00527ED9    ???
-00527EDA    ???
-00527EDB    ???
-00527EDC    ???
-00527EDD    ???
-00527EDE    ???
-00527EDF    ???
-00527EE0    ???
-00527EE1    ???
-00527EE2    ???
-00527EE3    ???
-00527EE4    ???
-00527EE5    ???
-00527EE6    ???
-00527EE7    ???
-00527EE8    ???
-00527EE9    ???
-00527EEA    ???
-00527EEB    ???
-00527EEC    ???
-00527EED    ???
-00527EEE    ???
-00527EEF    ???
-00527EF0    ???
-00527EF1    ???
-00527EF2    ???
-00527EF3    ???
-00527EF4    ???
-00527EF5    ???
-00527EF6    ???
-00527EF7    ???
+00527E70    push ebp
+00527E71    mov ebp, esp
+00527E73    push ecx
+00527E74    push ebx
+00527E75    push esi
+00527E76    push edi
+00527E77    mov edi, ecx
+00527E79    mov dword ptr ss:[ebp-0x04], edx
+00527E7C    mov eax, dword ptr ds:[edi]
+00527E7E    mov bl, byte ptr ds:[eax]
+00527E80    lea edx, ds:[eax+0x01]
+00527E83    movzx esi, bl
+00527E86    and esi, 0x7F
+00527E89    mov dword ptr ds:[edi], edx
+00527E8B    test bl, bl
+00527E8D    jns 0x00527EDA
+00527E8F    mov cl, byte ptr ds:[edx]
+00527E91    inc edx
+00527E92    movzx eax, cl
+00527E95    and eax, 0x7F
+00527E98    mov dword ptr ds:[edi], edx
+00527E9A    shl eax, 0x07
+00527E9D    or esi, eax
+00527E9F    test cl, cl
+00527EA1    jns 0x00527EDA
+00527EA3    mov cl, byte ptr ds:[edx]
+00527EA5    inc edx
+00527EA6    movzx eax, cl
+00527EA9    and eax, 0x7F
+00527EAC    mov dword ptr ds:[edi], edx
+00527EAE    shl eax, 0x0E
+00527EB1    or esi, eax
+00527EB3    test cl, cl
+00527EB5    jns 0x00527EDA
+00527EB7    mov cl, byte ptr ds:[edx]
+00527EB9    inc edx
+00527EBA    movzx eax, cl
+00527EBD    and eax, 0x7F
+00527EC0    mov dword ptr ds:[edi], edx
+00527EC2    shl eax, 0x15
+00527EC5    or esi, eax
+00527EC7    test cl, cl
+00527EC9    jns 0x00527EDA
+00527ECB    mov cl, byte ptr ds:[edx]
+00527ECD    lea eax, ds:[edx+0x01]
+00527ED0    mov dword ptr ds:[edi], eax
+00527ED2    movzx eax, cl
+00527ED5    shl eax, 0x1C
+00527ED8    or esi, eax
+00527EDA    test esi, esi
+00527EDC    jnz 0x00527EE7
+00527EDE    pop edi
+00527EDF    pop esi
+00527EE0    xor eax, eax
+00527EE2    pop ebx
+00527EE3    mov esp, ebp
+00527EE5    pop ebp
+00527EE6    ret
+00527EE7    mov eax, dword ptr ss:[ebp-0x04]
+00527EEA    pop edi
+00527EEB    mov eax, dword ptr ds:[eax+0x1C]
+00527EEE    mov eax, dword ptr ds:[eax+esi*4-0x04]
+00527EF2    pop esi
+00527EF3    pop ebx
+00527EF4    mov esp, ebp
+00527EF6    pop ebp
+00527EF7    ret

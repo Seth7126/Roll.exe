@@ -1,2 +1,2 @@
-00577BAE    ???
-00577BAF    ???
+00577BAE    leave
+00577BAF    ret

@@ -1,82 +1,31 @@
-00585A18    ???
-00585A19    ???
-00585A1A    ???
-00585A1B    ???
-00585A1C    ???
-00585A1D    ???
-00585A1E    ???
-00585A1F    ???
-00585A20    ???
-00585A21    ???
-00585A22    ???
-00585A23    ???
-00585A24    ???
-00585A25    ???
-00585A26    ???
-00585A27    ???
-00585A28    ???
-00585A29    ???
-00585A2A    ???
-00585A2B    ???
-00585A2C    ???
-00585A2D    ???
-00585A2E    ???
-00585A2F    ???
-00585A30    ???
-00585A31    ???
-00585A32    ???
-00585A33    ???
-00585A34    ???
-00585A35    ???
-00585A36    ???
-00585A37    ???
-00585A38    ???
-00585A39    ???
-00585A3A    ???
-00585A3B    ???
-00585A3C    ???
-00585A3D    ???
-00585A3E    ???
-00585A3F    ???
-00585A40    ???
-00585A41    ???
-00585A42    ???
-00585A43    ???
-00585A44    ???
-00585A45    ???
-00585A46    ???
-00585A47    ???
-00585A48    ???
-00585A49    ???
-00585A4A    ???
-00585A4B    ???
-00585A4C    ???
-00585A4D    ???
-00585A4E    ???
-00585A4F    ???
-00585A50    ???
-00585A51    ???
-00585A52    ???
-00585A53    ???
-00585A54    ???
-00585A55    ???
-00585A56    ???
-00585A57    ???
-00585A58    ???
-00585A59    ???
-00585A5A    ???
-00585A5B    ???
-00585A5C    ???
-00585A5D    ???
-00585A5E    ???
-00585A5F    ???
-00585A60    ???
-00585A61    ???
-00585A62    ???
-00585A63    ???
-00585A64    ???
-00585A65    ???
-00585A66    ???
-00585A67    ???
-00585A68    ???
-00585A69    ???
+00585A18    mov edi, edi
+00585A1A    push ebx
+00585A1B    push esi
+00585A1C    mov esi, ecx
+00585A1E    call 0x00589E17
+00585A23    movzx edx, byte ptr ds:[esi+0x14]
+00585A27    xor ebx, ebx
+00585A29    cmp word ptr ds:[eax+edx*2], bx
+00585A2D    jnl 0x00585A63
+00585A2F    mov eax, dword ptr ds:[esi+0x08]
+00585A32    mov cl, byte ptr ds:[eax]
+00585A34    test cl, cl
+00585A36    jnz 0x00585A5C
+00585A38    mov dword ptr ds:[esi+0x10], ebx
+00585A3B    xor al, al
+00585A3D    mov word ptr ds:[esi+0x14], bx
+00585A41    mov byte ptr ds:[esi+0x16], bl
+00585A44    mov dword ptr ds:[esi+0x18], ebx
+00585A47    mov dword ptr ds:[esi+0x1C], ebx
+00585A4A    mov dword ptr ds:[esi+0x20], ebx
+00585A4D    mov byte ptr ds:[esi+0x24], bl
+00585A50    mov dword ptr ds:[esi+0x28], ebx
+00585A53    mov dword ptr ds:[esi+0x0C], 0x2A
+00585A5A    jmp 0x00585A65
+00585A5C    inc eax
+00585A5D    mov byte ptr ds:[esi+0x15], cl
+00585A60    mov dword ptr ds:[esi+0x08], eax
+00585A63    mov al, 0x01
+00585A65    pop esi
+00585A66    pop ebx
+00585A67    ret 0x04

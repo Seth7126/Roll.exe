@@ -1,13 +1,7 @@
-0058ECBA    ???
-0058ECBB    ???
-0058ECBC    ???
-0058ECBD    ???
-0058ECBE    ???
-0058ECBF    ???
-0058ECC0    ???
-0058ECC1    ???
-0058ECC2    ???
-0058ECC3    ???
-0058ECC4    ???
-0058ECC5    ???
-0058ECC6    ???
+0058ECBA    mov edi, edi
+0058ECBC    push ebp
+0058ECBD    mov ebp, esp
+0058ECBF    fld qword ptr ss:[ebp+0x08]
+0058ECC2    fadd qword ptr ss:[ebp+0x10]
+0058ECC5    pop ebp
+0058ECC6    ret

@@ -1,57 +1,25 @@
-004F5B10    ???
-004F5B11    ???
-004F5B12    ???
-004F5B13    ???
-004F5B14    ???
-004F5B15    ???
-004F5B16    ???
-004F5B17    ???
-004F5B18    ???
-004F5B19    ???
-004F5B1A    ???
-004F5B1B    ???
-004F5B1C    ???
-004F5B1D    ???
-004F5B1E    ???
-004F5B1F    ???
-004F5B20    ???
-004F5B21    ???
-004F5B22    ???
-004F5B23    ???
-004F5B24    ???
-004F5B25    ???
-004F5B26    ???
-004F5B27    ???
-004F5B28    ???
-004F5B29    ???
-004F5B2A    ???
-004F5B2B    ???
-004F5B2C    ???
-004F5B2D    ???
-004F5B2E    ???
-004F5B2F    ???
-004F5B30    ???
-004F5B31    ???
-004F5B32    ???
-004F5B33    ???
-004F5B34    ???
-004F5B35    ???
-004F5B36    ???
-004F5B37    ???
-004F5B38    ???
-004F5B39    ???
-004F5B3A    ???
-004F5B3B    ???
-004F5B3C    ???
-004F5B3D    ???
-004F5B3E    ???
-004F5B3F    ???
-004F5B40    ???
-004F5B41    ???
-004F5B42    ???
-004F5B43    ???
-004F5B44    ???
-004F5B45    ???
-004F5B46    ???
-004F5B47    ???
-004F5B48    ???
+004F5B10    push ebp
+004F5B11    mov ebp, esp
+004F5B13    push ecx
+004F5B14    mov edx, dword ptr ss:[ebp+0x08]
+004F5B17    push esi
+004F5B18    mov esi, ecx
+004F5B1A    lea ecx, ds:[esi+0x08]
+004F5B1D    mov dword ptr ss:[ebp-0x04], esi
+004F5B20    mov eax, dword ptr ds:[edx]
+004F5B22    mov dword ptr ds:[esi], eax
+004F5B24    mov eax, dword ptr ds:[edx+0x04]
+004F5B27    mov dword ptr ds:[esi+0x04], eax
+004F5B2A    mov eax, dword ptr ds:[edx+0x08]
+004F5B2D    mov dword ptr ds:[ecx], eax
+004F5B2F    test eax, eax
+004F5B31    jz 0x004F5B40
+004F5B33    cmp byte ptr ds:[eax], 0x00
+004F5B36    jz 0x004F5B40
+004F5B38    call 0x0048A080
+004F5B3D    inc dword ptr ds:[eax+0x04]
+004F5B40    mov eax, esi
+004F5B42    pop esi
+004F5B43    mov esp, ebp
+004F5B45    pop ebp
+004F5B46    ret 0x04

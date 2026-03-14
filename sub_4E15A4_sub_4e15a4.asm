@@ -1,171 +1,134 @@
-004E15A4    ???
-004E15A5    ???
-004E15A6    ???
-004E15A7    ???
-004E15A8    ???
-004E15A9    ???
-004E15AA    ???
-004E15AB    ???
-004E15AC    ???
-004E15AD    ???
-004E15AE    ???
-004E15AF    ???
-004E15B0    ???
-004E15B1    ???
-004E15B2    ???
-004E15B3    ???
-004E15B4    ???
-004E15B5    ???
-004E15B6    ???
-004E15B7    ???
-004E15B8    ???
-004E15B9    ???
-004E15BA    ???
-004E15BB    ???
-004E15BC    ???
-004E15BD    ???
-004E15BE    ???
-004E15BF    ???
-004E15C0    ???
-004E15C1    ???
-004E15C2    ???
-004E15C3    ???
-004E15C4    ???
-004E15C5    ???
-004E15C6    ???
-004E15C7    ???
-004E15C8    ???
-004E15C9    ???
-004E15CA    ???
-004E15CB    ???
-004E15CC    ???
-004E15CD    ???
-004E15CE    ???
-004E15CF    ???
-004E15D0    ???
-004E15D1    ???
-004E15D2    ???
-004E15D3    ???
-004E15D4    ???
-004E15D5    ???
-004E15D6    ???
-004E15D7    ???
-004E15D8    ???
-004E15D9    ???
-004E15DA    ???
-004E15DB    ???
-004E15DC    ???
-004E15DD    ???
-004E15DE    ???
-004E15DF    ???
-004E15E0    ???
-004E15E1    ???
-004E15E2    ???
-004E15E3    ???
-004E15E4    ???
-004E15E5    ???
-004E15E6    ???
-004E15E7    ???
-004E15E8    ???
-004E15E9    ???
-004E15EA    ???
-004E15EB    ???
-004E15EC    ???
-004E15ED    ???
-004E15EE    ???
-004E15EF    ???
-004E15F0    ???
-004E15F1    ???
-004E15F2    ???
-004E15F3    ???
-004E15F4    ???
-004E15F5    ???
-004E15F6    ???
-004E15F7    ???
-004E15F8    ???
-004E15F9    ???
-004E15FA    ???
-004E15FB    ???
-004E15FC    ???
-004E15FD    ???
-004E15FE    ???
-004E15FF    ???
-004E1600    ???
-004E1601    ???
-004E1602    ???
-004E1603    ???
-004E1604    ???
-004E1605    ???
-004E1606    ???
-004E1607    ???
-004E1608    ???
-004E1609    ???
-004E160A    ???
-004E160B    ???
-004E160C    ???
-004E160D    ???
-004E160E    ???
-004E160F    ???
-004E1610    ???
-004E1611    ???
-004E1612    ???
-004E1613    ???
-004E1614    ???
-004E1615    ???
-004E1616    ???
-004E1617    ???
-004E1618    ???
-004E1619    ???
-004E161A    ???
-004E161B    ???
-004E161C    ???
-004E161D    ???
-004E161E    ???
-004E161F    ???
-004E1620    ???
-004E1621    ???
-004E1622    ???
-004E1623    ???
-004E1624    ???
-004E1625    ???
-004E1626    ???
-004E1627    ???
-004E1628    ???
-004E1629    ???
-004E162A    ???
-004E162B    ???
-004E162C    ???
-004E162D    ???
-004E162E    ???
-004E162F    ???
-004E1630    ???
-004E1631    ???
-004E1632    ???
-004E1633    ???
-004E1634    ???
-004E1635    ???
-004E1636    ???
-004E1637    ???
-004E1638    ???
-004E1639    ???
-004E163A    ???
-004E163B    ???
-004E163C    ???
-004E163D    ???
-004E163E    ???
-004E163F    ???
-004E1640    ???
-004E1641    ???
-004E1642    ???
-004E1643    ???
-004E1644    ???
-004E1645    ???
-004E1646    ???
-004E1647    ???
-004E1648    ???
-004E1649    ???
-004E164A    ???
-004E164B    ???
-004E164C    ???
-004E164D    ???
-004E164E    ???
+004E15A6    dec esi
+004E15A7    add byte ptr ds:[eax], al
+004E15A9    add dword ptr ds:[eax], eax
+004E15AB    add al, byte ptr ds:[ebx]
+004E15AD    add al, byte ptr ds:[eax*1+0x6060604]
+004E15B4    push es
+004E15B5    push es
+004E15B6    push es
+004E15B7    push es
+004E15B8    push es
+004E15B9    push es
+004E15BA    push es
+004E15BB    push es
+004E15BC    push es
+004E15BD    push es
+004E15BE    push es
+004E15BF    push es
+004E15C0    push es
+004E15C1    push es
+004E15C2    push es
+004E15C3    push es
+004E15C4    push es
+004E15C5    push es
+004E15C6    push es
+004E15C7    push es
+004E15C8    push es
+004E15C9    push es
+004E15CA    push es
+004E15CB    push es
+004E15CC    push es
+004E15CD    push es
+004E15CE    push es
+004E15CF    push es
+004E15D0    push es
+004E15D1    push es
+004E15D2    push es
+004E15D3    push es
+004E15D4    push es
+004E15D5    push es
+004E15D6    push es
+004E15D7    push es
+004E15D8    push es
+004E15D9    push es
+004E15DA    push es
+004E15DB    push es
+004E15DC    push es
+004E15DD    push es
+004E15DE    push es
+004E15DF    push es
+004E15E0    push es
+004E15E1    push es
+004E15E2    push es
+004E15E3    push es
+004E15E4    push es
+004E15E5    push es
+004E15E6    push es
+004E15E7    push es
+004E15E8    push es
+004E15E9    push es
+004E15EA    push es
+004E15EB    push es
+004E15EC    push es
+004E15ED    add byte ptr ds:[ecx], al
+004E15EF    nop
+004E15F0    mov word ptr ds:[ebx], ss
+004E15F2    dec esi
+004E15F3    add ah, cl
+004E15F5    adc al, 0x4E
+004E15F7    add byte ptr ds:[edi+0x14004E14], ch
+004E15FD    adc cl, byte ptr ds:[esi]
+004E1600    int 0x0F
+004E1602    dec esi
+004E1603    add byte ptr ds:[ecx+0x0E], dl
+004E1606    dec esi
+004E1607    add byte ptr ss:[ebp-0x33FFB1F0], dl
+004E160D    adc al, 0x4E
+004E160F    add byte ptr ds:[eax], al
+004E1611    pop es
+004E1612    pop es
+004E1613    pop es
+004E1614    pop es
+004E1615    pop es
+004E1616    pop es
+004E1617    add dword ptr ds:[ecx], eax
+004E1619    pop es
+004E161A    add al, byte ptr ds:[edi]
+004E161C    pop es
+004E161D    pop es
+004E161E    pop es
+004E161F    pop es
+004E1620    pop es
+004E1621    pop es
+004E1622    pop es
+004E1623    pop es
+004E1624    pop es
+004E1625    pop es
+004E1626    pop es
+004E1627    pop es
+004E1628    pop es
+004E1629    pop es
+004E162A    pop es
+004E162B    pop es
+004E162C    pop es
+004E162D    pop es
+004E162E    pop es
+004E162F    pop es
+004E1630    pop es
+004E1631    pop es
+004E1632    pop es
+004E1633    pop es
+004E1634    pop es
+004E1635    pop es
+004E1636    pop es
+004E1637    add dword ptr ds:[ecx], eax
+004E1639    add eax, dword ptr ds:[edi]
+004E163B    pop es
+004E163C    pop es
+004E163D    pop es
+004E163E    pop es
+004E163F    pop es
+004E1640    pop es
+004E1641    pop es
+004E1642    pop es
+004E1643    pop es
+004E1644    pop es
+004E1645    pop es
+004E1646    pop es
+004E1647    pop es
+004E1648    pop es
+004E1649    pop es
+004E164A    pop es
+004E164B    add al, 0x05
+004E164D    push es
+004E164E    int3

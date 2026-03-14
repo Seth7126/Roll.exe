@@ -1,16 +1,7 @@
-0056E8C0    ???
-0056E8C1    ???
-0056E8C2    ???
-0056E8C3    ???
-0056E8C4    ???
-0056E8C5    ???
-0056E8C6    ???
-0056E8C7    ???
-0056E8C8    ???
-0056E8C9    ???
-0056E8CA    ???
-0056E8CB    ???
-0056E8CC    ???
-0056E8CD    ???
-0056E8CE    ???
-0056E8CF    ???
+0056E8C0    push ebp
+0056E8C1    mov ebp, esp
+0056E8C3    mov eax, dword ptr ss:[ebp+0x08]
+0056E8C6    mov eax, dword ptr ds:[eax+0x14]
+0056E8C9    add eax, 0x5000000
+0056E8CE    pop ebp
+0056E8CF    ret

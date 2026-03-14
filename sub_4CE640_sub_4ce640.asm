@@ -1,64 +1,29 @@
-004CE640    ???
-004CE641    ???
-004CE642    ???
-004CE643    ???
-004CE644    ???
-004CE645    ???
-004CE646    ???
-004CE647    ???
-004CE648    ???
-004CE649    ???
-004CE64A    ???
-004CE64B    ???
-004CE64C    ???
-004CE64D    ???
-004CE64E    ???
-004CE64F    ???
-004CE650    ???
-004CE651    ???
-004CE652    ???
-004CE653    ???
-004CE654    ???
-004CE655    ???
-004CE656    ???
-004CE657    ???
-004CE658    ???
-004CE659    ???
-004CE65A    ???
-004CE65B    ???
-004CE65C    ???
-004CE65D    ???
-004CE65E    ???
-004CE65F    ???
-004CE660    ???
-004CE661    ???
-004CE662    ???
-004CE663    ???
-004CE664    ???
-004CE665    ???
-004CE666    ???
-004CE667    ???
-004CE668    ???
-004CE669    ???
-004CE66A    ???
-004CE66B    ???
-004CE66C    ???
-004CE66D    ???
-004CE66E    ???
-004CE66F    ???
-004CE670    ???
-004CE671    ???
-004CE672    ???
-004CE673    ???
-004CE674    ???
-004CE675    ???
-004CE676    ???
-004CE677    ???
-004CE678    ???
-004CE679    ???
-004CE67A    ???
-004CE67B    ???
-004CE67C    ???
-004CE67D    ???
-004CE67E    ???
-004CE67F    ???
+004CE640    push ebx
+004CE641    push esi
+004CE642    push edi
+004CE643    mov edi, edx
+004CE645    mov ebx, ecx
+004CE647    cmp dword ptr ds:[edi+0x08], 0x00
+004CE64B    jz 0x004CE67C
+004CE64D    xor esi, esi
+004CE64F    nop
+004CE650    mov eax, dword ptr ds:[edi+0x04]
+004CE653    mov ecx, esi
+004CE655    shl ecx, 0x04
+004CE658    sub ecx, esi
+004CE65A    inc esi
+004CE65B    cmp esi, dword ptr ds:[edi+0x08]
+004CE65E    lea edx, ds:[eax+ecx*4]
+004CE661    mov eax, 0xFFFFFFFF
+004CE666    push edx
+004CE667    mov edx, dword ptr ds:[edx+0x0C]
+004CE66A    mov ecx, ebx
+004CE66C    cmovnl esi, eax
+004CE66F    call 0x004CE430
+004CE674    add esp, 0x04
+004CE677    cmp esi, 0xFFFFFFFF
+004CE67A    jnz 0x004CE650
+004CE67C    pop edi
+004CE67D    pop esi
+004CE67E    pop ebx
+004CE67F    ret

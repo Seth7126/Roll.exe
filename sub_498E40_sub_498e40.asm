@@ -1,105 +1,40 @@
-00498E40    ???
-00498E41    ???
-00498E42    ???
-00498E43    ???
-00498E44    ???
-00498E45    ???
-00498E46    ???
-00498E47    ???
-00498E48    ???
-00498E49    ???
-00498E4A    ???
-00498E4B    ???
-00498E4C    ???
-00498E4D    ???
-00498E4E    ???
-00498E4F    ???
-00498E50    ???
-00498E51    ???
-00498E52    ???
-00498E53    ???
-00498E54    ???
-00498E55    ???
-00498E56    ???
-00498E57    ???
-00498E58    ???
-00498E59    ???
-00498E5A    ???
-00498E5B    ???
-00498E5C    ???
-00498E5D    ???
-00498E5E    ???
-00498E5F    ???
-00498E60    ???
-00498E61    ???
-00498E62    ???
-00498E63    ???
-00498E64    ???
-00498E65    ???
-00498E66    ???
-00498E67    ???
-00498E68    ???
-00498E69    ???
-00498E6A    ???
-00498E6B    ???
-00498E6C    ???
-00498E6D    ???
-00498E6E    ???
-00498E6F    ???
-00498E70    ???
-00498E71    ???
-00498E72    ???
-00498E73    ???
-00498E74    ???
-00498E75    ???
-00498E76    ???
-00498E77    ???
-00498E78    ???
-00498E79    ???
-00498E7A    ???
-00498E7B    ???
-00498E7C    ???
-00498E7D    ???
-00498E7E    ???
-00498E7F    ???
-00498E80    ???
-00498E81    ???
-00498E82    ???
-00498E83    ???
-00498E84    ???
-00498E85    ???
-00498E86    ???
-00498E87    ???
-00498E88    ???
-00498E89    ???
-00498E8A    ???
-00498E8B    ???
-00498E8C    ???
-00498E8D    ???
-00498E8E    ???
-00498E8F    ???
-00498E90    ???
-00498E91    ???
-00498E92    ???
-00498E93    ???
-00498E94    ???
-00498E95    ???
-00498E96    ???
-00498E97    ???
-00498E98    ???
-00498E99    ???
-00498E9A    ???
-00498E9B    ???
-00498E9C    ???
-00498E9D    ???
-00498E9E    ???
-00498E9F    ???
-00498EA0    ???
-00498EA1    ???
-00498EA2    ???
-00498EA3    ???
-00498EA4    ???
-00498EA5    ???
-00498EA6    ???
-00498EA7    ???
-00498EA8    ???
+00498E40    push ebp
+00498E41    mov ebp, esp
+00498E43    push ecx
+00498E44    push esi
+00498E45    push edi
+00498E46    mov edi, dword ptr ss:[ebp+0x08]
+00498E49    mov esi, ecx
+00498E4B    mov dword ptr ss:[ebp-0x04], esi
+00498E4E    mov eax, dword ptr ds:[edi]
+00498E50    mov dword ptr ds:[esi], eax
+00498E52    test eax, eax
+00498E54    jz 0x00498E63
+00498E56    cmp byte ptr ds:[eax], 0x00
+00498E59    jz 0x00498E63
+00498E5B    call 0x0048A080
+00498E60    inc dword ptr ds:[eax+0x04]
+00498E63    mov eax, dword ptr ds:[edi+0x04]
+00498E66    mov dword ptr ds:[esi+0x04], eax
+00498E69    mov eax, dword ptr ds:[edi+0x04]
+00498E6C    mov dword ptr ds:[esi+0x04], eax
+00498E6F    movups xmm0, xmmword ptr ds:[edi+0x04]
+00498E73    movups xmmword ptr ds:[esi+0x04], xmm0
+00498E77    movq xmm0, qword ptr ds:[edi+0x04]
+00498E7C    movq qword ptr ds:[esi+0x04], xmm0
+00498E81    mov eax, dword ptr ds:[edi+0x0C]
+00498E84    mov dword ptr ds:[esi+0x0C], eax
+00498E87    mov eax, dword ptr ds:[edi+0x04]
+00498E8A    mov dword ptr ds:[esi+0x04], eax
+00498E8D    mov eax, dword ptr ds:[edi+0x08]
+00498E90    mov dword ptr ds:[esi+0x08], eax
+00498E93    mov eax, dword ptr ds:[edi+0x04]
+00498E96    mov dword ptr ds:[esi+0x04], eax
+00498E99    mov eax, dword ptr ds:[edi+0x04]
+00498E9C    mov dword ptr ds:[esi+0x04], eax
+00498E9F    mov eax, esi
+00498EA1    pop edi
+00498EA2    pop esi
+00498EA3    mov esp, ebp
+00498EA5    pop ebp
+00498EA6    ret 0x04

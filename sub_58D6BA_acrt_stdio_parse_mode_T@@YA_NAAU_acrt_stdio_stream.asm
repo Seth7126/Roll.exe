@@ -1,31 +1,16 @@
-0058D6BA    ???
-0058D6BB    ???
-0058D6BC    ???
-0058D6BD    ???
-0058D6BE    ???
-0058D6BF    ???
-0058D6C0    ???
-0058D6C1    ???
-0058D6C2    ???
-0058D6C3    ???
-0058D6C4    ???
-0058D6C5    ???
-0058D6C6    ???
-0058D6C7    ???
-0058D6C8    ???
-0058D6C9    ???
-0058D6CA    ???
-0058D6CB    ???
-0058D6CC    ???
-0058D6CD    ???
-0058D6CE    ???
-0058D6CF    ???
-0058D6D0    ???
-0058D6D1    ???
-0058D6D2    ???
-0058D6D3    ???
-0058D6D4    ???
-0058D6D5    ???
-0058D6D6    ???
-0058D6D7    ???
-0058D6D8    ???
+0058D6BA    mov edi, edi
+0058D6BC    push ebp
+0058D6BD    mov ebp, esp
+0058D6BF    mov ecx, dword ptr ss:[ebp+0x08]
+0058D6C2    mov edx, 0x1000
+0058D6C7    mov eax, dword ptr ds:[ecx]
+0058D6C9    test edx, eax
+0058D6CB    jz 0x0058D6D1
+0058D6CD    xor al, al
+0058D6CF    pop ebp
+0058D6D0    ret
+0058D6D1    or eax, edx
+0058D6D3    mov dword ptr ds:[ecx], eax
+0058D6D5    mov al, 0x01
+0058D6D7    pop ebp
+0058D6D8    ret

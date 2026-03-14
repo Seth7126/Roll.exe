@@ -1,38 +1,19 @@
-00578AC5    ???
-00578AC6    ???
-00578AC7    ???
-00578AC8    ???
-00578AC9    ???
-00578ACA    ???
-00578ACB    ???
-00578ACC    ???
-00578ACD    ???
-00578ACE    ???
-00578ACF    ???
-00578AD0    ???
-00578AD1    ???
-00578AD2    ???
-00578AD3    ???
-00578AD4    ???
-00578AD5    ???
-00578AD6    ???
-00578AD7    ???
-00578AD8    ???
-00578AD9    ???
-00578ADA    ???
-00578ADB    ???
-00578ADC    ???
-00578ADD    ???
-00578ADE    ???
-00578ADF    ???
-00578AE0    ???
-00578AE1    ???
-00578AE2    ???
-00578AE3    ???
-00578AE4    ???
-00578AE5    ???
-00578AE6    ???
-00578AE7    ???
-00578AE8    ???
-00578AE9    ???
-00578AEA    ???
+00578AC5    push ebp
+00578AC6    mov ebp, esp
+00578AC8    call 0x0057A0A4
+00578ACD    mov eax, dword ptr ds:[eax+0x24]
+00578AD0    test eax, eax
+00578AD2    jz 0x00578AE2
+00578AD4    mov ecx, dword ptr ss:[ebp+0x08]
+00578AD7    cmp dword ptr ds:[eax], ecx
+00578AD9    jz 0x00578AE7
+00578ADB    mov eax, dword ptr ds:[eax+0x04]
+00578ADE    test eax, eax
+00578AE0    jnz 0x00578AD7
+00578AE2    xor eax, eax
+00578AE4    inc eax
+00578AE5    pop ebp
+00578AE6    ret
+00578AE7    xor eax, eax
+00578AE9    pop ebp
+00578AEA    ret

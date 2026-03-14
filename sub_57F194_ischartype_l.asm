@@ -1,51 +1,21 @@
-0057F194    ???
-0057F195    ???
-0057F196    ???
-0057F197    ???
-0057F198    ???
-0057F199    ???
-0057F19A    ???
-0057F19B    ???
-0057F19C    ???
-0057F19D    ???
-0057F19E    ???
-0057F19F    ???
-0057F1A0    ???
-0057F1A1    ???
-0057F1A2    ???
-0057F1A3    ???
-0057F1A4    ???
-0057F1A5    ???
-0057F1A6    ???
-0057F1A7    ???
-0057F1A8    ???
-0057F1A9    ???
-0057F1AA    ???
-0057F1AB    ???
-0057F1AC    ???
-0057F1AD    ???
-0057F1AE    ???
-0057F1AF    ???
-0057F1B0    ???
-0057F1B1    ???
-0057F1B2    ???
-0057F1B3    ???
-0057F1B4    ???
-0057F1B5    ???
-0057F1B6    ???
-0057F1B7    ???
-0057F1B8    ???
-0057F1B9    ???
-0057F1BA    ???
-0057F1BB    ???
-0057F1BC    ???
-0057F1BD    ???
-0057F1BE    ???
-0057F1BF    ???
-0057F1C0    ???
-0057F1C1    ???
-0057F1C2    ???
-0057F1C3    ???
-0057F1C4    ???
-0057F1C5    ???
-0057F1C6    ???
+0057F194    mov edi, edi
+0057F196    push ebp
+0057F197    mov ebp, esp
+0057F199    mov ecx, dword ptr ss:[ebp+0x10]
+0057F19C    test ecx, ecx
+0057F19E    jz 0x0057F1B6
+0057F1A0    mov eax, dword ptr ds:[ecx]
+0057F1A2    cmp dword ptr ds:[eax+0x04], 0x01
+0057F1A6    jle 0x0057F1B6
+0057F1A8    push ecx
+0057F1A9    push dword ptr ss:[ebp+0x0C]
+0057F1AC    push dword ptr ss:[ebp+0x08]
+0057F1AF    call 0x0058D183
+0057F1B4    jmp 0x0057F1C2
+0057F1B6    push ecx
+0057F1B7    push dword ptr ss:[ebp+0x0C]
+0057F1BA    push dword ptr ss:[ebp+0x08]
+0057F1BD    call 0x0057F16E
+0057F1C2    add esp, 0x0C
+0057F1C5    pop ebp
+0057F1C6    ret

@@ -1,66 +1,29 @@
-0057E71D    ???
-0057E71E    ???
-0057E71F    ???
-0057E720    ???
-0057E721    ???
-0057E722    ???
-0057E723    ???
-0057E724    ???
-0057E725    ???
-0057E726    ???
-0057E727    ???
-0057E728    ???
-0057E729    ???
-0057E72A    ???
-0057E72B    ???
-0057E72C    ???
-0057E72D    ???
-0057E72E    ???
-0057E72F    ???
-0057E730    ???
-0057E731    ???
-0057E732    ???
-0057E733    ???
-0057E734    ???
-0057E735    ???
-0057E736    ???
-0057E737    ???
-0057E738    ???
-0057E739    ???
-0057E73A    ???
-0057E73B    ???
-0057E73C    ???
-0057E73D    ???
-0057E73E    ???
-0057E73F    ???
-0057E740    ???
-0057E741    ???
-0057E742    ???
-0057E743    ???
-0057E744    ???
-0057E745    ???
-0057E746    ???
-0057E747    ???
-0057E748    ???
-0057E749    ???
-0057E74A    ???
-0057E74B    ???
-0057E74C    ???
-0057E74D    ???
-0057E74E    ???
-0057E74F    ???
-0057E750    ???
-0057E751    ???
-0057E752    ???
-0057E753    ???
-0057E754    ???
-0057E755    ???
-0057E756    ???
-0057E757    ???
-0057E758    ???
-0057E759    ???
-0057E75A    ???
-0057E75B    ???
-0057E75C    ???
-0057E75D    ???
-0057E75E    ???
+0057E71D    mov edi, edi
+0057E71F    push ebp
+0057E720    mov ebp, esp
+0057E722    mov edx, ecx
+0057E724    mov ecx, dword ptr ds:[edx]
+0057E726    mov eax, dword ptr ds:[ecx+0x08]
+0057E729    cmp eax, dword ptr ds:[ecx+0x04]
+0057E72C    mov eax, dword ptr ss:[ebp+0x0C]
+0057E72F    jnz 0x0057E745
+0057E731    cmp byte ptr ds:[ecx+0x0C], 0x00
+0057E735    jz 0x0057E73B
+0057E737    inc dword ptr ds:[eax]
+0057E739    jmp 0x0057E73E
+0057E73B    or dword ptr ds:[eax], 0xFFFFFFFF
+0057E73E    mov eax, dword ptr ds:[edx]
+0057E740    mov al, byte ptr ds:[eax+0x0C]
+0057E743    jmp 0x0057E75B
+0057E745    inc dword ptr ds:[eax]
+0057E747    mov eax, dword ptr ds:[edx]
+0057E749    inc dword ptr ds:[eax+0x08]
+0057E74C    mov eax, dword ptr ds:[edx]
+0057E74E    mov ecx, dword ptr ds:[eax]
+0057E750    mov al, byte ptr ss:[ebp+0x08]
+0057E753    mov byte ptr ds:[ecx], al
+0057E755    mov eax, dword ptr ds:[edx]
+0057E757    inc dword ptr ds:[eax]
+0057E759    mov al, 0x01
+0057E75B    pop ebp
+0057E75C    ret 0x08

@@ -1,3 +1,2 @@
-0048DCB0    ???
-0048DCB1    ???
-0048DCB2    ???
+0048DCB0    xor al, al
+0048DCB2    ret

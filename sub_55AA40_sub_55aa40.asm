@@ -1,101 +1,54 @@
-0055AA40    ???
-0055AA41    ???
-0055AA42    ???
-0055AA43    ???
-0055AA44    ???
-0055AA45    ???
-0055AA46    ???
-0055AA47    ???
-0055AA48    ???
-0055AA49    ???
-0055AA4A    ???
-0055AA4B    ???
-0055AA4C    ???
-0055AA4D    ???
-0055AA4E    ???
-0055AA4F    ???
-0055AA50    ???
-0055AA51    ???
-0055AA52    ???
-0055AA53    ???
-0055AA54    ???
-0055AA55    ???
-0055AA56    ???
-0055AA57    ???
-0055AA58    ???
-0055AA59    ???
-0055AA5A    ???
-0055AA5B    ???
-0055AA5C    ???
-0055AA5D    ???
-0055AA5E    ???
-0055AA5F    ???
-0055AA60    ???
-0055AA61    ???
-0055AA62    ???
-0055AA63    ???
-0055AA64    ???
-0055AA65    ???
-0055AA66    ???
-0055AA67    ???
-0055AA68    ???
-0055AA69    ???
-0055AA6A    ???
-0055AA6B    ???
-0055AA6C    ???
-0055AA6D    ???
-0055AA6E    ???
-0055AA6F    ???
-0055AA70    ???
-0055AA71    ???
-0055AA72    ???
-0055AA73    ???
-0055AA74    ???
-0055AA75    ???
-0055AA76    ???
-0055AA77    ???
-0055AA78    ???
-0055AA79    ???
-0055AA7A    ???
-0055AA7B    ???
-0055AA7C    ???
-0055AA7D    ???
-0055AA7E    ???
-0055AA7F    ???
-0055AA80    ???
-0055AA81    ???
-0055AA82    ???
-0055AA83    ???
-0055AA84    ???
-0055AA85    ???
-0055AA86    ???
-0055AA87    ???
-0055AA88    ???
-0055AA89    ???
-0055AA8A    ???
-0055AA8B    ???
-0055AA8C    ???
-0055AA8D    ???
-0055AA8E    ???
-0055AA8F    ???
-0055AA90    ???
-0055AA91    ???
-0055AA92    ???
-0055AA93    ???
-0055AA94    ???
-0055AA95    ???
-0055AA96    ???
-0055AA97    ???
-0055AA98    ???
-0055AA99    ???
-0055AA9A    ???
-0055AA9B    ???
-0055AA9C    ???
-0055AA9D    ???
-0055AA9E    ???
-0055AA9F    ???
-0055AAA0    ???
-0055AAA1    ???
-0055AAA2    ???
-0055AAA3    ???
-0055AAA4    ???
+0055AA40    push ebp
+0055AA41    mov ebp, esp
+0055AA43    dec ecx
+0055AA44    cmp ecx, 0x03
+0055AA47    jnbe 0x0055AAA1
+0055AA49    jmp dword ptr ds:[ecx*4+0x55AAA8]
+0055AA50    test edx, edx
+0055AA52    js 0x0055AAA1
+0055AA54    mov eax, dword ptr ss:[ebp+0x08]
+0055AA57    cmp edx, eax
+0055AA59    jl 0x0055AA6B
+0055AA5B    dec eax
+0055AA5C    pop ebp
+0055AA5D    ret
+0055AA5E    mov eax, dword ptr ss:[ebp+0x08]
+0055AA61    test edx, edx
+0055AA63    jns 0x0055AA6F
+0055AA65    cmp edx, eax
+0055AA67    jnl 0x0055AA7B
+0055AA69    neg edx
+0055AA6B    mov eax, edx
+0055AA6D    pop ebp
+0055AA6E    ret
+0055AA6F    cmp edx, eax
+0055AA71    jl 0x0055AA6B
+0055AA73    add eax, eax
+0055AA75    cmp edx, eax
+0055AA77    jnl 0x0055AAA1
+0055AA79    sub eax, edx
+0055AA7B    dec eax
+0055AA7C    pop ebp
+0055AA7D    ret
+0055AA7E    test edx, edx
+0055AA80    js 0x0055AA8C
+0055AA82    mov eax, edx
+0055AA84    cdq
+0055AA85    idiv dword ptr ss:[ebp+0x08]
+0055AA88    mov eax, edx
+0055AA8A    pop ebp
+0055AA8B    ret
+0055AA8C    mov ecx, dword ptr ss:[ebp+0x08]
+0055AA8F    neg edx
+0055AA91    mov eax, edx
+0055AA93    cdq
+0055AA94    idiv ecx
+0055AA96    sub ecx, edx
+0055AA98    test edx, edx
+0055AA9A    cmovz ecx, edx
+0055AA9D    mov eax, ecx
+0055AA9F    pop ebp
+0055AAA0    ret
+0055AAA1    xor eax, eax
+0055AAA3    pop ebp
+0055AAA4    ret

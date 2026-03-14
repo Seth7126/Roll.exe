@@ -1,19 +1,8 @@
-0057AE5D    ???
-0057AE5E    ???
-0057AE5F    ???
-0057AE60    ???
-0057AE61    ???
-0057AE62    ???
-0057AE63    ???
-0057AE64    ???
-0057AE65    ???
-0057AE66    ???
-0057AE67    ???
-0057AE68    ???
-0057AE69    ???
-0057AE6A    ???
-0057AE6B    ???
-0057AE6C    ???
-0057AE6D    ???
-0057AE6E    ???
-0057AE6F    ???
+0057AE5D    push ebp
+0057AE5E    mov ebp, esp
+0057AE60    push dword ptr ss:[ebp+0x14]
+0057AE63    mov ecx, dword ptr ss:[ebp+0x08]
+0057AE66    push dword ptr ss:[ebp+0x10]
+0057AE69    call dword ptr ss:[ebp+0x0C]
+0057AE6C    pop ebp
+0057AE6D    ret 0x10

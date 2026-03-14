@@ -1,111 +1,46 @@
-00585DF3    ???
-00585DF4    ???
-00585DF5    ???
-00585DF6    ???
-00585DF7    ???
-00585DF8    ???
-00585DF9    ???
-00585DFA    ???
-00585DFB    ???
-00585DFC    ???
-00585DFD    ???
-00585DFE    ???
-00585DFF    ???
-00585E00    ???
-00585E01    ???
-00585E02    ???
-00585E03    ???
-00585E04    ???
-00585E05    ???
-00585E06    ???
-00585E07    ???
-00585E08    ???
-00585E09    ???
-00585E0A    ???
-00585E0B    ???
-00585E0C    ???
-00585E0D    ???
-00585E0E    ???
-00585E0F    ???
-00585E10    ???
-00585E11    ???
-00585E12    ???
-00585E13    ???
-00585E14    ???
-00585E15    ???
-00585E16    ???
-00585E17    ???
-00585E18    ???
-00585E19    ???
-00585E1A    ???
-00585E1B    ???
-00585E1C    ???
-00585E1D    ???
-00585E1E    ???
-00585E1F    ???
-00585E20    ???
-00585E21    ???
-00585E22    ???
-00585E23    ???
-00585E24    ???
-00585E25    ???
-00585E26    ???
-00585E27    ???
-00585E28    ???
-00585E29    ???
-00585E2A    ???
-00585E2B    ???
-00585E2C    ???
-00585E2D    ???
-00585E2E    ???
-00585E2F    ???
-00585E30    ???
-00585E31    ???
-00585E32    ???
-00585E33    ???
-00585E34    ???
-00585E35    ???
-00585E36    ???
-00585E37    ???
-00585E38    ???
-00585E39    ???
-00585E3A    ???
-00585E3B    ???
-00585E3C    ???
-00585E3D    ???
-00585E3E    ???
-00585E3F    ???
-00585E40    ???
-00585E41    ???
-00585E42    ???
-00585E43    ???
-00585E44    ???
-00585E45    ???
-00585E46    ???
-00585E47    ???
-00585E48    ???
-00585E49    ???
-00585E4A    ???
-00585E4B    ???
-00585E4C    ???
-00585E4D    ???
-00585E4E    ???
-00585E4F    ???
-00585E50    ???
-00585E51    ???
-00585E52    ???
-00585E53    ???
-00585E54    ???
-00585E55    ???
-00585E56    ???
-00585E57    ???
-00585E58    ???
-00585E59    ???
-00585E5A    ???
-00585E5B    ???
-00585E5C    ???
-00585E5D    ???
-00585E5E    ???
-00585E5F    ???
-00585E60    ???
-00585E61    ???
+00585DF3    mov edi, edi
+00585DF5    push ebp
+00585DF6    mov ebp, esp
+00585DF8    push ecx
+00585DF9    push ecx
+00585DFA    push ebx
+00585DFB    mov bl, byte ptr ss:[ebp+0x18]
+00585DFE    xor eax, eax
+00585E00    push esi
+00585E01    mov esi, ecx
+00585E03    mov byte ptr ss:[ebp-0x04], bl
+00585E06    mov byte ptr ss:[ebp-0x03], al
+00585E09    call 0x00589E17
+00585E0E    movzx edx, bl
+00585E11    xor ecx, ecx
+00585E13    cmp word ptr ds:[eax+edx*2], cx
+00585E17    jnl 0x00585E24
+00585E19    lea ecx, ds:[esi+0x08]
+00585E1C    call 0x00584FDC
+00585E21    mov byte ptr ss:[ebp-0x03], al
+00585E24    push 0x3F
+00585E26    pop eax
+00585E27    mov word ptr ss:[ebp-0x08], ax
+00585E2B    mov eax, dword ptr ds:[esi+0x68]
+00585E2E    push eax
+00585E2F    mov eax, dword ptr ds:[eax]
+00585E31    push dword ptr ds:[eax+0x04]
+00585E34    lea eax, ss:[ebp-0x04]
+00585E37    push eax
+00585E38    lea eax, ss:[ebp-0x08]
+00585E3B    push eax
+00585E3C    call 0x0058BBFA
+00585E41    mov edx, dword ptr ss:[ebp+0x10]
+00585E44    add esp, 0x10
+00585E47    movsx cx, bl
+00585E4B    mov eax, dword ptr ds:[edx]
+00585E4D    pop esi
+00585E4E    pop ebx
+00585E4F    mov word ptr ds:[eax], cx
+00585E52    mov eax, dword ptr ss:[ebp+0x14]
+00585E55    add dword ptr ds:[edx], 0x02
+00585E58    dec dword ptr ds:[eax]
+00585E5A    mov al, 0x01
+00585E5C    mov esp, ebp
+00585E5E    pop ebp
+00585E5F    ret 0x14

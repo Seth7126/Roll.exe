@@ -1,120 +1,50 @@
-00585D7B    ???
-00585D7C    ???
-00585D7D    ???
-00585D7E    ???
-00585D7F    ???
-00585D80    ???
-00585D81    ???
-00585D82    ???
-00585D83    ???
-00585D84    ???
-00585D85    ???
-00585D86    ???
-00585D87    ???
-00585D88    ???
-00585D89    ???
-00585D8A    ???
-00585D8B    ???
-00585D8C    ???
-00585D8D    ???
-00585D8E    ???
-00585D8F    ???
-00585D90    ???
-00585D91    ???
-00585D92    ???
-00585D93    ???
-00585D94    ???
-00585D95    ???
-00585D96    ???
-00585D97    ???
-00585D98    ???
-00585D99    ???
-00585D9A    ???
-00585D9B    ???
-00585D9C    ???
-00585D9D    ???
-00585D9E    ???
-00585D9F    ???
-00585DA0    ???
-00585DA1    ???
-00585DA2    ???
-00585DA3    ???
-00585DA4    ???
-00585DA5    ???
-00585DA6    ???
-00585DA7    ???
-00585DA8    ???
-00585DA9    ???
-00585DAA    ???
-00585DAB    ???
-00585DAC    ???
-00585DAD    ???
-00585DAE    ???
-00585DAF    ???
-00585DB0    ???
-00585DB1    ???
-00585DB2    ???
-00585DB3    ???
-00585DB4    ???
-00585DB5    ???
-00585DB6    ???
-00585DB7    ???
-00585DB8    ???
-00585DB9    ???
-00585DBA    ???
-00585DBB    ???
-00585DBC    ???
-00585DBD    ???
-00585DBE    ???
-00585DBF    ???
-00585DC0    ???
-00585DC1    ???
-00585DC2    ???
-00585DC3    ???
-00585DC4    ???
-00585DC5    ???
-00585DC6    ???
-00585DC7    ???
-00585DC8    ???
-00585DC9    ???
-00585DCA    ???
-00585DCB    ???
-00585DCC    ???
-00585DCD    ???
-00585DCE    ???
-00585DCF    ???
-00585DD0    ???
-00585DD1    ???
-00585DD2    ???
-00585DD3    ???
-00585DD4    ???
-00585DD5    ???
-00585DD6    ???
-00585DD7    ???
-00585DD8    ???
-00585DD9    ???
-00585DDA    ???
-00585DDB    ???
-00585DDC    ???
-00585DDD    ???
-00585DDE    ???
-00585DDF    ???
-00585DE0    ???
-00585DE1    ???
-00585DE2    ???
-00585DE3    ???
-00585DE4    ???
-00585DE5    ???
-00585DE6    ???
-00585DE7    ???
-00585DE8    ???
-00585DE9    ???
-00585DEA    ???
-00585DEB    ???
-00585DEC    ???
-00585DED    ???
-00585DEE    ???
-00585DEF    ???
-00585DF0    ???
-00585DF1    ???
-00585DF2    ???
+00585D7B    mov edi, edi
+00585D7D    push ebp
+00585D7E    mov ebp, esp
+00585D80    push ecx
+00585D81    push ecx
+00585D82    push ebx
+00585D83    mov bl, byte ptr ss:[ebp+0x18]
+00585D86    xor eax, eax
+00585D88    push esi
+00585D89    mov esi, ecx
+00585D8B    mov byte ptr ss:[ebp-0x04], bl
+00585D8E    mov byte ptr ss:[ebp-0x03], al
+00585D91    call 0x00589E17
+00585D96    movzx edx, bl
+00585D99    xor ecx, ecx
+00585D9B    cmp word ptr ds:[eax+edx*2], cx
+00585D9F    jnl 0x00585DB5
+00585DA1    push dword ptr ds:[esi+0x08]
+00585DA4    call 0x0058DC38
+00585DA9    pop ecx
+00585DAA    cmp eax, 0xFFFFFFFF
+00585DAD    jz 0x00585DB2
+00585DAF    inc dword ptr ds:[esi+0x0C]
+00585DB2    mov byte ptr ss:[ebp-0x03], al
+00585DB5    push 0x3F
+00585DB7    pop eax
+00585DB8    mov word ptr ss:[ebp-0x08], ax
+00585DBC    mov eax, dword ptr ds:[esi+0x60]
+00585DBF    push eax
+00585DC0    mov eax, dword ptr ds:[eax]
+00585DC2    push dword ptr ds:[eax+0x04]
+00585DC5    lea eax, ss:[ebp-0x04]
+00585DC8    push eax
+00585DC9    lea eax, ss:[ebp-0x08]
+00585DCC    push eax
+00585DCD    call 0x0058BBFA
+00585DD2    mov edx, dword ptr ss:[ebp+0x10]
+00585DD5    add esp, 0x10
+00585DD8    movsx cx, bl
+00585DDC    mov eax, dword ptr ds:[edx]
+00585DDE    pop esi
+00585DDF    pop ebx
+00585DE0    mov word ptr ds:[eax], cx
+00585DE3    mov eax, dword ptr ss:[ebp+0x14]
+00585DE6    add dword ptr ds:[edx], 0x02
+00585DE9    dec dword ptr ds:[eax]
+00585DEB    mov al, 0x01
+00585DED    mov esp, ebp
+00585DEF    pop ebp
+00585DF0    ret 0x14

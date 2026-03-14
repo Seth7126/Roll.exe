@@ -1,208 +1,92 @@
-0052B5F0    ???
-0052B5F1    ???
-0052B5F2    ???
-0052B5F3    ???
-0052B5F4    ???
-0052B5F5    ???
-0052B5F6    ???
-0052B5F7    ???
-0052B5F8    ???
-0052B5F9    ???
-0052B5FA    ???
-0052B5FB    ???
-0052B5FC    ???
-0052B5FD    ???
-0052B5FE    ???
-0052B5FF    ???
-0052B600    ???
-0052B601    ???
-0052B602    ???
-0052B603    ???
-0052B604    ???
-0052B605    ???
-0052B606    ???
-0052B607    ???
-0052B608    ???
-0052B609    ???
-0052B60A    ???
-0052B60B    ???
-0052B60C    ???
-0052B60D    ???
-0052B60E    ???
-0052B60F    ???
-0052B610    ???
-0052B611    ???
-0052B612    ???
-0052B613    ???
-0052B614    ???
-0052B615    ???
-0052B616    ???
-0052B617    ???
-0052B618    ???
-0052B619    ???
-0052B61A    ???
-0052B61B    ???
-0052B61C    ???
-0052B61D    ???
-0052B61E    ???
-0052B61F    ???
-0052B620    ???
-0052B621    ???
-0052B622    ???
-0052B623    ???
-0052B624    ???
-0052B625    ???
-0052B626    ???
-0052B627    ???
-0052B628    ???
-0052B629    ???
-0052B62A    ???
-0052B62B    ???
-0052B62C    ???
-0052B62D    ???
-0052B62E    ???
-0052B62F    ???
-0052B630    ???
-0052B631    ???
-0052B632    ???
-0052B633    ???
-0052B634    ???
-0052B635    ???
-0052B636    ???
-0052B637    ???
-0052B638    ???
-0052B639    ???
-0052B63A    ???
-0052B63B    ???
-0052B63C    ???
-0052B63D    ???
-0052B63E    ???
-0052B63F    ???
-0052B640    ???
-0052B641    ???
-0052B642    ???
-0052B643    ???
-0052B644    ???
-0052B645    ???
-0052B646    ???
-0052B647    ???
-0052B648    ???
-0052B649    ???
-0052B64A    ???
-0052B64B    ???
-0052B64C    ???
-0052B64D    ???
-0052B64E    ???
-0052B64F    ???
-0052B650    ???
-0052B651    ???
-0052B652    ???
-0052B653    ???
-0052B654    ???
-0052B655    ???
-0052B656    ???
-0052B657    ???
-0052B658    ???
-0052B659    ???
-0052B65A    ???
-0052B65B    ???
-0052B65C    ???
-0052B65D    ???
-0052B65E    ???
-0052B65F    ???
-0052B660    ???
-0052B661    ???
-0052B662    ???
-0052B663    ???
-0052B664    ???
-0052B665    ???
-0052B666    ???
-0052B667    ???
-0052B668    ???
-0052B669    ???
-0052B66A    ???
-0052B66B    ???
-0052B66C    ???
-0052B66D    ???
-0052B66E    ???
-0052B66F    ???
-0052B670    ???
-0052B671    ???
-0052B672    ???
-0052B673    ???
-0052B674    ???
-0052B675    ???
-0052B676    ???
-0052B677    ???
-0052B678    ???
-0052B679    ???
-0052B67A    ???
-0052B67B    ???
-0052B67C    ???
-0052B67D    ???
-0052B67E    ???
-0052B67F    ???
-0052B680    ???
-0052B681    ???
-0052B682    ???
-0052B683    ???
-0052B684    ???
-0052B685    ???
-0052B686    ???
-0052B687    ???
-0052B688    ???
-0052B689    ???
-0052B68A    ???
-0052B68B    ???
-0052B68C    ???
-0052B68D    ???
-0052B68E    ???
-0052B68F    ???
-0052B690    ???
-0052B691    ???
-0052B692    ???
-0052B693    ???
-0052B694    ???
-0052B695    ???
-0052B696    ???
-0052B697    ???
-0052B698    ???
-0052B699    ???
-0052B69A    ???
-0052B69B    ???
-0052B69C    ???
-0052B69D    ???
-0052B69E    ???
-0052B69F    ???
-0052B6A0    ???
-0052B6A1    ???
-0052B6A2    ???
-0052B6A3    ???
-0052B6A4    ???
-0052B6A5    ???
-0052B6A6    ???
-0052B6A7    ???
-0052B6A8    ???
-0052B6A9    ???
-0052B6AA    ???
-0052B6AB    ???
-0052B6AC    ???
-0052B6AD    ???
-0052B6AE    ???
-0052B6AF    ???
-0052B6B0    ???
-0052B6B1    ???
-0052B6B2    ???
-0052B6B3    ???
-0052B6B4    ???
-0052B6B5    ???
-0052B6B6    ???
-0052B6B7    ???
-0052B6B8    ???
-0052B6B9    ???
-0052B6BA    ???
-0052B6BB    ???
-0052B6BC    ???
-0052B6BD    ???
-0052B6BE    ???
-0052B6BF    ???
+0052B5F0    push ebp
+0052B5F1    mov ebp, esp
+0052B5F3    push ecx
+0052B5F4    push ebx
+0052B5F5    push esi
+0052B5F6    push edi
+0052B5F7    mov edi, ecx
+0052B5F9    mov dword ptr ss:[ebp-0x04], edx
+0052B5FC    mov eax, dword ptr ds:[edi]
+0052B5FE    mov bl, byte ptr ds:[eax]
+0052B600    lea edx, ds:[eax+0x01]
+0052B603    movzx esi, bl
+0052B606    and esi, 0x7F
+0052B609    mov dword ptr ds:[edi], edx
+0052B60B    test bl, bl
+0052B60D    jns 0x0052B65A
+0052B60F    mov cl, byte ptr ds:[edx]
+0052B611    inc edx
+0052B612    movzx eax, cl
+0052B615    and eax, 0x7F
+0052B618    mov dword ptr ds:[edi], edx
+0052B61A    shl eax, 0x07
+0052B61D    or esi, eax
+0052B61F    test cl, cl
+0052B621    jns 0x0052B65A
+0052B623    mov cl, byte ptr ds:[edx]
+0052B625    inc edx
+0052B626    movzx eax, cl
+0052B629    and eax, 0x7F
+0052B62C    mov dword ptr ds:[edi], edx
+0052B62E    shl eax, 0x0E
+0052B631    or esi, eax
+0052B633    test cl, cl
+0052B635    jns 0x0052B65A
+0052B637    mov cl, byte ptr ds:[edx]
+0052B639    inc edx
+0052B63A    movzx eax, cl
+0052B63D    and eax, 0x7F
+0052B640    mov dword ptr ds:[edi], edx
+0052B642    shl eax, 0x15
+0052B645    or esi, eax
+0052B647    test cl, cl
+0052B649    jns 0x0052B65A
+0052B64B    mov cl, byte ptr ds:[edx]
+0052B64D    lea eax, ds:[edx+0x01]
+0052B650    mov dword ptr ds:[edi], eax
+0052B652    movzx eax, cl
+0052B655    shl eax, 0x1C
+0052B658    or esi, eax
+0052B65A    mov ecx, dword ptr ds:[0x01151AE0]
+0052B660    lea eax, ds:[esi+esi*1]
+0052B663    test ecx, ecx
+0052B665    jz 0x0052B679
+0052B667    push 0x271
+0052B66C    push 0x6083F0
+0052B671    push eax
+0052B672    call ecx
+0052B674    add esp, 0x0C
+0052B677    jmp 0x0052B682
+0052B679    push eax
+0052B67A    call 0x00580001
+0052B67F    add esp, 0x04
+0052B682    mov ebx, eax
+0052B684    xor edx, edx
+0052B686    mov eax, dword ptr ss:[ebp-0x04]
+0052B689    mov dword ptr ds:[eax], esi
+0052B68B    test esi, esi
+0052B68D    jle 0x0052B6B7
+0052B68F    nop
+0052B690    mov eax, dword ptr ds:[edi]
+0052B692    movzx ecx, byte ptr ds:[eax]
+0052B695    inc eax
+0052B696    mov dword ptr ds:[edi], eax
+0052B698    mov ax, cx
+0052B69B    shl ax, 0x08
+0052B69F    mov word ptr ds:[ebx+edx*2], ax
+0052B6A3    mov eax, dword ptr ds:[edi]
+0052B6A5    movzx ecx, byte ptr ds:[eax]
+0052B6A8    inc eax
+0052B6A9    mov dword ptr ds:[edi], eax
+0052B6AB    mov ax, cx
+0052B6AE    or word ptr ds:[ebx+edx*2], ax
+0052B6B2    inc edx
+0052B6B3    cmp edx, esi
+0052B6B5    jl 0x0052B690
+0052B6B7    pop edi
+0052B6B8    pop esi
+0052B6B9    mov eax, ebx
+0052B6BB    pop ebx
+0052B6BC    mov esp, ebp
+0052B6BE    pop ebp
+0052B6BF    ret

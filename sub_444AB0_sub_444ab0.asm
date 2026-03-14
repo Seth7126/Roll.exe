@@ -1,67 +1,30 @@
-00444AB0    ???
-00444AB1    ???
-00444AB2    ???
-00444AB3    ???
-00444AB4    ???
-00444AB5    ???
-00444AB6    ???
-00444AB7    ???
-00444AB8    ???
-00444AB9    ???
-00444ABA    ???
-00444ABB    ???
-00444ABC    ???
-00444ABD    ???
-00444ABE    ???
-00444ABF    ???
-00444AC0    ???
-00444AC1    ???
-00444AC2    ???
-00444AC3    ???
-00444AC4    ???
-00444AC5    ???
-00444AC6    ???
-00444AC7    ???
-00444AC8    ???
-00444AC9    ???
-00444ACA    ???
-00444ACB    ???
-00444ACC    ???
-00444ACD    ???
-00444ACE    ???
-00444ACF    ???
-00444AD0    ???
-00444AD1    ???
-00444AD2    ???
-00444AD3    ???
-00444AD4    ???
-00444AD5    ???
-00444AD6    ???
-00444AD7    ???
-00444AD8    ???
-00444AD9    ???
-00444ADA    ???
-00444ADB    ???
-00444ADC    ???
-00444ADD    ???
-00444ADE    ???
-00444ADF    ???
-00444AE0    ???
-00444AE1    ???
-00444AE2    ???
-00444AE3    ???
-00444AE4    ???
-00444AE5    ???
-00444AE6    ???
-00444AE7    ???
-00444AE8    ???
-00444AE9    ???
-00444AEA    ???
-00444AEB    ???
-00444AEC    ???
-00444AED    ???
-00444AEE    ???
-00444AEF    ???
-00444AF0    ???
-00444AF1    ???
-00444AF2    ???
+00444AB0    push ebp
+00444AB1    mov ebp, esp
+00444AB3    imul eax, edx, 0x1BC
+00444AB9    push esi
+00444ABA    xor esi, esi
+00444ABC    mov edx, dword ptr ds:[eax+ecx*1+0x164]
+00444AC3    test edx, edx
+00444AC5    jle 0x00444AEE
+00444AC7    push ebx
+00444AC8    mov ebx, dword ptr ss:[ebp+0x08]
+00444ACB    add ecx, 0x24
+00444ACE    push edi
+00444ACF    mov edi, dword ptr ss:[ebp+0x0C]
+00444AD2    add ecx, eax
+00444AD4    movzx eax, byte ptr ds:[ecx+0x01]
+00444AD8    cmp eax, ebx
+00444ADA    jnz 0x00444AE4
+00444ADC    movzx eax, byte ptr ds:[ecx]
+00444ADF    cmp eax, edi
+00444AE1    jnz 0x00444AE4
+00444AE3    inc esi
+00444AE4    add ecx, 0x08
+00444AE7    sub edx, 0x01
+00444AEA    jnz 0x00444AD4
+00444AEC    pop edi
+00444AED    pop ebx
+00444AEE    mov eax, esi
+00444AF0    pop esi
+00444AF1    pop ebp
+00444AF2    ret

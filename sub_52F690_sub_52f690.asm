@@ -1,110 +1,56 @@
-0052F690    ???
-0052F691    ???
-0052F692    ???
-0052F693    ???
-0052F694    ???
-0052F695    ???
-0052F696    ???
-0052F697    ???
-0052F698    ???
-0052F699    ???
-0052F69A    ???
-0052F69B    ???
-0052F69C    ???
-0052F69D    ???
-0052F69E    ???
-0052F69F    ???
-0052F6A0    ???
-0052F6A1    ???
-0052F6A2    ???
-0052F6A3    ???
-0052F6A4    ???
-0052F6A5    ???
-0052F6A6    ???
-0052F6A7    ???
-0052F6A8    ???
-0052F6A9    ???
-0052F6AA    ???
-0052F6AB    ???
-0052F6AC    ???
-0052F6AD    ???
-0052F6AE    ???
-0052F6AF    ???
-0052F6B0    ???
-0052F6B1    ???
-0052F6B2    ???
-0052F6B3    ???
-0052F6B4    ???
-0052F6B5    ???
-0052F6B6    ???
-0052F6B7    ???
-0052F6B8    ???
-0052F6B9    ???
-0052F6BA    ???
-0052F6BB    ???
-0052F6BC    ???
-0052F6BD    ???
-0052F6BE    ???
-0052F6BF    ???
-0052F6C0    ???
-0052F6C1    ???
-0052F6C2    ???
-0052F6C3    ???
-0052F6C4    ???
-0052F6C5    ???
-0052F6C6    ???
-0052F6C7    ???
-0052F6C8    ???
-0052F6C9    ???
-0052F6CA    ???
-0052F6CB    ???
-0052F6CC    ???
-0052F6CD    ???
-0052F6CE    ???
-0052F6CF    ???
-0052F6D0    ???
-0052F6D1    ???
-0052F6D2    ???
-0052F6D3    ???
-0052F6D4    ???
-0052F6D5    ???
-0052F6D6    ???
-0052F6D7    ???
-0052F6D8    ???
-0052F6D9    ???
-0052F6DA    ???
-0052F6DB    ???
-0052F6DC    ???
-0052F6DD    ???
-0052F6DE    ???
-0052F6DF    ???
-0052F6E0    ???
-0052F6E1    ???
-0052F6E2    ???
-0052F6E3    ???
-0052F6E4    ???
-0052F6E5    ???
-0052F6E6    ???
-0052F6E7    ???
-0052F6E8    ???
-0052F6E9    ???
-0052F6EA    ???
-0052F6EB    ???
-0052F6EC    ???
-0052F6ED    ???
-0052F6EE    ???
-0052F6EF    ???
-0052F6F0    ???
-0052F6F1    ???
-0052F6F2    ???
-0052F6F3    ???
-0052F6F4    ???
-0052F6F5    ???
-0052F6F6    ???
-0052F6F7    ???
-0052F6F8    ???
-0052F6F9    ???
-0052F6FA    ???
-0052F6FB    ???
-0052F6FC    ???
-0052F6FD    ???
+0052F690    push ebp
+0052F691    mov ebp, esp
+0052F693    sub esp, 0x08
+0052F696    push ebx
+0052F697    mov ebx, dword ptr ds:[ecx+0x30]
+0052F69A    mov eax, edx
+0052F69C    push esi
+0052F69D    xor esi, esi
+0052F69F    mov dword ptr ss:[ebp-0x04], eax
+0052F6A2    push edi
+0052F6A3    test ebx, ebx
+0052F6A5    jle 0x0052F6E8
+0052F6A7    mov ecx, dword ptr ds:[ecx+0x34]
+0052F6AA    mov edi, ecx
+0052F6AC    mov dword ptr ss:[ebp-0x08], ecx
+0052F6AF    nop
+0052F6B0    mov ecx, dword ptr ds:[edi]
+0052F6B2    mov ecx, dword ptr ds:[ecx]
+0052F6B4    mov dl, byte ptr ds:[ecx]
+0052F6B6    cmp dl, byte ptr ds:[eax]
+0052F6B8    jnz 0x0052F6D4
+0052F6BA    test dl, dl
+0052F6BC    jz 0x0052F6D0
+0052F6BE    mov dl, byte ptr ds:[ecx+0x01]
+0052F6C1    cmp dl, byte ptr ds:[eax+0x01]
+0052F6C4    jnz 0x0052F6D4
+0052F6C6    add ecx, 0x02
+0052F6C9    add eax, 0x02
+0052F6CC    test dl, dl
+0052F6CE    jnz 0x0052F6B4
+0052F6D0    xor eax, eax
+0052F6D2    jmp 0x0052F6D9
+0052F6D4    sbb eax, eax
+0052F6D6    or eax, 0x01
+0052F6D9    test eax, eax
+0052F6DB    jz 0x0052F6F1
+0052F6DD    mov eax, dword ptr ss:[ebp-0x04]
+0052F6E0    inc esi
+0052F6E1    add edi, 0x04
+0052F6E4    cmp esi, ebx
+0052F6E6    jl 0x0052F6B0
+0052F6E8    pop edi
+0052F6E9    pop esi
+0052F6EA    xor eax, eax
+0052F6EC    pop ebx
+0052F6ED    mov esp, ebp
+0052F6EF    pop ebp
+0052F6F0    ret
+0052F6F1    mov eax, dword ptr ss:[ebp-0x08]
+0052F6F4    pop edi
+0052F6F5    mov eax, dword ptr ds:[eax+esi*4]
+0052F6F8    pop esi
+0052F6F9    pop ebx
+0052F6FA    mov esp, ebp
+0052F6FC    pop ebp
+0052F6FD    ret

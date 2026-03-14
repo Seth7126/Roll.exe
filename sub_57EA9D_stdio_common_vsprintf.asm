@@ -1,36 +1,14 @@
-0057EA9D    ???
-0057EA9E    ???
-0057EA9F    ???
-0057EAA0    ???
-0057EAA1    ???
-0057EAA2    ???
-0057EAA3    ???
-0057EAA4    ???
-0057EAA5    ???
-0057EAA6    ???
-0057EAA7    ???
-0057EAA8    ???
-0057EAA9    ???
-0057EAAA    ???
-0057EAAB    ???
-0057EAAC    ???
-0057EAAD    ???
-0057EAAE    ???
-0057EAAF    ???
-0057EAB0    ???
-0057EAB1    ???
-0057EAB2    ???
-0057EAB3    ???
-0057EAB4    ???
-0057EAB5    ???
-0057EAB6    ???
-0057EAB7    ???
-0057EAB8    ???
-0057EAB9    ???
-0057EABA    ???
-0057EABB    ???
-0057EABC    ???
-0057EABD    ???
-0057EABE    ???
-0057EABF    ???
-0057EAC0    ???
+0057EA9D    mov edi, edi
+0057EA9F    push ebp
+0057EAA0    mov ebp, esp
+0057EAA2    push dword ptr ss:[ebp+0x20]
+0057EAA5    push dword ptr ss:[ebp+0x1C]
+0057EAA8    push dword ptr ss:[ebp+0x18]
+0057EAAB    push dword ptr ss:[ebp+0x14]
+0057EAAE    push dword ptr ss:[ebp+0x10]
+0057EAB1    push dword ptr ss:[ebp+0x0C]
+0057EAB4    push dword ptr ss:[ebp+0x08]
+0057EAB7    call 0x0057B826
+0057EABC    add esp, 0x1C
+0057EABF    pop ebp
+0057EAC0    ret

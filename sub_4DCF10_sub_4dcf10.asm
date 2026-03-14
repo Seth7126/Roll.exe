@@ -1,44 +1,21 @@
-004DCF10    ???
-004DCF11    ???
-004DCF12    ???
-004DCF13    ???
-004DCF14    ???
-004DCF15    ???
-004DCF16    ???
-004DCF17    ???
-004DCF18    ???
-004DCF19    ???
-004DCF1A    ???
-004DCF1B    ???
-004DCF1C    ???
-004DCF1D    ???
-004DCF1E    ???
-004DCF1F    ???
-004DCF20    ???
-004DCF21    ???
-004DCF22    ???
-004DCF23    ???
-004DCF24    ???
-004DCF25    ???
-004DCF26    ???
-004DCF27    ???
-004DCF28    ???
-004DCF29    ???
-004DCF2A    ???
-004DCF2B    ???
-004DCF2C    ???
-004DCF2D    ???
-004DCF2E    ???
-004DCF2F    ???
-004DCF30    ???
-004DCF31    ???
-004DCF32    ???
-004DCF33    ???
-004DCF34    ???
-004DCF35    ???
-004DCF36    ???
-004DCF37    ???
-004DCF38    ???
-004DCF39    ???
-004DCF3A    ???
-004DCF3B    ???
+004DCF10    push ecx
+004DCF11    push esi
+004DCF12    push edi
+004DCF13    mov edi, ecx
+004DCF15    mov ecx, dword ptr ds:[edi+0x2C]
+004DCF18    test ecx, ecx
+004DCF1A    jz 0x004DCF21
+004DCF1C    call 0x004F2980
+004DCF21    mov esi, dword ptr ds:[edi+0x38]
+004DCF24    test esi, esi
+004DCF26    jz 0x004DCF38
+004DCF28    mov edx, esi
+004DCF2A    mov ecx, edi
+004DCF2C    mov esi, dword ptr ds:[esi+0x10]
+004DCF2F    call 0x004DCBA0
+004DCF34    test esi, esi
+004DCF36    jnz 0x004DCF28
+004DCF38    pop edi
+004DCF39    pop esi
+004DCF3A    pop ecx
+004DCF3B    ret

@@ -1,16 +1,6 @@
-0057F5D6    ???
-0057F5D7    ???
-0057F5D8    ???
-0057F5D9    ???
-0057F5DA    ???
-0057F5DB    ???
-0057F5DC    ???
-0057F5DD    ???
-0057F5DE    ???
-0057F5DF    ???
-0057F5E0    ???
-0057F5E1    ???
-0057F5E2    ???
-0057F5E3    ???
-0057F5E4    ???
-0057F5E5    ???
+0057F5D6    mov eax, dword ptr ss:[ebp-0x14]
+0057F5D9    mov eax, dword ptr ds:[eax]
+0057F5DB    push dword ptr ds:[eax]
+0057F5DD    call 0x0057F5EF
+0057F5E2    add esp, 0x04
+0057F5E5    ret

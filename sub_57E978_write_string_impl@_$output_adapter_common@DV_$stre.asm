@@ -1,160 +1,68 @@
-0057E978    ???
-0057E979    ???
-0057E97A    ???
-0057E97B    ???
-0057E97C    ???
-0057E97D    ???
-0057E97E    ???
-0057E97F    ???
-0057E980    ???
-0057E981    ???
-0057E982    ???
-0057E983    ???
-0057E984    ???
-0057E985    ???
-0057E986    ???
-0057E987    ???
-0057E988    ???
-0057E989    ???
-0057E98A    ???
-0057E98B    ???
-0057E98C    ???
-0057E98D    ???
-0057E98E    ???
-0057E98F    ???
-0057E990    ???
-0057E991    ???
-0057E992    ???
-0057E993    ???
-0057E994    ???
-0057E995    ???
-0057E996    ???
-0057E997    ???
-0057E998    ???
-0057E999    ???
-0057E99A    ???
-0057E99B    ???
-0057E99C    ???
-0057E99D    ???
-0057E99E    ???
-0057E99F    ???
-0057E9A0    ???
-0057E9A1    ???
-0057E9A2    ???
-0057E9A3    ???
-0057E9A4    ???
-0057E9A5    ???
-0057E9A6    ???
-0057E9A7    ???
-0057E9A8    ???
-0057E9A9    ???
-0057E9AA    ???
-0057E9AB    ???
-0057E9AC    ???
-0057E9AD    ???
-0057E9AE    ???
-0057E9AF    ???
-0057E9B0    ???
-0057E9B1    ???
-0057E9B2    ???
-0057E9B3    ???
-0057E9B4    ???
-0057E9B5    ???
-0057E9B6    ???
-0057E9B7    ???
-0057E9B8    ???
-0057E9B9    ???
-0057E9BA    ???
-0057E9BB    ???
-0057E9BC    ???
-0057E9BD    ???
-0057E9BE    ???
-0057E9BF    ???
-0057E9C0    ???
-0057E9C1    ???
-0057E9C2    ???
-0057E9C3    ???
-0057E9C4    ???
-0057E9C5    ???
-0057E9C6    ???
-0057E9C7    ???
-0057E9C8    ???
-0057E9C9    ???
-0057E9CA    ???
-0057E9CB    ???
-0057E9CC    ???
-0057E9CD    ???
-0057E9CE    ???
-0057E9CF    ???
-0057E9D0    ???
-0057E9D1    ???
-0057E9D2    ???
-0057E9D3    ???
-0057E9D4    ???
-0057E9D5    ???
-0057E9D6    ???
-0057E9D7    ???
-0057E9D8    ???
-0057E9D9    ???
-0057E9DA    ???
-0057E9DB    ???
-0057E9DC    ???
-0057E9DD    ???
-0057E9DE    ???
-0057E9DF    ???
-0057E9E0    ???
-0057E9E1    ???
-0057E9E2    ???
-0057E9E3    ???
-0057E9E4    ???
-0057E9E5    ???
-0057E9E6    ???
-0057E9E7    ???
-0057E9E8    ???
-0057E9E9    ???
-0057E9EA    ???
-0057E9EB    ???
-0057E9EC    ???
-0057E9ED    ???
-0057E9EE    ???
-0057E9EF    ???
-0057E9F0    ???
-0057E9F1    ???
-0057E9F2    ???
-0057E9F3    ???
-0057E9F4    ???
-0057E9F5    ???
-0057E9F6    ???
-0057E9F7    ???
-0057E9F8    ???
-0057E9F9    ???
-0057E9FA    ???
-0057E9FB    ???
-0057E9FC    ???
-0057E9FD    ???
-0057E9FE    ???
-0057E9FF    ???
-0057EA00    ???
-0057EA01    ???
-0057EA02    ???
-0057EA03    ???
-0057EA04    ???
-0057EA05    ???
-0057EA06    ???
-0057EA07    ???
-0057EA08    ???
-0057EA09    ???
-0057EA0A    ???
-0057EA0B    ???
-0057EA0C    ???
-0057EA0D    ???
-0057EA0E    ???
-0057EA0F    ???
-0057EA10    ???
-0057EA11    ???
-0057EA12    ???
-0057EA13    ???
-0057EA14    ???
-0057EA15    ???
-0057EA16    ???
-0057EA17    ???
+0057E978    mov edi, edi
+0057E97A    push ebp
+0057E97B    mov ebp, esp
+0057E97D    sub esp, 0x0C
+0057E980    push ebx
+0057E981    mov ebx, dword ptr ss:[ebp+0x14]
+0057E984    mov edx, ecx
+0057E986    push esi
+0057E987    mov dword ptr ss:[ebp-0x04], edx
+0057E98A    mov esi, dword ptr ds:[ebx]
+0057E98C    test esi, esi
+0057E98E    jnz 0x0057E99C
+0057E990    call 0x00589E04
+0057E995    mov edx, dword ptr ss:[ebp-0x04]
+0057E998    mov esi, eax
+0057E99A    mov dword ptr ds:[ebx], esi
+0057E99C    mov ebx, dword ptr ss:[ebp+0x08]
+0057E99F    mov ecx, dword ptr ss:[ebp+0x0C]
+0057E9A2    mov eax, dword ptr ds:[esi]
+0057E9A4    add ecx, ebx
+0057E9A6    and dword ptr ds:[esi], 0x00
+0057E9A9    mov dword ptr ss:[ebp-0x08], eax
+0057E9AC    mov dword ptr ss:[ebp-0x0C], ecx
+0057E9AF    cmp ebx, ecx
+0057E9B1    jz 0x0057EA05
+0057E9B3    push edi
+0057E9B4    mov edi, dword ptr ss:[ebp+0x10]
+0057E9B7    movzx eax, byte ptr ds:[ebx]
+0057E9BA    mov ecx, edx
+0057E9BC    push eax
+0057E9BD    call 0x0057E75F
+0057E9C2    test al, al
+0057E9C4    jnz 0x0057E9EC
+0057E9C6    mov eax, dword ptr ss:[ebp+0x14]
+0057E9C9    mov eax, dword ptr ds:[eax]
+0057E9CB    test eax, eax
+0057E9CD    jnz 0x0057E9D9
+0057E9CF    call 0x00589E04
+0057E9D4    mov ecx, dword ptr ss:[ebp+0x14]
+0057E9D7    mov dword ptr ds:[ecx], eax
+0057E9D9    cmp dword ptr ds:[eax], 0x2A
+0057E9DC    jnz 0x0057E9FE
+0057E9DE    mov ecx, dword ptr ss:[ebp-0x04]
+0057E9E1    push 0x3F
+0057E9E3    call 0x0057E75F
+0057E9E8    test al, al
+0057E9EA    jz 0x0057E9F0
+0057E9EC    inc dword ptr ds:[edi]
+0057E9EE    jmp 0x0057E9F3
+0057E9F0    or dword ptr ds:[edi], 0xFFFFFFFF
+0057E9F3    mov edx, dword ptr ss:[ebp-0x04]
+0057E9F6    inc ebx
+0057E9F7    cmp ebx, dword ptr ss:[ebp-0x0C]
+0057E9FA    jnz 0x0057E9B7
+0057E9FC    jmp 0x0057EA01
+0057E9FE    or dword ptr ds:[edi], 0xFFFFFFFF
+0057EA01    mov eax, dword ptr ss:[ebp-0x08]
+0057EA04    pop edi
+0057EA05    cmp dword ptr ds:[esi], 0x00
+0057EA08    jnz 0x0057EA10
+0057EA0A    test eax, eax
+0057EA0C    jz 0x0057EA10
+0057EA0E    mov dword ptr ds:[esi], eax
+0057EA10    pop esi
+0057EA11    pop ebx
+0057EA12    mov esp, ebp
+0057EA14    pop ebp
+0057EA15    ret 0x10

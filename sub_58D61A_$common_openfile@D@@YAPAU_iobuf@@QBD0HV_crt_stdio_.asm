@@ -1,133 +1,54 @@
-0058D61A    ???
-0058D61B    ???
-0058D61C    ???
-0058D61D    ???
-0058D61E    ???
-0058D61F    ???
-0058D620    ???
-0058D621    ???
-0058D622    ???
-0058D623    ???
-0058D624    ???
-0058D625    ???
-0058D626    ???
-0058D627    ???
-0058D628    ???
-0058D629    ???
-0058D62A    ???
-0058D62B    ???
-0058D62C    ???
-0058D62D    ???
-0058D62E    ???
-0058D62F    ???
-0058D630    ???
-0058D631    ???
-0058D632    ???
-0058D633    ???
-0058D634    ???
-0058D635    ???
-0058D636    ???
-0058D637    ???
-0058D638    ???
-0058D639    ???
-0058D63A    ???
-0058D63B    ???
-0058D63C    ???
-0058D63D    ???
-0058D63E    ???
-0058D63F    ???
-0058D640    ???
-0058D641    ???
-0058D642    ???
-0058D643    ???
-0058D644    ???
-0058D645    ???
-0058D646    ???
-0058D647    ???
-0058D648    ???
-0058D649    ???
-0058D64A    ???
-0058D64B    ???
-0058D64C    ???
-0058D64D    ???
-0058D64E    ???
-0058D64F    ???
-0058D650    ???
-0058D651    ???
-0058D652    ???
-0058D653    ???
-0058D654    ???
-0058D655    ???
-0058D656    ???
-0058D657    ???
-0058D658    ???
-0058D659    ???
-0058D65A    ???
-0058D65B    ???
-0058D65C    ???
-0058D65D    ???
-0058D65E    ???
-0058D65F    ???
-0058D660    ???
-0058D661    ???
-0058D662    ???
-0058D663    ???
-0058D664    ???
-0058D665    ???
-0058D666    ???
-0058D667    ???
-0058D668    ???
-0058D669    ???
-0058D66A    ???
-0058D66B    ???
-0058D66C    ???
-0058D66D    ???
-0058D66E    ???
-0058D66F    ???
-0058D670    ???
-0058D671    ???
-0058D672    ???
-0058D673    ???
-0058D674    ???
-0058D675    ???
-0058D676    ???
-0058D677    ???
-0058D678    ???
-0058D679    ???
-0058D67A    ???
-0058D67B    ???
-0058D67C    ???
-0058D67D    ???
-0058D67E    ???
-0058D67F    ???
-0058D680    ???
-0058D681    ???
-0058D682    ???
-0058D683    ???
-0058D684    ???
-0058D685    ???
-0058D686    ???
-0058D687    ???
-0058D688    ???
-0058D689    ???
-0058D68A    ???
-0058D68B    ???
-0058D68C    ???
-0058D68D    ???
-0058D68E    ???
-0058D68F    ???
-0058D690    ???
-0058D691    ???
-0058D692    ???
-0058D693    ???
-0058D694    ???
-0058D695    ???
-0058D696    ???
-0058D697    ???
-0058D698    ???
-0058D699    ???
-0058D69A    ???
-0058D69B    ???
-0058D69C    ???
-0058D69D    ???
-0058D69E    ???
+0058D61A    mov edi, edi
+0058D61C    push ebp
+0058D61D    mov ebp, esp
+0058D61F    sub esp, 0x1C
+0058D622    push esi
+0058D623    push edi
+0058D624    push dword ptr ss:[ebp+0x0C]
+0058D627    lea eax, ss:[ebp-0x1C]
+0058D62A    push eax
+0058D62B    call 0x0058D3EB
+0058D630    mov esi, eax
+0058D632    lea edi, ss:[ebp-0x10]
+0058D635    pop ecx
+0058D636    pop ecx
+0058D637    movsd
+0058D638    movsd
+0058D639    movsd
+0058D63A    cmp byte ptr ss:[ebp-0x08], 0x00
+0058D63E    pop edi
+0058D63F    pop esi
+0058D640    jnz 0x0058D646
+0058D642    xor eax, eax
+0058D644    jmp 0x0058D69B
+0058D646    push 0x180
+0058D64B    push dword ptr ss:[ebp+0x10]
+0058D64E    lea eax, ss:[ebp-0x04]
+0058D651    push dword ptr ss:[ebp-0x10]
+0058D654    push dword ptr ss:[ebp+0x08]
+0058D657    push eax
+0058D658    call 0x005961E4
+0058D65D    add esp, 0x14
+0058D660    test eax, eax
+0058D662    jnz 0x0058D642
+0058D664    mov eax, dword ptr ss:[ebp+0x14]
+0058D667    inc dword ptr ds:[0x006CF75C]
+0058D66D    add eax, 0x0C
+0058D670    mov ecx, dword ptr ss:[ebp-0x0C]
+0058D673    lock or dword ptr ds:[eax], ecx
+0058D676    mov eax, dword ptr ss:[ebp+0x14]
+0058D679    xor ecx, ecx
+0058D67B    mov dword ptr ds:[eax+0x08], ecx
+0058D67E    mov eax, dword ptr ss:[ebp+0x14]
+0058D681    mov dword ptr ds:[eax+0x1C], ecx
+0058D684    mov eax, dword ptr ss:[ebp+0x14]
+0058D687    mov dword ptr ds:[eax+0x04], ecx
+0058D68A    mov eax, dword ptr ss:[ebp+0x14]
+0058D68D    mov dword ptr ds:[eax], ecx
+0058D68F    mov ecx, dword ptr ss:[ebp+0x14]
+0058D692    mov eax, dword ptr ss:[ebp-0x04]
+0058D695    mov dword ptr ds:[ecx+0x10], eax
+0058D698    mov eax, dword ptr ss:[ebp+0x14]
+0058D69B    mov esp, ebp
+0058D69D    pop ebp
+0058D69E    ret

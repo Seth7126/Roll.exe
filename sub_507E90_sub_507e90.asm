@@ -1,203 +1,80 @@
-00507E90    ???
-00507E91    ???
-00507E92    ???
-00507E93    ???
-00507E94    ???
-00507E95    ???
-00507E96    ???
-00507E97    ???
-00507E98    ???
-00507E99    ???
-00507E9A    ???
-00507E9B    ???
-00507E9C    ???
-00507E9D    ???
-00507E9E    ???
-00507E9F    ???
-00507EA0    ???
-00507EA1    ???
-00507EA2    ???
-00507EA3    ???
-00507EA4    ???
-00507EA5    ???
-00507EA6    ???
-00507EA7    ???
-00507EA8    ???
-00507EA9    ???
-00507EAA    ???
-00507EAB    ???
-00507EAC    ???
-00507EAD    ???
-00507EAE    ???
-00507EAF    ???
-00507EB0    ???
-00507EB1    ???
-00507EB2    ???
-00507EB3    ???
-00507EB4    ???
-00507EB5    ???
-00507EB6    ???
-00507EB7    ???
-00507EB8    ???
-00507EB9    ???
-00507EBA    ???
-00507EBB    ???
-00507EBC    ???
-00507EBD    ???
-00507EBE    ???
-00507EBF    ???
-00507EC0    ???
-00507EC1    ???
-00507EC2    ???
-00507EC3    ???
-00507EC4    ???
-00507EC5    ???
-00507EC6    ???
-00507EC7    ???
-00507EC8    ???
-00507EC9    ???
-00507ECA    ???
-00507ECB    ???
-00507ECC    ???
-00507ECD    ???
-00507ECE    ???
-00507ECF    ???
-00507ED0    ???
-00507ED1    ???
-00507ED2    ???
-00507ED3    ???
-00507ED4    ???
-00507ED5    ???
-00507ED6    ???
-00507ED7    ???
-00507ED8    ???
-00507ED9    ???
-00507EDA    ???
-00507EDB    ???
-00507EDC    ???
-00507EDD    ???
-00507EDE    ???
-00507EDF    ???
-00507EE0    ???
-00507EE1    ???
-00507EE2    ???
-00507EE3    ???
-00507EE4    ???
-00507EE5    ???
-00507EE6    ???
-00507EE7    ???
-00507EE8    ???
-00507EE9    ???
-00507EEA    ???
-00507EEB    ???
-00507EEC    ???
-00507EED    ???
-00507EEE    ???
-00507EEF    ???
-00507EF0    ???
-00507EF1    ???
-00507EF2    ???
-00507EF3    ???
-00507EF4    ???
-00507EF5    ???
-00507EF6    ???
-00507EF7    ???
-00507EF8    ???
-00507EF9    ???
-00507EFA    ???
-00507EFB    ???
-00507EFC    ???
-00507EFD    ???
-00507EFE    ???
-00507EFF    ???
-00507F00    ???
-00507F01    ???
-00507F02    ???
-00507F03    ???
-00507F04    ???
-00507F05    ???
-00507F06    ???
-00507F07    ???
-00507F08    ???
-00507F09    ???
-00507F0A    ???
-00507F0B    ???
-00507F0C    ???
-00507F0D    ???
-00507F0E    ???
-00507F0F    ???
-00507F10    ???
-00507F11    ???
-00507F12    ???
-00507F13    ???
-00507F14    ???
-00507F15    ???
-00507F16    ???
-00507F17    ???
-00507F18    ???
-00507F19    ???
-00507F1A    ???
-00507F1B    ???
-00507F1C    ???
-00507F1D    ???
-00507F1E    ???
-00507F1F    ???
-00507F20    ???
-00507F21    ???
-00507F22    ???
-00507F23    ???
-00507F24    ???
-00507F25    ???
-00507F26    ???
-00507F27    ???
-00507F28    ???
-00507F29    ???
-00507F2A    ???
-00507F2B    ???
-00507F2C    ???
-00507F2D    ???
-00507F2E    ???
-00507F2F    ???
-00507F30    ???
-00507F31    ???
-00507F32    ???
-00507F33    ???
-00507F34    ???
-00507F35    ???
-00507F36    ???
-00507F37    ???
-00507F38    ???
-00507F39    ???
-00507F3A    ???
-00507F3B    ???
-00507F3C    ???
-00507F3D    ???
-00507F3E    ???
-00507F3F    ???
-00507F40    ???
-00507F41    ???
-00507F42    ???
-00507F43    ???
-00507F44    ???
-00507F45    ???
-00507F46    ???
-00507F47    ???
-00507F48    ???
-00507F49    ???
-00507F4A    ???
-00507F4B    ???
-00507F4C    ???
-00507F4D    ???
-00507F4E    ???
-00507F4F    ???
-00507F50    ???
-00507F51    ???
-00507F52    ???
-00507F53    ???
-00507F54    ???
-00507F55    ???
-00507F56    ???
-00507F57    ???
-00507F58    ???
-00507F59    ???
-00507F5A    ???
+00507E90    push ebp
+00507E91    mov ebp, esp
+00507E93    sub esp, 0x08
+00507E96    mov eax, dword ptr ss:[ebp+0x08]
+00507E99    push ebx
+00507E9A    push esi
+00507E9B    dec eax
+00507E9C    mov esi, ecx
+00507E9E    push edi
+00507E9F    mov edi, edx
+00507EA1    sar eax, 0x01
+00507EA3    mov edx, dword ptr ss:[ebp+0x10]
+00507EA6    mov ecx, edi
+00507EA8    mov dword ptr ss:[ebp-0x04], ecx
+00507EAB    mov ebx, edi
+00507EAD    mov dword ptr ss:[ebp-0x08], eax
+00507EB0    cmp edi, eax
+00507EB2    jnl 0x00507EF6
+00507EB4    nop dword ptr ds:[eax], eax
+00507EB8    nop dword ptr ds:[eax+eax*1], eax
+00507EC0    lea ebx, ds:[ebx*2+0x02]
+00507EC7    lea ecx, ds:[esi+ebx*8]
+00507ECA    lea eax, ds:[ecx-0x08]
+00507ECD    push eax
+00507ECE    push ecx
+00507ECF    call edx
+00507ED1    add esp, 0x08
+00507ED4    test al, al
+00507ED6    jz 0x00507ED9
+00507ED8    dec ebx
+00507ED9    mov eax, dword ptr ds:[esi+ebx*8]
+00507EDC    mov edx, dword ptr ss:[ebp+0x10]
+00507EDF    mov dword ptr ds:[esi+edi*8], eax
+00507EE2    mov eax, dword ptr ds:[esi+ebx*8+0x04]
+00507EE6    mov dword ptr ds:[esi+edi*8+0x04], eax
+00507EEA    mov edi, ebx
+00507EEC    mov eax, dword ptr ss:[ebp-0x08]
+00507EEF    cmp ebx, eax
+00507EF1    jl 0x00507EC0
+00507EF3    mov ecx, dword ptr ss:[ebp-0x04]
+00507EF6    cmp ebx, eax
+00507EF8    jnz 0x00507F14
+00507EFA    mov ebx, dword ptr ss:[ebp+0x08]
+00507EFD    test bl, 0x01
+00507F00    jnz 0x00507F14
+00507F02    mov eax, dword ptr ds:[esi+ebx*8-0x08]
+00507F06    mov dword ptr ds:[esi+edi*8], eax
+00507F09    mov eax, dword ptr ds:[esi+ebx*8-0x04]
+00507F0D    mov dword ptr ds:[esi+edi*8+0x04], eax
+00507F11    lea edi, ds:[ebx-0x01]
+00507F14    cmp ecx, edi
+00507F16    jnl 0x00507F45
+00507F18    push dword ptr ss:[ebp+0x0C]
+00507F1B    lea ebx, ds:[edi-0x01]
+00507F1E    sar ebx, 0x01
+00507F20    lea eax, ds:[esi+ebx*8]
+00507F23    push eax
+00507F24    call edx
+00507F26    add esp, 0x08
+00507F29    test al, al
+00507F2B    jz 0x00507F45
+00507F2D    mov eax, dword ptr ds:[esi+ebx*8]
+00507F30    mov edx, dword ptr ss:[ebp+0x10]
+00507F33    mov dword ptr ds:[esi+edi*8], eax
+00507F36    mov eax, dword ptr ds:[esi+ebx*8+0x04]
+00507F3A    mov dword ptr ds:[esi+edi*8+0x04], eax
+00507F3E    mov edi, ebx
+00507F40    cmp dword ptr ss:[ebp-0x04], ebx
+00507F43    jl 0x00507F18
+00507F45    mov ecx, dword ptr ss:[ebp+0x0C]
+00507F48    mov eax, dword ptr ds:[ecx]
+00507F4A    mov dword ptr ds:[esi+edi*8], eax
+00507F4D    mov eax, dword ptr ds:[ecx+0x04]
+00507F50    mov dword ptr ds:[esi+edi*8+0x04], eax
+00507F54    pop edi
+00507F55    pop esi
+00507F56    pop ebx
+00507F57    mov esp, ebp
+00507F59    pop ebp
+00507F5A    ret

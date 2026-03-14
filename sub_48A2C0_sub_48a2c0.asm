@@ -1,65 +1,29 @@
-0048A2C0    ???
-0048A2C1    ???
-0048A2C2    ???
-0048A2C3    ???
-0048A2C4    ???
-0048A2C5    ???
-0048A2C6    ???
-0048A2C7    ???
-0048A2C8    ???
-0048A2C9    ???
-0048A2CA    ???
-0048A2CB    ???
-0048A2CC    ???
-0048A2CD    ???
-0048A2CE    ???
-0048A2CF    ???
-0048A2D0    ???
-0048A2D1    ???
-0048A2D2    ???
-0048A2D3    ???
-0048A2D4    ???
-0048A2D5    ???
-0048A2D6    ???
-0048A2D7    ???
-0048A2D8    ???
-0048A2D9    ???
-0048A2DA    ???
-0048A2DB    ???
-0048A2DC    ???
-0048A2DD    ???
-0048A2DE    ???
-0048A2DF    ???
-0048A2E0    ???
-0048A2E1    ???
-0048A2E2    ???
-0048A2E3    ???
-0048A2E4    ???
-0048A2E5    ???
-0048A2E6    ???
-0048A2E7    ???
-0048A2E8    ???
-0048A2E9    ???
-0048A2EA    ???
-0048A2EB    ???
-0048A2EC    ???
-0048A2ED    ???
-0048A2EE    ???
-0048A2EF    ???
-0048A2F0    ???
-0048A2F1    ???
-0048A2F2    ???
-0048A2F3    ???
-0048A2F4    ???
-0048A2F5    ???
-0048A2F6    ???
-0048A2F7    ???
-0048A2F8    ???
-0048A2F9    ???
-0048A2FA    ???
-0048A2FB    ???
-0048A2FC    ???
-0048A2FD    ???
-0048A2FE    ???
-0048A2FF    ???
-0048A300    ???
+0048A2C0    push esi
+0048A2C1    mov esi, edx
+0048A2C3    push edi
+0048A2C4    mov edi, ecx
+0048A2C6    cmp byte ptr ds:[esi], 0x00
+0048A2C9    jnz 0x0048A2D4
+0048A2CB    mov dword ptr ds:[edi], 0x5B2591
+0048A2D1    pop edi
+0048A2D2    pop esi
+0048A2D3    ret
+0048A2D4    lea ecx, ds:[edx+0x01]
+0048A2D7    mov al, byte ptr ds:[edx]
+0048A2D9    inc edx
+0048A2DA    test al, al
+0048A2DC    jnz 0x0048A2D7
+0048A2DE    sub edx, ecx
+0048A2E0    mov ecx, edi
+0048A2E2    call 0x0048A0E0
+0048A2E7    mov ecx, dword ptr ds:[edi]
+0048A2E9    nop dword ptr ds:[eax], eax
+0048A2F0    mov al, byte ptr ds:[esi]
+0048A2F2    lea esi, ds:[esi+0x01]
+0048A2F5    mov byte ptr ds:[ecx], al
+0048A2F7    lea ecx, ds:[ecx+0x01]
+0048A2FA    test al, al
+0048A2FC    jnz 0x0048A2F0
+0048A2FE    pop edi
+0048A2FF    pop esi
+0048A300    ret

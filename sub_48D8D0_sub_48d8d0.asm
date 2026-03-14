@@ -1,24 +1,11 @@
-0048D8D0    ???
-0048D8D1    ???
-0048D8D2    ???
-0048D8D3    ???
-0048D8D4    ???
-0048D8D5    ???
-0048D8D6    ???
-0048D8D7    ???
-0048D8D8    ???
-0048D8D9    ???
-0048D8DA    ???
-0048D8DB    ???
-0048D8DC    ???
-0048D8DD    ???
-0048D8DE    ???
-0048D8DF    ???
-0048D8E0    ???
-0048D8E1    ???
-0048D8E2    ???
-0048D8E3    ???
-0048D8E4    ???
-0048D8E5    ???
-0048D8E6    ???
-0048D8E7    ???
+0048D8D0    push ebp
+0048D8D1    mov ebp, esp
+0048D8D3    mov edx, dword ptr ss:[ebp+0x0C]
+0048D8D6    lea eax, ss:[ebp+0x10]
+0048D8D9    push eax
+0048D8DA    push ecx
+0048D8DB    mov ecx, dword ptr ss:[ebp+0x08]
+0048D8DE    call 0x0048D8A0
+0048D8E3    add esp, 0x08
+0048D8E6    pop ebp
+0048D8E7    ret

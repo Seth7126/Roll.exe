@@ -1,3 +1,1 @@
-0058D14B    ???
-0058D14C    ???
-0058D14D    ???
+0058D14B    mov bl, byte ptr ss:[ebp-0x19]

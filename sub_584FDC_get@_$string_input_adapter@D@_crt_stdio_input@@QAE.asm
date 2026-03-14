@@ -1,22 +1,10 @@
-00584FDC    ???
-00584FDD    ???
-00584FDE    ???
-00584FDF    ???
-00584FE0    ???
-00584FE1    ???
-00584FE2    ???
-00584FE3    ???
-00584FE4    ???
-00584FE5    ???
-00584FE6    ???
-00584FE7    ???
-00584FE8    ???
-00584FE9    ???
-00584FEA    ???
-00584FEB    ???
-00584FEC    ???
-00584FED    ???
-00584FEE    ???
-00584FEF    ???
-00584FF0    ???
-00584FF1    ???
+00584FDC    mov edx, ecx
+00584FDE    mov ecx, dword ptr ds:[edx+0x08]
+00584FE1    cmp ecx, dword ptr ds:[edx+0x04]
+00584FE4    jnz 0x00584FEA
+00584FE6    or eax, 0xFFFFFFFF
+00584FE9    ret
+00584FEA    movzx eax, byte ptr ds:[ecx]
+00584FED    inc ecx
+00584FEE    mov dword ptr ds:[edx+0x08], ecx
+00584FF1    ret

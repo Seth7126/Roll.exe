@@ -1,18 +1,8 @@
-0055A6F0    ???
-0055A6F1    ???
-0055A6F2    ???
-0055A6F3    ???
-0055A6F4    ???
-0055A6F5    ???
-0055A6F6    ???
-0055A6F7    ???
-0055A6F8    ???
-0055A6F9    ???
-0055A6FA    ???
-0055A6FB    ???
-0055A6FC    ???
-0055A6FD    ???
-0055A6FE    ???
-0055A6FF    ???
-0055A700    ???
-0055A701    ???
+0055A6F0    push ebp
+0055A6F1    mov ebp, esp
+0055A6F3    fld dword ptr ss:[ebp+0x08]
+0055A6F6    fld dword ptr ds:[0x0060C3F0]
+0055A6FC    fmul st1, st0
+0055A6FE    faddp st1, st0
+0055A700    pop ebp
+0055A701    ret

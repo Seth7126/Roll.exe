@@ -1,36 +1,15 @@
-005788DC    ???
-005788DD    ???
-005788DE    ???
-005788DF    ???
-005788E0    ???
-005788E1    ???
-005788E2    ???
-005788E3    ???
-005788E4    ???
-005788E5    ???
-005788E6    ???
-005788E7    ???
-005788E8    ???
-005788E9    ???
-005788EA    ???
-005788EB    ???
-005788EC    ???
-005788ED    ???
-005788EE    ???
-005788EF    ???
-005788F0    ???
-005788F1    ???
-005788F2    ???
-005788F3    ???
-005788F4    ???
-005788F5    ???
-005788F6    ???
-005788F7    ???
-005788F8    ???
-005788F9    ???
-005788FA    ???
-005788FB    ???
-005788FC    ???
-005788FD    ???
-005788FE    ???
-005788FF    ???
+005788DC    push ebp
+005788DD    mov ebp, esp
+005788DF    mov ecx, dword ptr ss:[ebp+0x0C]
+005788E2    push esi
+005788E3    mov esi, dword ptr ss:[ebp+0x08]
+005788E6    mov dword ptr ds:[esi], ecx
+005788E8    call 0x0057A0A4
+005788ED    mov ecx, dword ptr ds:[eax+0x24]
+005788F0    mov dword ptr ds:[esi+0x04], ecx
+005788F3    call 0x0057A0A4
+005788F8    mov dword ptr ds:[eax+0x24], esi
+005788FB    mov eax, esi
+005788FD    pop esi
+005788FE    pop ebp
+005788FF    ret

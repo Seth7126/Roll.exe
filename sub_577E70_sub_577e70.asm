@@ -1,20 +1,10 @@
-00577E70    ???
-00577E71    ???
-00577E72    ???
-00577E73    ???
-00577E74    ???
-00577E75    ???
-00577E76    ???
-00577E77    ???
-00577E78    ???
-00577E79    ???
-00577E7A    ???
-00577E7B    ???
-00577E7C    ???
-00577E7D    ???
-00577E7E    ???
-00577E7F    ???
-00577E80    ???
-00577E81    ???
-00577E82    ???
-00577E83    ???
+00577E70    mov ecx, dword ptr ss:[ebp-0x14]
+00577E73    mov eax, dword ptr ds:[ecx]
+00577E75    mov eax, dword ptr ds:[eax]
+00577E77    mov dword ptr ss:[ebp-0x20], eax
+00577E7A    push ecx
+00577E7B    push eax
+00577E7C    call 0x0058A45B
+00577E81    pop ecx
+00577E82    pop ecx
+00577E83    ret

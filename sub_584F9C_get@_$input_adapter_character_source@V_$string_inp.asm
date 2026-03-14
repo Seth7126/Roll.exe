@@ -1,64 +1,27 @@
-00584F9C    ???
-00584F9D    ???
-00584F9E    ???
-00584F9F    ???
-00584FA0    ???
-00584FA1    ???
-00584FA2    ???
-00584FA3    ???
-00584FA4    ???
-00584FA5    ???
-00584FA6    ???
-00584FA7    ???
-00584FA8    ???
-00584FA9    ???
-00584FAA    ???
-00584FAB    ???
-00584FAC    ???
-00584FAD    ???
-00584FAE    ???
-00584FAF    ???
-00584FB0    ???
-00584FB1    ???
-00584FB2    ???
-00584FB3    ???
-00584FB4    ???
-00584FB5    ???
-00584FB6    ???
-00584FB7    ???
-00584FB8    ???
-00584FB9    ???
-00584FBA    ???
-00584FBB    ???
-00584FBC    ???
-00584FBD    ???
-00584FBE    ???
-00584FBF    ???
-00584FC0    ???
-00584FC1    ???
-00584FC2    ???
-00584FC3    ???
-00584FC4    ???
-00584FC5    ???
-00584FC6    ???
-00584FC7    ???
-00584FC8    ???
-00584FC9    ???
-00584FCA    ???
-00584FCB    ???
-00584FCC    ???
-00584FCD    ???
-00584FCE    ???
-00584FCF    ???
-00584FD0    ???
-00584FD1    ???
-00584FD2    ???
-00584FD3    ???
-00584FD4    ???
-00584FD5    ???
-00584FD6    ???
-00584FD7    ???
-00584FD8    ???
-00584FD9    ???
-00584FDA    ???
-00584FDB    ???
+00584F9C    mov edx, dword ptr ds:[ecx+0x10]
+00584F9F    mov eax, dword ptr ds:[ecx+0x08]
+00584FA2    add edx, 0x01
+00584FA5    push esi
+00584FA6    mov esi, dword ptr ds:[ecx+0x14]
+00584FA9    adc esi, 0x00
+00584FAC    mov dword ptr ds:[ecx+0x10], edx
+00584FAF    or eax, dword ptr ds:[ecx+0x0C]
+00584FB2    mov dword ptr ds:[ecx+0x14], esi
+00584FB5    jz 0x00584FC7
+00584FB7    cmp esi, dword ptr ds:[ecx+0x0C]
+00584FBA    jb 0x00584FC7
+00584FBC    jnbe 0x00584FC3
+00584FBE    cmp edx, dword ptr ds:[ecx+0x08]
+00584FC1    jbe 0x00584FC7
+00584FC3    xor al, al
+00584FC5    pop esi
+00584FC6    ret
+00584FC7    mov ecx, dword ptr ds:[ecx]
+00584FC9    call 0x00584FDC
+00584FCE    mov ecx, eax
+00584FD0    cmp ecx, 0xFFFFFFFF
+00584FD3    pop esi
+00584FD4    setz al
+00584FD7    dec al
+00584FD9    and al, cl
+00584FDB    ret

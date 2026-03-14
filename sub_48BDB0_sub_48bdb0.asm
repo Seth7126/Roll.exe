@@ -1,131 +1,51 @@
-0048BDB0    ???
-0048BDB1    ???
-0048BDB2    ???
-0048BDB3    ???
-0048BDB4    ???
-0048BDB5    ???
-0048BDB6    ???
-0048BDB7    ???
-0048BDB8    ???
-0048BDB9    ???
-0048BDBA    ???
-0048BDBB    ???
-0048BDBC    ???
-0048BDBD    ???
-0048BDBE    ???
-0048BDBF    ???
-0048BDC0    ???
-0048BDC1    ???
-0048BDC2    ???
-0048BDC3    ???
-0048BDC4    ???
-0048BDC5    ???
-0048BDC6    ???
-0048BDC7    ???
-0048BDC8    ???
-0048BDC9    ???
-0048BDCA    ???
-0048BDCB    ???
-0048BDCC    ???
-0048BDCD    ???
-0048BDCE    ???
-0048BDCF    ???
-0048BDD0    ???
-0048BDD1    ???
-0048BDD2    ???
-0048BDD3    ???
-0048BDD4    ???
-0048BDD5    ???
-0048BDD6    ???
-0048BDD7    ???
-0048BDD8    ???
-0048BDD9    ???
-0048BDDA    ???
-0048BDDB    ???
-0048BDDC    ???
-0048BDDD    ???
-0048BDDE    ???
-0048BDDF    ???
-0048BDE0    ???
-0048BDE1    ???
-0048BDE2    ???
-0048BDE3    ???
-0048BDE4    ???
-0048BDE5    ???
-0048BDE6    ???
-0048BDE7    ???
-0048BDE8    ???
-0048BDE9    ???
-0048BDEA    ???
-0048BDEB    ???
-0048BDEC    ???
-0048BDED    ???
-0048BDEE    ???
-0048BDEF    ???
-0048BDF0    ???
-0048BDF1    ???
-0048BDF2    ???
-0048BDF3    ???
-0048BDF4    ???
-0048BDF5    ???
-0048BDF6    ???
-0048BDF7    ???
-0048BDF8    ???
-0048BDF9    ???
-0048BDFA    ???
-0048BDFB    ???
-0048BDFC    ???
-0048BDFD    ???
-0048BDFE    ???
-0048BDFF    ???
-0048BE00    ???
-0048BE01    ???
-0048BE02    ???
-0048BE03    ???
-0048BE04    ???
-0048BE05    ???
-0048BE06    ???
-0048BE07    ???
-0048BE08    ???
-0048BE09    ???
-0048BE0A    ???
-0048BE0B    ???
-0048BE0C    ???
-0048BE0D    ???
-0048BE0E    ???
-0048BE0F    ???
-0048BE10    ???
-0048BE11    ???
-0048BE12    ???
-0048BE13    ???
-0048BE14    ???
-0048BE15    ???
-0048BE16    ???
-0048BE17    ???
-0048BE18    ???
-0048BE19    ???
-0048BE1A    ???
-0048BE1B    ???
-0048BE1C    ???
-0048BE1D    ???
-0048BE1E    ???
-0048BE1F    ???
-0048BE20    ???
-0048BE21    ???
-0048BE22    ???
-0048BE23    ???
-0048BE24    ???
-0048BE25    ???
-0048BE26    ???
-0048BE27    ???
-0048BE28    ???
-0048BE29    ???
-0048BE2A    ???
-0048BE2B    ???
-0048BE2C    ???
-0048BE2D    ???
-0048BE2E    ???
-0048BE2F    ???
-0048BE30    ???
-0048BE31    ???
-0048BE32    ???
+0048BDB0    push ebp
+0048BDB1    mov ebp, esp
+0048BDB3    mov eax, dword ptr ds:[0x00ACA0DC]
+0048BDB8    push esi
+0048BDB9    push edi
+0048BDBA    mov edi, edx
+0048BDBC    test ecx, ecx
+0048BDBE    jz 0x0048BE2F
+0048BDC0    movzx esi, cx
+0048BDC3    cmp esi, dword ptr ds:[eax+0x04]
+0048BDC6    jnb 0x0048BE2F
+0048BDC8    imul esi, esi, 0x4C
+0048BDCB    add esi, dword ptr ds:[eax]
+0048BDCD    cmp dword ptr ds:[esi+0x48], ecx
+0048BDD0    jnz 0x0048BE2F
+0048BDD2    mov eax, dword ptr ds:[esi+0x10]
+0048BDD5    cmp eax, 0xFFFFFFFF
+0048BDD8    jnz 0x0048BDF4
+0048BDDA    mov ecx, dword ptr ds:[0x00ACA1E4]
+0048BDE0    movzx eax, word ptr ds:[esi+0x02]
+0048BDE4    push 0x00
+0048BDE6    push eax
+0048BDE7    mov edx, dword ptr ds:[ecx]
+0048BDE9    call dword ptr ds:[edx+0x08]
+0048BDEC    mov dword ptr ds:[esi+0x10], eax
+0048BDEF    cmp eax, 0xFFFFFFFF
+0048BDF2    jz 0x0048BE2F
+0048BDF4    push dword ptr ss:[ebp+0x08]
+0048BDF7    mov ecx, dword ptr ds:[0x00ACA1E4]
+0048BDFD    push dword ptr ss:[ebp+0x0C]
+0048BE00    push edi
+0048BE01    mov edx, dword ptr ds:[ecx]
+0048BE03    push eax
+0048BE04    call dword ptr ds:[edx+0x10]
+0048BE07    cmp eax, 0xFFFFFFFE
+0048BE0A    jnz 0x0048BE2F
+0048BE0C    mov ecx, dword ptr ds:[0x00ACA1E4]
+0048BE12    push dword ptr ds:[esi+0x10]
+0048BE15    mov eax, dword ptr ds:[ecx]
+0048BE17    call dword ptr ds:[eax+0x0C]
+0048BE1A    mov ecx, dword ptr ds:[0x00ACA1E4]
+0048BE20    movzx eax, word ptr ds:[esi+0x02]
+0048BE24    push 0x00
+0048BE26    push eax
+0048BE27    mov edx, dword ptr ds:[ecx]
+0048BE29    call dword ptr ds:[edx+0x08]
+0048BE2C    mov dword ptr ds:[esi+0x10], eax
+0048BE2F    pop edi
+0048BE30    pop esi
+0048BE31    pop ebp
+0048BE32    ret

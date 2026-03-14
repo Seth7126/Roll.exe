@@ -1,49 +1,24 @@
-0057BFBC    ???
-0057BFBD    ???
-0057BFBE    ???
-0057BFBF    ???
-0057BFC0    ???
-0057BFC1    ???
-0057BFC2    ???
-0057BFC3    ???
-0057BFC4    ???
-0057BFC5    ???
-0057BFC6    ???
-0057BFC7    ???
-0057BFC8    ???
-0057BFC9    ???
-0057BFCA    ???
-0057BFCB    ???
-0057BFCC    ???
-0057BFCD    ???
-0057BFCE    ???
-0057BFCF    ???
-0057BFD0    ???
-0057BFD1    ???
-0057BFD2    ???
-0057BFD3    ???
-0057BFD4    ???
-0057BFD5    ???
-0057BFD6    ???
-0057BFD7    ???
-0057BFD8    ???
-0057BFD9    ???
-0057BFDA    ???
-0057BFDB    ???
-0057BFDC    ???
-0057BFDD    ???
-0057BFDE    ???
-0057BFDF    ???
-0057BFE0    ???
-0057BFE1    ???
-0057BFE2    ???
-0057BFE3    ???
-0057BFE4    ???
-0057BFE5    ???
-0057BFE6    ???
-0057BFE7    ???
-0057BFE8    ???
-0057BFE9    ???
-0057BFEA    ???
-0057BFEB    ???
-0057BFEC    ???
+0057BFBC    mov edi, edi
+0057BFBE    push ebp
+0057BFBF    mov ebp, esp
+0057BFC1    mov eax, dword ptr ss:[ebp+0x14]
+0057BFC4    dec eax
+0057BFC5    sub eax, 0x01
+0057BFC8    jz 0x0057BFE9
+0057BFCA    sub eax, 0x01
+0057BFCD    jz 0x0057BFE5
+0057BFCF    sub eax, 0x09
+0057BFD2    jz 0x0057BFE5
+0057BFD4    cmp dword ptr ss:[ebp+0x14], 0x0D
+0057BFD8    jz 0x0057BFE9
+0057BFDA    mov al, byte ptr ss:[ebp+0x10]
+0057BFDD    cmp al, 0x63
+0057BFDF    jz 0x0057BFE9
+0057BFE1    cmp al, 0x73
+0057BFE3    jz 0x0057BFE9
+0057BFE5    mov al, 0x01
+0057BFE7    pop ebp
+0057BFE8    ret
+0057BFE9    xor al, al
+0057BFEB    pop ebp
+0057BFEC    ret

@@ -1,12 +1,6 @@
-004C2ED0    ???
-004C2ED1    ???
-004C2ED2    ???
-004C2ED3    ???
-004C2ED4    ???
-004C2ED5    ???
-004C2ED6    ???
-004C2ED7    ???
-004C2ED8    ???
-004C2ED9    ???
-004C2EDA    ???
-004C2EDB    ???
+004C2ED0    test ecx, ecx
+004C2ED2    jz 0x004C2EDB
+004C2ED4    push ecx
+004C2ED5    call 0x00586F45
+004C2EDA    pop ecx
+004C2EDB    ret

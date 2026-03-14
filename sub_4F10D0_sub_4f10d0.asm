@@ -1,87 +1,41 @@
-004F10D0    ???
-004F10D1    ???
-004F10D2    ???
-004F10D3    ???
-004F10D4    ???
-004F10D5    ???
-004F10D6    ???
-004F10D7    ???
-004F10D8    ???
-004F10D9    ???
-004F10DA    ???
-004F10DB    ???
-004F10DC    ???
-004F10DD    ???
-004F10DE    ???
-004F10DF    ???
-004F10E0    ???
-004F10E1    ???
-004F10E2    ???
-004F10E3    ???
-004F10E4    ???
-004F10E5    ???
-004F10E6    ???
-004F10E7    ???
-004F10E8    ???
-004F10E9    ???
-004F10EA    ???
-004F10EB    ???
-004F10EC    ???
-004F10ED    ???
-004F10EE    ???
-004F10EF    ???
-004F10F0    ???
-004F10F1    ???
-004F10F2    ???
-004F10F3    ???
-004F10F4    ???
-004F10F5    ???
-004F10F6    ???
-004F10F7    ???
-004F10F8    ???
-004F10F9    ???
-004F10FA    ???
-004F10FB    ???
-004F10FC    ???
-004F10FD    ???
-004F10FE    ???
-004F10FF    ???
-004F1100    ???
-004F1101    ???
-004F1102    ???
-004F1103    ???
-004F1104    ???
-004F1105    ???
-004F1106    ???
-004F1107    ???
-004F1108    ???
-004F1109    ???
-004F110A    ???
-004F110B    ???
-004F110C    ???
-004F110D    ???
-004F110E    ???
-004F110F    ???
-004F1110    ???
-004F1111    ???
-004F1112    ???
-004F1113    ???
-004F1114    ???
-004F1115    ???
-004F1116    ???
-004F1117    ???
-004F1118    ???
-004F1119    ???
-004F111A    ???
-004F111B    ???
-004F111C    ???
-004F111D    ???
-004F111E    ???
-004F111F    ???
-004F1120    ???
-004F1121    ???
-004F1122    ???
-004F1123    ???
-004F1124    ???
-004F1125    ???
-004F1126    ???
+004F10D0    push ebp
+004F10D1    mov ebp, esp
+004F10D3    sub esp, 0x08
+004F10D6    push ebx
+004F10D7    mov eax, ecx
+004F10D9    mov dword ptr ss:[ebp-0x08], edx
+004F10DC    push esi
+004F10DD    xor esi, esi
+004F10DF    mov dword ptr ss:[ebp-0x04], eax
+004F10E2    push edi
+004F10E3    cmp dword ptr ds:[eax+0x08], esi
+004F10E6    jle 0x004F1113
+004F10E8    xor edi, edi
+004F10EA    nop word ptr ds:[eax+eax*1], ax
+004F10F0    mov ebx, dword ptr ds:[eax+0x04]
+004F10F3    push edx
+004F10F4    push dword ptr ds:[ebx+edi*1+0x04]
+004F10F8    call 0x0057EB20
+004F10FD    add esp, 0x08
+004F1100    test eax, eax
+004F1102    jz 0x004F111D
+004F1104    mov eax, dword ptr ss:[ebp-0x04]
+004F1107    inc esi
+004F1108    mov edx, dword ptr ss:[ebp-0x08]
+004F110B    add edi, 0x3C
+004F110E    cmp esi, dword ptr ds:[eax+0x08]
+004F1111    jl 0x004F10F0
+004F1113    pop edi
+004F1114    pop esi
+004F1115    or eax, 0xFFFFFFFF
+004F1118    pop ebx
+004F1119    mov esp, ebp
+004F111B    pop ebp
+004F111C    ret
+004F111D    mov eax, dword ptr ds:[ebx+edi*1]
+004F1120    pop edi
+004F1121    pop esi
+004F1122    pop ebx
+004F1123    mov esp, ebp
+004F1125    pop ebp
+004F1126    ret

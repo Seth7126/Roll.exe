@@ -1,12 +1,5 @@
-0058BED4    ???
-0058BED5    ???
-0058BED6    ???
-0058BED7    ???
-0058BED8    ???
-0058BED9    ???
-0058BEDA    ???
-0058BEDB    ???
-0058BEDC    ???
-0058BEDD    ???
-0058BEDE    ???
-0058BEDF    ???
+0058BED4    mov eax, dword ptr ss:[ebp+0x10]
+0058BED7    push dword ptr ds:[eax]
+0058BED9    call 0x00589EC6
+0058BEDE    pop ecx
+0058BEDF    ret

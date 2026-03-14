@@ -1,56 +1,29 @@
-00593C7D    ???
-00593C7E    ???
-00593C7F    ???
-00593C80    ???
-00593C81    ???
-00593C82    ???
-00593C83    ???
-00593C84    ???
-00593C85    ???
-00593C86    ???
-00593C87    ???
-00593C88    ???
-00593C89    ???
-00593C8A    ???
-00593C8B    ???
-00593C8C    ???
-00593C8D    ???
-00593C8E    ???
-00593C8F    ???
-00593C90    ???
-00593C91    ???
-00593C92    ???
-00593C93    ???
-00593C94    ???
-00593C95    ???
-00593C96    ???
-00593C97    ???
-00593C98    ???
-00593C99    ???
-00593C9A    ???
-00593C9B    ???
-00593C9C    ???
-00593C9D    ???
-00593C9E    ???
-00593C9F    ???
-00593CA0    ???
-00593CA1    ???
-00593CA2    ???
-00593CA3    ???
-00593CA4    ???
-00593CA5    ???
-00593CA6    ???
-00593CA7    ???
-00593CA8    ???
-00593CA9    ???
-00593CAA    ???
-00593CAB    ???
-00593CAC    ???
-00593CAD    ???
-00593CAE    ???
-00593CAF    ???
-00593CB0    ???
-00593CB1    ???
-00593CB2    ???
-00593CB3    ???
-00593CB4    ???
+00593C7D    mov edi, edi
+00593C7F    push ebp
+00593C80    mov ebp, esp
+00593C82    mov ecx, dword ptr ss:[ebp+0x0C]
+00593C85    push ebx
+00593C86    shl ecx, 0x02
+00593C89    push esi
+00593C8A    mov esi, dword ptr ss:[ebp+0x08]
+00593C8D    push edi
+00593C8E    xor edi, edi
+00593C90    lea eax, ds:[ecx+esi*1]
+00593C93    shr ecx, 0x02
+00593C96    cmp eax, esi
+00593C98    sbb ebx, ebx
+00593C9A    not ebx
+00593C9C    and ebx, ecx
+00593C9E    jz 0x00593CB0
+00593CA0    push dword ptr ds:[esi]
+00593CA2    call 0x0058BB72
+00593CA7    inc edi
+00593CA8    lea esi, ds:[esi+0x04]
+00593CAB    pop ecx
+00593CAC    cmp edi, ebx
+00593CAE    jnz 0x00593CA0
+00593CB0    pop edi
+00593CB1    pop esi
+00593CB2    pop ebx
+00593CB3    pop ebp
+00593CB4    ret

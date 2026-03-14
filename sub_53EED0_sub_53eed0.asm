@@ -1,99 +1,52 @@
-0053EED0    ???
-0053EED1    ???
-0053EED2    ???
-0053EED3    ???
-0053EED4    ???
-0053EED5    ???
-0053EED6    ???
-0053EED7    ???
-0053EED8    ???
-0053EED9    ???
-0053EEDA    ???
-0053EEDB    ???
-0053EEDC    ???
-0053EEDD    ???
-0053EEDE    ???
-0053EEDF    ???
-0053EEE0    ???
-0053EEE1    ???
-0053EEE2    ???
-0053EEE3    ???
-0053EEE4    ???
-0053EEE5    ???
-0053EEE6    ???
-0053EEE7    ???
-0053EEE8    ???
-0053EEE9    ???
-0053EEEA    ???
-0053EEEB    ???
-0053EEEC    ???
-0053EEED    ???
-0053EEEE    ???
-0053EEEF    ???
-0053EEF0    ???
-0053EEF1    ???
-0053EEF2    ???
-0053EEF3    ???
-0053EEF4    ???
-0053EEF5    ???
-0053EEF6    ???
-0053EEF7    ???
-0053EEF8    ???
-0053EEF9    ???
-0053EEFA    ???
-0053EEFB    ???
-0053EEFC    ???
-0053EEFD    ???
-0053EEFE    ???
-0053EEFF    ???
-0053EF00    ???
-0053EF01    ???
-0053EF02    ???
-0053EF03    ???
-0053EF04    ???
-0053EF05    ???
-0053EF06    ???
-0053EF07    ???
-0053EF08    ???
-0053EF09    ???
-0053EF0A    ???
-0053EF0B    ???
-0053EF0C    ???
-0053EF0D    ???
-0053EF0E    ???
-0053EF0F    ???
-0053EF10    ???
-0053EF11    ???
-0053EF12    ???
-0053EF13    ???
-0053EF14    ???
-0053EF15    ???
-0053EF16    ???
-0053EF17    ???
-0053EF18    ???
-0053EF19    ???
-0053EF1A    ???
-0053EF1B    ???
-0053EF1C    ???
-0053EF1D    ???
-0053EF1E    ???
-0053EF1F    ???
-0053EF20    ???
-0053EF21    ???
-0053EF22    ???
-0053EF23    ???
-0053EF24    ???
-0053EF25    ???
-0053EF26    ???
-0053EF27    ???
-0053EF28    ???
-0053EF29    ???
-0053EF2A    ???
-0053EF2B    ???
-0053EF2C    ???
-0053EF2D    ???
-0053EF2E    ???
-0053EF2F    ???
-0053EF30    ???
-0053EF31    ???
-0053EF32    ???
+0053EED0    push ebp
+0053EED1    mov ebp, esp
+0053EED3    push ecx
+0053EED4    push ebx
+0053EED5    mov ebx, dword ptr ss:[ebp+0x08]
+0053EED8    push esi
+0053EED9    push edi
+0053EEDA    mov edi, dword ptr ss:[ebp+0x0C]
+0053EEDD    mov ecx, dword ptr ds:[ebx]
+0053EEDF    mov eax, dword ptr ds:[edi]
+0053EEE1    cmp dword ptr ds:[ecx+0x04], 0x03
+0053EEE5    mov eax, dword ptr ds:[eax+0x04]
+0053EEE8    jnz 0x0053EF26
+0053EEEA    cmp eax, 0x03
+0053EEED    jnz 0x0053EF1E
+0053EEEF    call 0x0048F5C0
+0053EEF4    mov ecx, dword ptr ds:[edi]
+0053EEF6    mov esi, eax
+0053EEF8    call 0x0048F5C0
+0053EEFD    mov ecx, dword ptr ds:[esi]
+0053EEFF    mov eax, dword ptr ds:[eax]
+0053EF01    mov edx, dword ptr ds:[ecx+0x04]
+0053EF04    imul edx, dword ptr ds:[ecx]
+0053EF07    mov ecx, dword ptr ds:[eax+0x04]
+0053EF0A    imul ecx, dword ptr ds:[eax]
+0053EF0D    cmp edx, ecx
+0053EF0F    jnle 0x0053EF1E
+0053EF11    jl 0x0053EF2B
+0053EF13    cmp ebx, edi
+0053EF15    setb al
+0053EF18    pop edi
+0053EF19    pop esi
+0053EF1A    pop ebx
+0053EF1B    pop ecx
+0053EF1C    pop ebp
+0053EF1D    ret
+0053EF1E    mov al, 0x01
+0053EF20    pop edi
+0053EF21    pop esi
+0053EF22    pop ebx
+0053EF23    pop ecx
+0053EF24    pop ebp
+0053EF25    ret
+0053EF26    cmp eax, 0x03
+0053EF29    jnz 0x0053EF13
+0053EF2B    pop edi
+0053EF2C    pop esi
+0053EF2D    xor al, al
+0053EF2F    pop ebx
+0053EF30    pop ecx
+0053EF31    pop ebp
+0053EF32    ret

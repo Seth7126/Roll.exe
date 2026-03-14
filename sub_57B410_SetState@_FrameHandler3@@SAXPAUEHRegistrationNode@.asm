@@ -1,14 +1,7 @@
-0057B410    ???
-0057B411    ???
-0057B412    ???
-0057B413    ???
-0057B414    ???
-0057B415    ???
-0057B416    ???
-0057B417    ???
-0057B418    ???
-0057B419    ???
-0057B41A    ???
-0057B41B    ???
-0057B41C    ???
-0057B41D    ???
+0057B410    push ebp
+0057B411    mov ebp, esp
+0057B413    mov eax, dword ptr ss:[ebp+0x08]
+0057B416    mov ecx, dword ptr ss:[ebp+0x10]
+0057B419    mov dword ptr ds:[eax+0x08], ecx
+0057B41C    pop ebp
+0057B41D    ret

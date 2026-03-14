@@ -1,59 +1,29 @@
-0057EAE5    ???
-0057EAE6    ???
-0057EAE7    ???
-0057EAE8    ???
-0057EAE9    ???
-0057EAEA    ???
-0057EAEB    ???
-0057EAEC    ???
-0057EAED    ???
-0057EAEE    ???
-0057EAEF    ???
-0057EAF0    ???
-0057EAF1    ???
-0057EAF2    ???
-0057EAF3    ???
-0057EAF4    ???
-0057EAF5    ???
-0057EAF6    ???
-0057EAF7    ???
-0057EAF8    ???
-0057EAF9    ???
-0057EAFA    ???
-0057EAFB    ???
-0057EAFC    ???
-0057EAFD    ???
-0057EAFE    ???
-0057EAFF    ???
-0057EB00    ???
-0057EB01    ???
-0057EB02    ???
-0057EB03    ???
-0057EB04    ???
-0057EB05    ???
-0057EB06    ???
-0057EB07    ???
-0057EB08    ???
-0057EB09    ???
-0057EB0A    ???
-0057EB0B    ???
-0057EB0C    ???
-0057EB0D    ???
-0057EB0E    ???
-0057EB0F    ???
-0057EB10    ???
-0057EB11    ???
-0057EB12    ???
-0057EB13    ???
-0057EB14    ???
-0057EB15    ???
-0057EB16    ???
-0057EB17    ???
-0057EB18    ???
-0057EB19    ???
-0057EB1A    ???
-0057EB1B    ???
-0057EB1C    ???
-0057EB1D    ???
-0057EB1E    ???
-0057EB1F    ???
+0057EAE5    mov edi, edi
+0057EAE7    push ebp
+0057EAE8    mov ebp, esp
+0057EAEA    push esi
+0057EAEB    mov esi, dword ptr ss:[ebp+0x08]
+0057EAEE    push edi
+0057EAEF    mov edi, dword ptr ss:[ebp+0x0C]
+0057EAF2    movzx ecx, byte ptr ds:[esi]
+0057EAF5    inc esi
+0057EAF6    lea eax, ds:[ecx-0x41]
+0057EAF9    cmp eax, 0x19
+0057EAFC    jnbe 0x0057EB01
+0057EAFE    add ecx, 0x20
+0057EB01    movzx edx, byte ptr ds:[edi]
+0057EB04    inc edi
+0057EB05    lea eax, ds:[edx-0x41]
+0057EB08    cmp eax, 0x19
+0057EB0B    jnbe 0x0057EB10
+0057EB0D    add edx, 0x20
+0057EB10    test ecx, ecx
+0057EB12    jz 0x0057EB18
+0057EB14    cmp ecx, edx
+0057EB16    jz 0x0057EAF2
+0057EB18    sub ecx, edx
+0057EB1A    pop edi
+0057EB1B    mov eax, ecx
+0057EB1D    pop esi
+0057EB1E    pop ebp
+0057EB1F    ret

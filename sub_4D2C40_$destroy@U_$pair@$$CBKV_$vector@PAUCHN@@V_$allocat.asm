@@ -1,12 +1,5 @@
-004D2C40    ???
-004D2C41    ???
-004D2C42    ???
-004D2C43    ???
-004D2C44    ???
-004D2C45    ???
-004D2C46    ???
-004D2C47    ???
-004D2C48    ???
-004D2C49    ???
-004D2C4A    ???
-004D2C4B    ???
+004D2C40    push ebp
+004D2C41    mov ebp, esp
+004D2C43    mov ecx, dword ptr ss:[ebp+0x0C]
+004D2C46    pop ebp
+004D2C47    jmp 0x004D2AC0

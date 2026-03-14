@@ -1,37 +1,18 @@
-00578AEB    ???
-00578AEC    ???
-00578AED    ???
-00578AEE    ???
-00578AEF    ???
-00578AF0    ???
-00578AF1    ???
-00578AF2    ???
-00578AF3    ???
-00578AF4    ???
-00578AF5    ???
-00578AF6    ???
-00578AF7    ???
-00578AF8    ???
-00578AF9    ???
-00578AFA    ???
-00578AFB    ???
-00578AFC    ???
-00578AFD    ???
-00578AFE    ???
-00578AFF    ???
-00578B00    ???
-00578B01    ???
-00578B02    ???
-00578B03    ???
-00578B04    ???
-00578B05    ???
-00578B06    ???
-00578B07    ???
-00578B08    ???
-00578B09    ???
-00578B0A    ???
-00578B0B    ???
-00578B0C    ???
-00578B0D    ???
-00578B0E    ???
-00578B0F    ???
+00578AEB    push ebp
+00578AEC    mov ebp, esp
+00578AEE    mov ecx, dword ptr ss:[ebp+0x0C]
+00578AF1    mov edx, dword ptr ss:[ebp+0x08]
+00578AF4    push esi
+00578AF5    mov eax, dword ptr ds:[ecx]
+00578AF7    mov esi, dword ptr ds:[ecx+0x04]
+00578AFA    add eax, edx
+00578AFC    test esi, esi
+00578AFE    js 0x00578B0D
+00578B00    mov ecx, dword ptr ds:[ecx+0x08]
+00578B03    mov edx, dword ptr ds:[esi+edx*1]
+00578B06    mov ecx, dword ptr ds:[edx+ecx*1]
+00578B09    add ecx, esi
+00578B0B    add eax, ecx
+00578B0D    pop esi
+00578B0E    pop ebp
+00578B0F    ret

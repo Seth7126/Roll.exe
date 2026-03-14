@@ -1,19 +1,10 @@
-0058F292    ???
-0058F293    ???
-0058F294    ???
-0058F295    ???
-0058F296    ???
-0058F297    ???
-0058F298    ???
-0058F299    ???
-0058F29A    ???
-0058F29B    ???
-0058F29C    ???
-0058F29D    ???
-0058F29E    ???
-0058F29F    ???
-0058F2A0    ???
-0058F2A1    ???
-0058F2A2    ???
-0058F2A3    ???
-0058F2A4    ???
+0058F292    mov edi, edi
+0058F294    push ebp
+0058F295    mov ebp, esp
+0058F297    push ecx
+0058F298    fnstsw word ptr ss:[ebp-0x04]
+0058F29B    fnclex
+0058F29D    movsx eax, word ptr ss:[ebp-0x04]
+0058F2A1    mov esp, ebp
+0058F2A3    pop ebp
+0058F2A4    ret

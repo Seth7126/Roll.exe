@@ -1,25 +1,13 @@
-004767A0    ???
-004767A1    ???
-004767A2    ???
-004767A3    ???
-004767A4    ???
-004767A5    ???
-004767A6    ???
-004767A7    ???
-004767A8    ???
-004767A9    ???
-004767AA    ???
-004767AB    ???
-004767AC    ???
-004767AD    ???
-004767AE    ???
-004767AF    ???
-004767B0    ???
-004767B1    ???
-004767B2    ???
-004767B3    ???
-004767B4    ???
-004767B5    ???
-004767B6    ???
-004767B7    ???
-004767B8    ???
+004767A1    add eax, dword ptr ds:[ebx]
+004767A3    add eax, dword ptr ds:[eax]
+004767A5    add eax, dword ptr ds:[ebx]
+004767A7    add eax, dword ptr ds:[ebx]
+004767A9    add eax, dword ptr ds:[ebx]
+004767AB    add dword ptr ds:[ebx], eax
+004767AD    add eax, dword ptr ds:[ebx]
+004767AF    add byte ptr ds:[edx], al
+004767B1    add al, byte ptr ds:[edx]
+004767B3    add al, byte ptr ds:[ebx]
+004767B5    add eax, dword ptr ds:[eax]
+004767B7    int3
+004767B8    int3

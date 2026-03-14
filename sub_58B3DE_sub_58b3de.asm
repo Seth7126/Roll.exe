@@ -1,6 +1,2 @@
-0058B3DE    ???
-0058B3DF    ???
-0058B3E0    ???
-0058B3E1    ???
-0058B3E2    ???
-0058B3E3    ???
+0058B3DE    mov eax, dword ptr ds:[0x006CFA08]
+0058B3E3    ret

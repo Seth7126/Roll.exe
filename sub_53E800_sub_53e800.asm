@@ -1,210 +1,86 @@
-0053E800    ???
-0053E801    ???
-0053E802    ???
-0053E803    ???
-0053E804    ???
-0053E805    ???
-0053E806    ???
-0053E807    ???
-0053E808    ???
-0053E809    ???
-0053E80A    ???
-0053E80B    ???
-0053E80C    ???
-0053E80D    ???
-0053E80E    ???
-0053E80F    ???
-0053E810    ???
-0053E811    ???
-0053E812    ???
-0053E813    ???
-0053E814    ???
-0053E815    ???
-0053E816    ???
-0053E817    ???
-0053E818    ???
-0053E819    ???
-0053E81A    ???
-0053E81B    ???
-0053E81C    ???
-0053E81D    ???
-0053E81E    ???
-0053E81F    ???
-0053E820    ???
-0053E821    ???
-0053E822    ???
-0053E823    ???
-0053E824    ???
-0053E825    ???
-0053E826    ???
-0053E827    ???
-0053E828    ???
-0053E829    ???
-0053E82A    ???
-0053E82B    ???
-0053E82C    ???
-0053E82D    ???
-0053E82E    ???
-0053E82F    ???
-0053E830    ???
-0053E831    ???
-0053E832    ???
-0053E833    ???
-0053E834    ???
-0053E835    ???
-0053E836    ???
-0053E837    ???
-0053E838    ???
-0053E839    ???
-0053E83A    ???
-0053E83B    ???
-0053E83C    ???
-0053E83D    ???
-0053E83E    ???
-0053E83F    ???
-0053E840    ???
-0053E841    ???
-0053E842    ???
-0053E843    ???
-0053E844    ???
-0053E845    ???
-0053E846    ???
-0053E847    ???
-0053E848    ???
-0053E849    ???
-0053E84A    ???
-0053E84B    ???
-0053E84C    ???
-0053E84D    ???
-0053E84E    ???
-0053E84F    ???
-0053E850    ???
-0053E851    ???
-0053E852    ???
-0053E853    ???
-0053E854    ???
-0053E855    ???
-0053E856    ???
-0053E857    ???
-0053E858    ???
-0053E859    ???
-0053E85A    ???
-0053E85B    ???
-0053E85C    ???
-0053E85D    ???
-0053E85E    ???
-0053E85F    ???
-0053E860    ???
-0053E861    ???
-0053E862    ???
-0053E863    ???
-0053E864    ???
-0053E865    ???
-0053E866    ???
-0053E867    ???
-0053E868    ???
-0053E869    ???
-0053E86A    ???
-0053E86B    ???
-0053E86C    ???
-0053E86D    ???
-0053E86E    ???
-0053E86F    ???
-0053E870    ???
-0053E871    ???
-0053E872    ???
-0053E873    ???
-0053E874    ???
-0053E875    ???
-0053E876    ???
-0053E877    ???
-0053E878    ???
-0053E879    ???
-0053E87A    ???
-0053E87B    ???
-0053E87C    ???
-0053E87D    ???
-0053E87E    ???
-0053E87F    ???
-0053E880    ???
-0053E881    ???
-0053E882    ???
-0053E883    ???
-0053E884    ???
-0053E885    ???
-0053E886    ???
-0053E887    ???
-0053E888    ???
-0053E889    ???
-0053E88A    ???
-0053E88B    ???
-0053E88C    ???
-0053E88D    ???
-0053E88E    ???
-0053E88F    ???
-0053E890    ???
-0053E891    ???
-0053E892    ???
-0053E893    ???
-0053E894    ???
-0053E895    ???
-0053E896    ???
-0053E897    ???
-0053E898    ???
-0053E899    ???
-0053E89A    ???
-0053E89B    ???
-0053E89C    ???
-0053E89D    ???
-0053E89E    ???
-0053E89F    ???
-0053E8A0    ???
-0053E8A1    ???
-0053E8A2    ???
-0053E8A3    ???
-0053E8A4    ???
-0053E8A5    ???
-0053E8A6    ???
-0053E8A7    ???
-0053E8A8    ???
-0053E8A9    ???
-0053E8AA    ???
-0053E8AB    ???
-0053E8AC    ???
-0053E8AD    ???
-0053E8AE    ???
-0053E8AF    ???
-0053E8B0    ???
-0053E8B1    ???
-0053E8B2    ???
-0053E8B3    ???
-0053E8B4    ???
-0053E8B5    ???
-0053E8B6    ???
-0053E8B7    ???
-0053E8B8    ???
-0053E8B9    ???
-0053E8BA    ???
-0053E8BB    ???
-0053E8BC    ???
-0053E8BD    ???
-0053E8BE    ???
-0053E8BF    ???
-0053E8C0    ???
-0053E8C1    ???
-0053E8C2    ???
-0053E8C3    ???
-0053E8C4    ???
-0053E8C5    ???
-0053E8C6    ???
-0053E8C7    ???
-0053E8C8    ???
-0053E8C9    ???
-0053E8CA    ???
-0053E8CB    ???
-0053E8CC    ???
-0053E8CD    ???
-0053E8CE    ???
-0053E8CF    ???
-0053E8D0    ???
-0053E8D1    ???
+0053E800    push ebp
+0053E801    mov ebp, esp
+0053E803    sub esp, 0x14
+0053E806    mov ecx, dword ptr ss:[ebp+0x0C]
+0053E809    add ecx, dword ptr ss:[ebp+0x08]
+0053E80C    movzx eax, word ptr ds:[edx]
+0053E80F    push ebx
+0053E810    push esi
+0053E811    push edi
+0053E812    xor edi, edi
+0053E814    mov dword ptr ss:[ebp-0x14], ecx
+0053E817    xor esi, esi
+0053E819    mov dword ptr ss:[ebp-0x04], edi
+0053E81C    xor ebx, ebx
+0053E81E    mov dword ptr ss:[ebp-0x0C], esi
+0053E821    cmp eax, ecx
+0053E823    jnl 0x0053E8C4
+0053E829    nop dword ptr ds:[eax], eax
+0053E830    movzx eax, word ptr ds:[edx+0x02]
+0053E834    mov dword ptr ss:[ebp-0x08], eax
+0053E837    cmp eax, edi
+0053E839    jle 0x0053E872
+0053E83B    mov ecx, eax
+0053E83D    mov dword ptr ss:[ebp-0x04], eax
+0053E840    movzx eax, word ptr ds:[edx]
+0053E843    sub ecx, edi
+0053E845    mov edx, dword ptr ds:[edx+0x04]
+0053E848    mov edi, dword ptr ss:[ebp+0x08]
+0053E84B    mov dword ptr ss:[ebp-0x08], eax
+0053E84E    imul ecx, ebx
+0053E851    movzx esi, word ptr ds:[edx]
+0053E854    mov eax, esi
+0053E856    cmp dword ptr ss:[ebp-0x08], edi
+0053E859    jnl 0x0053E866
+0053E85B    sub eax, edi
+0053E85D    add ebx, eax
+0053E85F    mov eax, esi
+0053E861    movzx eax, ax
+0053E864    jmp 0x0053E89F
+0053E866    sub eax, dword ptr ss:[ebp-0x08]
+0053E869    add ebx, eax
+0053E86B    mov eax, esi
+0053E86D    movzx eax, ax
+0053E870    jmp 0x0053E89F
+0053E872    mov esi, dword ptr ds:[edx+0x04]
+0053E875    movzx eax, word ptr ds:[edx]
+0053E878    mov edx, dword ptr ss:[ebp+0x0C]
+0053E87B    sub edx, ebx
+0053E87D    mov dword ptr ss:[ebp-0x10], esi
+0053E880    movzx edi, word ptr ds:[esi]
+0053E883    mov ecx, edi
+0053E885    sub ecx, eax
+0053E887    lea eax, ds:[ecx+ebx*1]
+0053E88A    cmp eax, dword ptr ss:[ebp+0x0C]
+0053E88D    mov eax, edi
+0053E88F    cmovle edx, ecx
+0053E892    mov ecx, dword ptr ss:[ebp-0x04]
+0053E895    sub ecx, dword ptr ss:[ebp-0x08]
+0053E898    add ebx, edx
+0053E89A    imul ecx, edx
+0053E89D    mov edx, esi
+0053E89F    mov esi, dword ptr ss:[ebp-0x0C]
+0053E8A2    mov edi, dword ptr ss:[ebp-0x04]
+0053E8A5    add esi, ecx
+0053E8A7    movzx ecx, ax
+0053E8AA    mov dword ptr ss:[ebp-0x0C], esi
+0053E8AD    cmp ecx, dword ptr ss:[ebp-0x14]
+0053E8B0    jl 0x0053E830
+0053E8B6    mov ecx, dword ptr ss:[ebp+0x10]
+0053E8B9    mov eax, edi
+0053E8BB    pop edi
+0053E8BC    mov dword ptr ds:[ecx], esi
+0053E8BE    pop esi
+0053E8BF    pop ebx
+0053E8C0    mov esp, ebp
+0053E8C2    pop ebp
+0053E8C3    ret
+0053E8C4    mov eax, dword ptr ss:[ebp+0x10]
+0053E8C7    mov dword ptr ds:[eax], esi
+0053E8C9    mov eax, edi
+0053E8CB    pop edi
+0053E8CC    pop esi
+0053E8CD    pop ebx
+0053E8CE    mov esp, ebp
+0053E8D0    pop ebp
+0053E8D1    ret

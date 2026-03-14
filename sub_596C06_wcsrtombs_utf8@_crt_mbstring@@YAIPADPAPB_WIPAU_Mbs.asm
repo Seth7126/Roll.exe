@@ -1,256 +1,106 @@
-00596C06    ???
-00596C07    ???
-00596C08    ???
-00596C09    ???
-00596C0A    ???
-00596C0B    ???
-00596C0C    ???
-00596C0D    ???
-00596C0E    ???
-00596C0F    ???
-00596C10    ???
-00596C11    ???
-00596C12    ???
-00596C13    ???
-00596C14    ???
-00596C15    ???
-00596C16    ???
-00596C17    ???
-00596C18    ???
-00596C19    ???
-00596C1A    ???
-00596C1B    ???
-00596C1C    ???
-00596C1D    ???
-00596C1E    ???
-00596C1F    ???
-00596C20    ???
-00596C21    ???
-00596C22    ???
-00596C23    ???
-00596C24    ???
-00596C25    ???
-00596C26    ???
-00596C27    ???
-00596C28    ???
-00596C29    ???
-00596C2A    ???
-00596C2B    ???
-00596C2C    ???
-00596C2D    ???
-00596C2E    ???
-00596C2F    ???
-00596C30    ???
-00596C31    ???
-00596C32    ???
-00596C33    ???
-00596C34    ???
-00596C35    ???
-00596C36    ???
-00596C37    ???
-00596C38    ???
-00596C39    ???
-00596C3A    ???
-00596C3B    ???
-00596C3C    ???
-00596C3D    ???
-00596C3E    ???
-00596C3F    ???
-00596C40    ???
-00596C41    ???
-00596C42    ???
-00596C43    ???
-00596C44    ???
-00596C45    ???
-00596C46    ???
-00596C47    ???
-00596C48    ???
-00596C49    ???
-00596C4A    ???
-00596C4B    ???
-00596C4C    ???
-00596C4D    ???
-00596C4E    ???
-00596C4F    ???
-00596C50    ???
-00596C51    ???
-00596C52    ???
-00596C53    ???
-00596C54    ???
-00596C55    ???
-00596C56    ???
-00596C57    ???
-00596C58    ???
-00596C59    ???
-00596C5A    ???
-00596C5B    ???
-00596C5C    ???
-00596C5D    ???
-00596C5E    ???
-00596C5F    ???
-00596C60    ???
-00596C61    ???
-00596C62    ???
-00596C63    ???
-00596C64    ???
-00596C65    ???
-00596C66    ???
-00596C67    ???
-00596C68    ???
-00596C69    ???
-00596C6A    ???
-00596C6B    ???
-00596C6C    ???
-00596C6D    ???
-00596C6E    ???
-00596C6F    ???
-00596C70    ???
-00596C71    ???
-00596C72    ???
-00596C73    ???
-00596C74    ???
-00596C75    ???
-00596C76    ???
-00596C77    ???
-00596C78    ???
-00596C79    ???
-00596C7A    ???
-00596C7B    ???
-00596C7C    ???
-00596C7D    ???
-00596C7E    ???
-00596C7F    ???
-00596C80    ???
-00596C81    ???
-00596C82    ???
-00596C83    ???
-00596C84    ???
-00596C85    ???
-00596C86    ???
-00596C87    ???
-00596C88    ???
-00596C89    ???
-00596C8A    ???
-00596C8B    ???
-00596C8C    ???
-00596C8D    ???
-00596C8E    ???
-00596C8F    ???
-00596C90    ???
-00596C91    ???
-00596C92    ???
-00596C93    ???
-00596C94    ???
-00596C95    ???
-00596C96    ???
-00596C97    ???
-00596C98    ???
-00596C99    ???
-00596C9A    ???
-00596C9B    ???
-00596C9C    ???
-00596C9D    ???
-00596C9E    ???
-00596C9F    ???
-00596CA0    ???
-00596CA1    ???
-00596CA2    ???
-00596CA3    ???
-00596CA4    ???
-00596CA5    ???
-00596CA6    ???
-00596CA7    ???
-00596CA8    ???
-00596CA9    ???
-00596CAA    ???
-00596CAB    ???
-00596CAC    ???
-00596CAD    ???
-00596CAE    ???
-00596CAF    ???
-00596CB0    ???
-00596CB1    ???
-00596CB2    ???
-00596CB3    ???
-00596CB4    ???
-00596CB5    ???
-00596CB6    ???
-00596CB7    ???
-00596CB8    ???
-00596CB9    ???
-00596CBA    ???
-00596CBB    ???
-00596CBC    ???
-00596CBD    ???
-00596CBE    ???
-00596CBF    ???
-00596CC0    ???
-00596CC1    ???
-00596CC2    ???
-00596CC3    ???
-00596CC4    ???
-00596CC5    ???
-00596CC6    ???
-00596CC7    ???
-00596CC8    ???
-00596CC9    ???
-00596CCA    ???
-00596CCB    ???
-00596CCC    ???
-00596CCD    ???
-00596CCE    ???
-00596CCF    ???
-00596CD0    ???
-00596CD1    ???
-00596CD2    ???
-00596CD3    ???
-00596CD4    ???
-00596CD5    ???
-00596CD6    ???
-00596CD7    ???
-00596CD8    ???
-00596CD9    ???
-00596CDA    ???
-00596CDB    ???
-00596CDC    ???
-00596CDD    ???
-00596CDE    ???
-00596CDF    ???
-00596CE0    ???
-00596CE1    ???
-00596CE2    ???
-00596CE3    ???
-00596CE4    ???
-00596CE5    ???
-00596CE6    ???
-00596CE7    ???
-00596CE8    ???
-00596CE9    ???
-00596CEA    ???
-00596CEB    ???
-00596CEC    ???
-00596CED    ???
-00596CEE    ???
-00596CEF    ???
-00596CF0    ???
-00596CF1    ???
-00596CF2    ???
-00596CF3    ???
-00596CF4    ???
-00596CF5    ???
-00596CF6    ???
-00596CF7    ???
-00596CF8    ???
-00596CF9    ???
-00596CFA    ???
-00596CFB    ???
-00596CFC    ???
-00596CFD    ???
-00596CFE    ???
-00596CFF    ???
-00596D00    ???
-00596D01    ???
-00596D02    ???
-00596D03    ???
-00596D04    ???
-00596D05    ???
+00596C06    mov edi, edi
+00596C08    push ebp
+00596C09    mov ebp, esp
+00596C0B    sub esp, 0x20
+00596C0E    mov eax, dword ptr ds:[0x0061F06C]
+00596C13    xor eax, ebp
+00596C15    mov dword ptr ss:[ebp-0x04], eax
+00596C18    mov eax, dword ptr ss:[ebp+0x0C]
+00596C1B    mov ecx, dword ptr ss:[ebp+0x08]
+00596C1E    mov dword ptr ss:[ebp-0x20], ecx
+00596C21    mov dword ptr ss:[ebp-0x18], eax
+00596C24    push ebx
+00596C25    mov ebx, dword ptr ss:[ebp+0x14]
+00596C28    mov dword ptr ss:[ebp-0x1C], ebx
+00596C2B    push esi
+00596C2C    push edi
+00596C2D    mov edi, dword ptr ds:[eax]
+00596C2F    test ecx, ecx
+00596C31    jz 0x00596CC6
+00596C37    mov eax, dword ptr ss:[ebp+0x10]
+00596C3A    mov esi, ecx
+00596C3C    mov dword ptr ss:[ebp-0x10], edi
+00596C3F    cmp eax, 0x04
+00596C42    jnb 0x00596C4C
+00596C44    lea ecx, ss:[ebp-0x0C]
+00596C47    mov dword ptr ss:[ebp-0x14], ecx
+00596C4A    jmp 0x00596C51
+00596C4C    mov ecx, esi
+00596C4E    mov dword ptr ss:[ebp-0x14], esi
+00596C51    movzx eax, word ptr ds:[edi]
+00596C54    push ebx
+00596C55    push eax
+00596C56    push ecx
+00596C57    call 0x005977D8
+00596C5C    mov ebx, eax
+00596C5E    add esp, 0x0C
+00596C61    cmp ebx, 0xFFFFFFFF
+00596C64    jz 0x00596CB9
+00596C66    mov eax, dword ptr ss:[ebp-0x14]
+00596C69    cmp eax, esi
+00596C6B    jz 0x00596C7D
+00596C6D    cmp dword ptr ss:[ebp+0x10], ebx
+00596C70    jb 0x00596CA3
+00596C72    push ebx
+00596C73    push eax
+00596C74    push esi
+00596C75    call 0x00579300
+00596C7A    add esp, 0x0C
+00596C7D    test ebx, ebx
+00596C7F    jz 0x00596C8A
+00596C81    lea ecx, ds:[ebx+esi*1]
+00596C84    cmp byte ptr ds:[ecx-0x01], 0x00
+00596C88    jz 0x00596CA8
+00596C8A    add edi, 0x02
+00596C8D    test ebx, ebx
+00596C8F    jz 0x00596C94
+00596C91    mov dword ptr ss:[ebp-0x10], edi
+00596C94    mov eax, dword ptr ss:[ebp+0x10]
+00596C97    sub eax, ebx
+00596C99    add esi, ebx
+00596C9B    mov ebx, dword ptr ss:[ebp-0x1C]
+00596C9E    mov dword ptr ss:[ebp+0x10], eax
+00596CA1    jmp 0x00596C3F
+00596CA3    mov eax, dword ptr ss:[ebp-0x10]
+00596CA6    jmp 0x00596CAD
+00596CA8    xor eax, eax
+00596CAA    lea esi, ds:[ecx-0x01]
+00596CAD    mov edx, dword ptr ss:[ebp-0x18]
+00596CB0    sub esi, dword ptr ss:[ebp-0x20]
+00596CB3    mov dword ptr ds:[edx], eax
+00596CB5    mov eax, esi
+00596CB7    jmp 0x00596CF5
+00596CB9    mov edx, dword ptr ss:[ebp-0x18]
+00596CBC    or eax, 0xFFFFFFFF
+00596CBF    mov ecx, dword ptr ss:[ebp-0x10]
+00596CC2    mov dword ptr ds:[edx], ecx
+00596CC4    jmp 0x00596CF5
+00596CC6    xor esi, esi
+00596CC8    jmp 0x00596CDA
+00596CCA    test eax, eax
+00596CCC    jz 0x00596CD5
+00596CCE    cmp byte ptr ss:[ebp+eax*1-0x0D], 0x00
+00596CD3    jz 0x00596CF2
+00596CD5    add esi, eax
+00596CD7    add edi, 0x02
+00596CDA    movzx eax, word ptr ds:[edi]
+00596CDD    push ebx
+00596CDE    push eax
+00596CDF    lea eax, ss:[ebp-0x0C]
+00596CE2    push eax
+00596CE3    call 0x005977D8
+00596CE8    add esp, 0x0C
+00596CEB    cmp eax, 0xFFFFFFFF
+00596CEE    jnz 0x00596CCA
+00596CF0    jmp 0x00596CF5
+00596CF2    dec eax
+00596CF3    add eax, esi
+00596CF5    mov ecx, dword ptr ss:[ebp-0x04]
+00596CF8    pop edi
+00596CF9    pop esi
+00596CFA    xor ecx, ebp
+00596CFC    pop ebx
+00596CFD    call 0x00577333
+00596D02    mov esp, ebp
+00596D04    pop ebp
+00596D05    ret

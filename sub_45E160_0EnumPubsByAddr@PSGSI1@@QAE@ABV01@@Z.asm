@@ -1,60 +1,20 @@
-0045E160    ???
-0045E161    ???
-0045E162    ???
-0045E163    ???
-0045E164    ???
-0045E165    ???
-0045E166    ???
-0045E167    ???
-0045E168    ???
-0045E169    ???
-0045E16A    ???
-0045E16B    ???
-0045E16C    ???
-0045E16D    ???
-0045E16E    ???
-0045E16F    ???
-0045E170    ???
-0045E171    ???
-0045E172    ???
-0045E173    ???
-0045E174    ???
-0045E175    ???
-0045E176    ???
-0045E177    ???
-0045E178    ???
-0045E179    ???
-0045E17A    ???
-0045E17B    ???
-0045E17C    ???
-0045E17D    ???
-0045E17E    ???
-0045E17F    ???
-0045E180    ???
-0045E181    ???
-0045E182    ???
-0045E183    ???
-0045E184    ???
-0045E185    ???
-0045E186    ???
-0045E187    ???
-0045E188    ???
-0045E189    ???
-0045E18A    ???
-0045E18B    ???
-0045E18C    ???
-0045E18D    ???
-0045E18E    ???
-0045E18F    ???
-0045E190    ???
-0045E191    ???
-0045E192    ???
-0045E193    ???
-0045E194    ???
-0045E195    ???
-0045E196    ???
-0045E197    ???
-0045E198    ???
-0045E199    ???
-0045E19A    ???
-0045E19B    ???
+0045E160    push ebp
+0045E161    mov ebp, esp
+0045E163    mov edx, dword ptr ss:[ebp+0x08]
+0045E166    mov dword ptr ds:[ecx], 0x5B27B0
+0045E16C    mov eax, dword ptr ds:[edx+0x04]
+0045E16F    mov dword ptr ds:[ecx+0x04], eax
+0045E172    mov eax, dword ptr ds:[edx+0x08]
+0045E175    mov dword ptr ds:[ecx+0x08], eax
+0045E178    mov eax, dword ptr ds:[edx+0x0C]
+0045E17B    mov dword ptr ds:[ecx+0x0C], eax
+0045E17E    mov eax, dword ptr ds:[edx+0x10]
+0045E181    mov dword ptr ds:[ecx+0x10], eax
+0045E184    mov eax, dword ptr ds:[edx+0x14]
+0045E187    mov dword ptr ds:[ecx+0x14], eax
+0045E18A    mov dword ptr ds:[ecx], 0x5B27A0
+0045E190    mov eax, dword ptr ds:[edx+0x18]
+0045E193    mov dword ptr ds:[ecx+0x18], eax
+0045E196    mov eax, ecx
+0045E198    pop ebp
+0045E199    ret 0x04

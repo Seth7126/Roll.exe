@@ -1,47 +1,21 @@
-0058ADEF    ???
-0058ADF0    ???
-0058ADF1    ???
-0058ADF2    ???
-0058ADF3    ???
-0058ADF4    ???
-0058ADF5    ???
-0058ADF6    ???
-0058ADF7    ???
-0058ADF8    ???
-0058ADF9    ???
-0058ADFA    ???
-0058ADFB    ???
-0058ADFC    ???
-0058ADFD    ???
-0058ADFE    ???
-0058ADFF    ???
-0058AE00    ???
-0058AE01    ???
-0058AE02    ???
-0058AE03    ???
-0058AE04    ???
-0058AE05    ???
-0058AE06    ???
-0058AE07    ???
-0058AE08    ???
-0058AE09    ???
-0058AE0A    ???
-0058AE0B    ???
-0058AE0C    ???
-0058AE0D    ???
-0058AE0E    ???
-0058AE0F    ???
-0058AE10    ???
-0058AE11    ???
-0058AE12    ???
-0058AE13    ???
-0058AE14    ???
-0058AE15    ???
-0058AE16    ???
-0058AE17    ???
-0058AE18    ???
-0058AE19    ???
-0058AE1A    ???
-0058AE1B    ???
-0058AE1C    ???
-0058AE1D    ???
+0058ADEF    mov edi, edi
+0058ADF1    push ebp
+0058ADF2    mov ebp, esp
+0058ADF4    sub esp, 0x10
+0058ADF7    push 0x02
+0058ADF9    lea eax, ss:[ebp+0x08]
+0058ADFC    mov dword ptr ss:[ebp-0x0C], eax
+0058ADFF    lea ecx, ss:[ebp-0x01]
+0058AE02    pop eax
+0058AE03    mov dword ptr ss:[ebp-0x08], eax
+0058AE06    mov dword ptr ss:[ebp-0x10], eax
+0058AE09    lea eax, ss:[ebp-0x08]
+0058AE0C    push eax
+0058AE0D    lea eax, ss:[ebp-0x0C]
+0058AE10    push eax
+0058AE11    lea eax, ss:[ebp-0x10]
+0058AE14    push eax
+0058AE15    call 0x0058AAD2
+0058AE1A    mov esp, ebp
+0058AE1C    pop ebp
+0058AE1D    ret

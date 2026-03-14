@@ -1,20 +1,9 @@
-0057FA18    ???
-0057FA19    ???
-0057FA1A    ???
-0057FA1B    ???
-0057FA1C    ???
-0057FA1D    ???
-0057FA1E    ???
-0057FA1F    ???
-0057FA20    ???
-0057FA21    ???
-0057FA22    ???
-0057FA23    ???
-0057FA24    ???
-0057FA25    ???
-0057FA26    ???
-0057FA27    ???
-0057FA28    ???
-0057FA29    ???
-0057FA2A    ???
-0057FA2B    ???
+0057FA18    mov edi, edi
+0057FA1A    push ebp
+0057FA1B    mov ebp, esp
+0057FA1D    mov eax, dword ptr ss:[ebp+0x08]
+0057FA20    add eax, 0x20
+0057FA23    push eax
+0057FA24    call dword ptr ds:[0x005A41A4]
+0057FA2A    pop ebp
+0057FA2B    ret

@@ -1,71 +1,26 @@
-0057C174    ???
-0057C175    ???
-0057C176    ???
-0057C177    ???
-0057C178    ???
-0057C179    ???
-0057C17A    ???
-0057C17B    ???
-0057C17C    ???
-0057C17D    ???
-0057C17E    ???
-0057C17F    ???
-0057C180    ???
-0057C181    ???
-0057C182    ???
-0057C183    ???
-0057C184    ???
-0057C185    ???
-0057C186    ???
-0057C187    ???
-0057C188    ???
-0057C189    ???
-0057C18A    ???
-0057C18B    ???
-0057C18C    ???
-0057C18D    ???
-0057C18E    ???
-0057C18F    ???
-0057C190    ???
-0057C191    ???
-0057C192    ???
-0057C193    ???
-0057C194    ???
-0057C195    ???
-0057C196    ???
-0057C197    ???
-0057C198    ???
-0057C199    ???
-0057C19A    ???
-0057C19B    ???
-0057C19C    ???
-0057C19D    ???
-0057C19E    ???
-0057C19F    ???
-0057C1A0    ???
-0057C1A1    ???
-0057C1A2    ???
-0057C1A3    ???
-0057C1A4    ???
-0057C1A5    ???
-0057C1A6    ???
-0057C1A7    ???
-0057C1A8    ???
-0057C1A9    ???
-0057C1AA    ???
-0057C1AB    ???
-0057C1AC    ???
-0057C1AD    ???
-0057C1AE    ???
-0057C1AF    ???
-0057C1B0    ???
-0057C1B1    ???
-0057C1B2    ???
-0057C1B3    ???
-0057C1B4    ???
-0057C1B5    ???
-0057C1B6    ???
-0057C1B7    ???
-0057C1B8    ???
-0057C1B9    ???
-0057C1BA    ???
+0057C174    mov edi, edi
+0057C176    push ebp
+0057C177    mov ebp, esp
+0057C179    push ecx
+0057C17A    xor eax, eax
+0057C17C    mov dword ptr ss:[ebp-0x04], ecx
+0057C17F    mov dword ptr ds:[ecx], eax
+0057C181    mov dword ptr ds:[ecx+0x04], eax
+0057C184    mov dword ptr ds:[ecx+0x08], eax
+0057C187    mov dword ptr ds:[ecx+0x0C], eax
+0057C18A    mov dword ptr ds:[ecx+0x10], eax
+0057C18D    mov dword ptr ds:[ecx+0x14], eax
+0057C190    mov dword ptr ds:[ecx+0x18], eax
+0057C193    mov dword ptr ds:[ecx+0x1C], eax
+0057C196    mov dword ptr ds:[ecx+0x20], eax
+0057C199    mov dword ptr ds:[ecx+0x24], eax
+0057C19C    mov dword ptr ds:[ecx+0x28], eax
+0057C19F    mov word ptr ds:[ecx+0x30], ax
+0057C1A3    mov dword ptr ds:[ecx+0x38], eax
+0057C1A6    mov byte ptr ds:[ecx+0x3C], al
+0057C1A9    mov dword ptr ds:[ecx+0x440], eax
+0057C1AF    mov dword ptr ds:[ecx+0x444], eax
+0057C1B5    mov eax, ecx
+0057C1B7    mov esp, ebp
+0057C1B9    pop ebp
+0057C1BA    ret

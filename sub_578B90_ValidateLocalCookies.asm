@@ -1,50 +1,21 @@
-00578B90    ???
-00578B91    ???
-00578B92    ???
-00578B93    ???
-00578B94    ???
-00578B95    ???
-00578B96    ???
-00578B97    ???
-00578B98    ???
-00578B99    ???
-00578B9A    ???
-00578B9B    ???
-00578B9C    ???
-00578B9D    ???
-00578B9E    ???
-00578B9F    ???
-00578BA0    ???
-00578BA1    ???
-00578BA2    ???
-00578BA3    ???
-00578BA4    ???
-00578BA5    ???
-00578BA6    ???
-00578BA7    ???
-00578BA8    ???
-00578BA9    ???
-00578BAA    ???
-00578BAB    ???
-00578BAC    ???
-00578BAD    ???
-00578BAE    ???
-00578BAF    ???
-00578BB0    ???
-00578BB1    ???
-00578BB2    ???
-00578BB3    ???
-00578BB4    ???
-00578BB5    ???
-00578BB6    ???
-00578BB7    ???
-00578BB8    ???
-00578BB9    ???
-00578BBA    ???
-00578BBB    ???
-00578BBC    ???
-00578BBD    ???
-00578BBE    ???
-00578BBF    ???
-00578BC0    ???
-00578BC1    ???
+00578B90    push ebp
+00578B91    mov ebp, esp
+00578B93    push esi
+00578B94    mov esi, dword ptr ss:[ebp+0x08]
+00578B97    push edi
+00578B98    mov edi, dword ptr ss:[ebp+0x0C]
+00578B9B    mov eax, dword ptr ds:[esi]
+00578B9D    cmp eax, 0xFFFFFFFE
+00578BA0    jz 0x00578BAF
+00578BA2    mov ecx, dword ptr ds:[esi+0x04]
+00578BA5    add ecx, edi
+00578BA7    xor ecx, dword ptr ds:[eax+edi*1]
+00578BAA    call 0x00577333
+00578BAF    mov eax, dword ptr ds:[esi+0x08]
+00578BB2    mov ecx, dword ptr ds:[esi+0x0C]
+00578BB5    add ecx, edi
+00578BB7    xor ecx, dword ptr ds:[eax+edi*1]
+00578BBA    pop edi
+00578BBB    pop esi
+00578BBC    pop ebp
+00578BBD    jmp 0x00577333

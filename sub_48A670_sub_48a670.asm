@@ -1,108 +1,48 @@
-0048A670    ???
-0048A671    ???
-0048A672    ???
-0048A673    ???
-0048A674    ???
-0048A675    ???
-0048A676    ???
-0048A677    ???
-0048A678    ???
-0048A679    ???
-0048A67A    ???
-0048A67B    ???
-0048A67C    ???
-0048A67D    ???
-0048A67E    ???
-0048A67F    ???
-0048A680    ???
-0048A681    ???
-0048A682    ???
-0048A683    ???
-0048A684    ???
-0048A685    ???
-0048A686    ???
-0048A687    ???
-0048A688    ???
-0048A689    ???
-0048A68A    ???
-0048A68B    ???
-0048A68C    ???
-0048A68D    ???
-0048A68E    ???
-0048A68F    ???
-0048A690    ???
-0048A691    ???
-0048A692    ???
-0048A693    ???
-0048A694    ???
-0048A695    ???
-0048A696    ???
-0048A697    ???
-0048A698    ???
-0048A699    ???
-0048A69A    ???
-0048A69B    ???
-0048A69C    ???
-0048A69D    ???
-0048A69E    ???
-0048A69F    ???
-0048A6A0    ???
-0048A6A1    ???
-0048A6A2    ???
-0048A6A3    ???
-0048A6A4    ???
-0048A6A5    ???
-0048A6A6    ???
-0048A6A7    ???
-0048A6A8    ???
-0048A6A9    ???
-0048A6AA    ???
-0048A6AB    ???
-0048A6AC    ???
-0048A6AD    ???
-0048A6AE    ???
-0048A6AF    ???
-0048A6B0    ???
-0048A6B1    ???
-0048A6B2    ???
-0048A6B3    ???
-0048A6B4    ???
-0048A6B5    ???
-0048A6B6    ???
-0048A6B7    ???
-0048A6B8    ???
-0048A6B9    ???
-0048A6BA    ???
-0048A6BB    ???
-0048A6BC    ???
-0048A6BD    ???
-0048A6BE    ???
-0048A6BF    ???
-0048A6C0    ???
-0048A6C1    ???
-0048A6C2    ???
-0048A6C3    ???
-0048A6C4    ???
-0048A6C5    ???
-0048A6C6    ???
-0048A6C7    ???
-0048A6C8    ???
-0048A6C9    ???
-0048A6CA    ???
-0048A6CB    ???
-0048A6CC    ???
-0048A6CD    ???
-0048A6CE    ???
-0048A6CF    ???
-0048A6D0    ???
-0048A6D1    ???
-0048A6D2    ???
-0048A6D3    ???
-0048A6D4    ???
-0048A6D5    ???
-0048A6D6    ???
-0048A6D7    ???
-0048A6D8    ???
-0048A6D9    ???
-0048A6DA    ???
-0048A6DB    ???
+0048A670    push ebp
+0048A671    mov ebp, esp
+0048A673    push ebx
+0048A674    mov ebx, dword ptr ss:[ebp+0x08]
+0048A677    push edi
+0048A678    mov edi, ecx
+0048A67A    cmp byte ptr ds:[ebx], 0x00
+0048A67D    jz 0x0048A6D6
+0048A67F    mov eax, dword ptr ds:[edi]
+0048A681    test eax, eax
+0048A683    jz 0x0048A6CF
+0048A685    cmp byte ptr ds:[eax], 0x00
+0048A688    jz 0x0048A6CF
+0048A68A    push esi
+0048A68B    call 0x0048A080
+0048A690    mov esi, ebx
+0048A692    mov ecx, dword ptr ds:[eax+0x08]
+0048A695    mov dword ptr ss:[ebp+0x08], ecx
+0048A698    lea edx, ds:[esi+0x01]
+0048A69B    nop dword ptr ds:[eax+eax*1], eax
+0048A6A0    mov al, byte ptr ds:[esi]
+0048A6A2    inc esi
+0048A6A3    test al, al
+0048A6A5    jnz 0x0048A6A0
+0048A6A7    sub esi, edx
+0048A6A9    push 0x01
+0048A6AB    lea edx, ds:[esi+ecx*1]
+0048A6AE    mov ecx, edi
+0048A6B0    call 0x0048A180
+0048A6B5    lea eax, ds:[esi+0x01]
+0048A6B8    push eax
+0048A6B9    mov eax, dword ptr ds:[edi]
+0048A6BB    add eax, dword ptr ss:[ebp+0x08]
+0048A6BE    push ebx
+0048A6BF    push eax
+0048A6C0    call 0x00579300
+0048A6C5    add esp, 0x10
+0048A6C8    pop esi
+0048A6C9    pop edi
+0048A6CA    pop ebx
+0048A6CB    pop ebp
+0048A6CC    ret 0x04
+0048A6CF    mov edx, ebx
+0048A6D1    call 0x0048A2C0
+0048A6D6    pop edi
+0048A6D7    pop ebx
+0048A6D8    pop ebp
+0048A6D9    ret 0x04

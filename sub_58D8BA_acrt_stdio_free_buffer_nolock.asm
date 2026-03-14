@@ -1,62 +1,28 @@
-0058D8BA    ???
-0058D8BB    ???
-0058D8BC    ???
-0058D8BD    ???
-0058D8BE    ???
-0058D8BF    ???
-0058D8C0    ???
-0058D8C1    ???
-0058D8C2    ???
-0058D8C3    ???
-0058D8C4    ???
-0058D8C5    ???
-0058D8C6    ???
-0058D8C7    ???
-0058D8C8    ???
-0058D8C9    ???
-0058D8CA    ???
-0058D8CB    ???
-0058D8CC    ???
-0058D8CD    ???
-0058D8CE    ???
-0058D8CF    ???
-0058D8D0    ???
-0058D8D1    ???
-0058D8D2    ???
-0058D8D3    ???
-0058D8D4    ???
-0058D8D5    ???
-0058D8D6    ???
-0058D8D7    ???
-0058D8D8    ???
-0058D8D9    ???
-0058D8DA    ???
-0058D8DB    ???
-0058D8DC    ???
-0058D8DD    ???
-0058D8DE    ???
-0058D8DF    ???
-0058D8E0    ???
-0058D8E1    ???
-0058D8E2    ???
-0058D8E3    ???
-0058D8E4    ???
-0058D8E5    ???
-0058D8E6    ???
-0058D8E7    ???
-0058D8E8    ???
-0058D8E9    ???
-0058D8EA    ???
-0058D8EB    ???
-0058D8EC    ???
-0058D8ED    ???
-0058D8EE    ???
-0058D8EF    ???
-0058D8F0    ???
-0058D8F1    ???
-0058D8F2    ???
-0058D8F3    ???
-0058D8F4    ???
-0058D8F5    ???
-0058D8F6    ???
-0058D8F7    ???
+0058D8BA    mov edi, edi
+0058D8BC    push ebp
+0058D8BD    mov ebp, esp
+0058D8BF    push esi
+0058D8C0    mov esi, dword ptr ss:[ebp+0x08]
+0058D8C3    push edi
+0058D8C4    lea edi, ds:[esi+0x0C]
+0058D8C7    mov eax, dword ptr ds:[edi]
+0058D8C9    shr eax, 0x0D
+0058D8CC    test al, 0x01
+0058D8CE    jz 0x0058D8F4
+0058D8D0    mov eax, dword ptr ds:[edi]
+0058D8D2    shr eax, 0x06
+0058D8D5    test al, 0x01
+0058D8D7    jz 0x0058D8F4
+0058D8D9    push dword ptr ds:[esi+0x04]
+0058D8DC    call 0x0058BB72
+0058D8E1    pop ecx
+0058D8E2    mov eax, 0xFFFFFEBF
+0058D8E7    lock and dword ptr ds:[edi], eax
+0058D8EA    xor eax, eax
+0058D8EC    mov dword ptr ds:[esi+0x04], eax
+0058D8EF    mov dword ptr ds:[esi], eax
+0058D8F1    mov dword ptr ds:[esi+0x08], eax
+0058D8F4    pop edi
+0058D8F5    pop esi
+0058D8F6    pop ebp
+0058D8F7    ret

@@ -1,129 +1,56 @@
-0055F160    ???
-0055F161    ???
-0055F162    ???
-0055F163    ???
-0055F164    ???
-0055F165    ???
-0055F166    ???
-0055F167    ???
-0055F168    ???
-0055F169    ???
-0055F16A    ???
-0055F16B    ???
-0055F16C    ???
-0055F16D    ???
-0055F16E    ???
-0055F16F    ???
-0055F170    ???
-0055F171    ???
-0055F172    ???
-0055F173    ???
-0055F174    ???
-0055F175    ???
-0055F176    ???
-0055F177    ???
-0055F178    ???
-0055F179    ???
-0055F17A    ???
-0055F17B    ???
-0055F17C    ???
-0055F17D    ???
-0055F17E    ???
-0055F17F    ???
-0055F180    ???
-0055F181    ???
-0055F182    ???
-0055F183    ???
-0055F184    ???
-0055F185    ???
-0055F186    ???
-0055F187    ???
-0055F188    ???
-0055F189    ???
-0055F18A    ???
-0055F18B    ???
-0055F18C    ???
-0055F18D    ???
-0055F18E    ???
-0055F18F    ???
-0055F190    ???
-0055F191    ???
-0055F192    ???
-0055F193    ???
-0055F194    ???
-0055F195    ???
-0055F196    ???
-0055F197    ???
-0055F198    ???
-0055F199    ???
-0055F19A    ???
-0055F19B    ???
-0055F19C    ???
-0055F19D    ???
-0055F19E    ???
-0055F19F    ???
-0055F1A0    ???
-0055F1A1    ???
-0055F1A2    ???
-0055F1A3    ???
-0055F1A4    ???
-0055F1A5    ???
-0055F1A6    ???
-0055F1A7    ???
-0055F1A8    ???
-0055F1A9    ???
-0055F1AA    ???
-0055F1AB    ???
-0055F1AC    ???
-0055F1AD    ???
-0055F1AE    ???
-0055F1AF    ???
-0055F1B0    ???
-0055F1B1    ???
-0055F1B2    ???
-0055F1B3    ???
-0055F1B4    ???
-0055F1B5    ???
-0055F1B6    ???
-0055F1B7    ???
-0055F1B8    ???
-0055F1B9    ???
-0055F1BA    ???
-0055F1BB    ???
-0055F1BC    ???
-0055F1BD    ???
-0055F1BE    ???
-0055F1BF    ???
-0055F1C0    ???
-0055F1C1    ???
-0055F1C2    ???
-0055F1C3    ???
-0055F1C4    ???
-0055F1C5    ???
-0055F1C6    ???
-0055F1C7    ???
-0055F1C8    ???
-0055F1C9    ???
-0055F1CA    ???
-0055F1CB    ???
-0055F1CC    ???
-0055F1CD    ???
-0055F1CE    ???
-0055F1CF    ???
-0055F1D0    ???
-0055F1D1    ???
-0055F1D2    ???
-0055F1D3    ???
-0055F1D4    ???
-0055F1D5    ???
-0055F1D6    ???
-0055F1D7    ???
-0055F1D8    ???
-0055F1D9    ???
-0055F1DA    ???
-0055F1DB    ???
-0055F1DC    ???
-0055F1DD    ???
-0055F1DE    ???
-0055F1DF    ???
-0055F1E0    ???
+0055F160    push ebp
+0055F161    mov ebp, esp
+0055F163    push ecx
+0055F164    mov eax, dword ptr ss:[ebp+0x08]
+0055F167    push esi
+0055F168    mov dword ptr ss:[ebp-0x04], edx
+0055F16B    mov esi, ecx
+0055F16D    cmp dword ptr ds:[eax], 0x08
+0055F170    jl 0x0055F1DA
+0055F172    push ebx
+0055F173    push edi
+0055F174    lea ebx, ds:[esi-0x08]
+0055F177    test esi, esi
+0055F179    jz 0x0055F18E
+0055F17B    mov eax, dword ptr ds:[esi-0x04]
+0055F17E    mov edi, dword ptr ds:[ebx]
+0055F180    inc eax
+0055F181    cmp eax, edi
+0055F183    jl 0x0055F1BC
+0055F185    lea edi, ds:[edi*2+0x01]
+0055F18C    jmp 0x0055F193
+0055F18E    mov edi, 0x02
+0055F193    lea eax, ds:[edi+0x08]
+0055F196    xor ecx, ecx
+0055F198    push eax
+0055F199    test esi, esi
+0055F19B    mov eax, ebx
+0055F19D    cmovz eax, ecx
+0055F1A0    push eax
+0055F1A1    call 0x0057FB2F
+0055F1A6    add esp, 0x08
+0055F1A9    test eax, eax
+0055F1AB    jz 0x0055F1BC
+0055F1AD    test esi, esi
+0055F1AF    jnz 0x0055F1B4
+0055F1B1    mov dword ptr ds:[eax+0x04], esi
+0055F1B4    lea esi, ds:[eax+0x08]
+0055F1B7    lea ebx, ds:[esi-0x08]
+0055F1BA    mov dword ptr ds:[ebx], edi
+0055F1BC    mov edi, dword ptr ss:[ebp-0x04]
+0055F1BF    mov ecx, dword ptr ds:[esi-0x04]
+0055F1C2    mov al, byte ptr ds:[edi]
+0055F1C4    shr dword ptr ds:[edi], 0x08
+0055F1C7    mov byte ptr ds:[esi+ecx*1], al
+0055F1CA    mov eax, dword ptr ss:[ebp+0x08]
+0055F1CD    inc dword ptr ds:[esi-0x04]
+0055F1D0    add dword ptr ds:[eax], 0xFFFFFFF8
+0055F1D3    cmp dword ptr ds:[eax], 0x08
+0055F1D6    jnl 0x0055F177
+0055F1D8    pop edi
+0055F1D9    pop ebx
+0055F1DA    mov eax, esi
+0055F1DC    pop esi
+0055F1DD    mov esp, ebp
+0055F1DF    pop ebp
+0055F1E0    ret

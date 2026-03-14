@@ -1,124 +1,59 @@
-004D1E40    ???
-004D1E41    ???
-004D1E42    ???
-004D1E43    ???
-004D1E44    ???
-004D1E45    ???
-004D1E46    ???
-004D1E47    ???
-004D1E48    ???
-004D1E49    ???
-004D1E4A    ???
-004D1E4B    ???
-004D1E4C    ???
-004D1E4D    ???
-004D1E4E    ???
-004D1E4F    ???
-004D1E50    ???
-004D1E51    ???
-004D1E52    ???
-004D1E53    ???
-004D1E54    ???
-004D1E55    ???
-004D1E56    ???
-004D1E57    ???
-004D1E58    ???
-004D1E59    ???
-004D1E5A    ???
-004D1E5B    ???
-004D1E5C    ???
-004D1E5D    ???
-004D1E5E    ???
-004D1E5F    ???
-004D1E60    ???
-004D1E61    ???
-004D1E62    ???
-004D1E63    ???
-004D1E64    ???
-004D1E65    ???
-004D1E66    ???
-004D1E67    ???
-004D1E68    ???
-004D1E69    ???
-004D1E6A    ???
-004D1E6B    ???
-004D1E6C    ???
-004D1E6D    ???
-004D1E6E    ???
-004D1E6F    ???
-004D1E70    ???
-004D1E71    ???
-004D1E72    ???
-004D1E73    ???
-004D1E74    ???
-004D1E75    ???
-004D1E76    ???
-004D1E77    ???
-004D1E78    ???
-004D1E79    ???
-004D1E7A    ???
-004D1E7B    ???
-004D1E7C    ???
-004D1E7D    ???
-004D1E7E    ???
-004D1E7F    ???
-004D1E80    ???
-004D1E81    ???
-004D1E82    ???
-004D1E83    ???
-004D1E84    ???
-004D1E85    ???
-004D1E86    ???
-004D1E87    ???
-004D1E88    ???
-004D1E89    ???
-004D1E8A    ???
-004D1E8B    ???
-004D1E8C    ???
-004D1E8D    ???
-004D1E8E    ???
-004D1E8F    ???
-004D1E90    ???
-004D1E91    ???
-004D1E92    ???
-004D1E93    ???
-004D1E94    ???
-004D1E95    ???
-004D1E96    ???
-004D1E97    ???
-004D1E98    ???
-004D1E99    ???
-004D1E9A    ???
-004D1E9B    ???
-004D1E9C    ???
-004D1E9D    ???
-004D1E9E    ???
-004D1E9F    ???
-004D1EA0    ???
-004D1EA1    ???
-004D1EA2    ???
-004D1EA3    ???
-004D1EA4    ???
-004D1EA5    ???
-004D1EA6    ???
-004D1EA7    ???
-004D1EA8    ???
-004D1EA9    ???
-004D1EAA    ???
-004D1EAB    ???
-004D1EAC    ???
-004D1EAD    ???
-004D1EAE    ???
-004D1EAF    ???
-004D1EB0    ???
-004D1EB1    ???
-004D1EB2    ???
-004D1EB3    ???
-004D1EB4    ???
-004D1EB5    ???
-004D1EB6    ???
-004D1EB7    ???
-004D1EB8    ???
-004D1EB9    ???
-004D1EBA    ???
-004D1EBB    ???
+004D1E40    push ebp
+004D1E41    mov ebp, esp
+004D1E43    push ecx
+004D1E44    push ebx
+004D1E45    mov ebx, dword ptr ds:[0x0114E844]
+004D1E4B    push esi
+004D1E4C    push edi
+004D1E4D    mov edi, dword ptr ss:[ebp+0x08]
+004D1E50    mov dword ptr ss:[ebp-0x04], ebx
+004D1E53    mov esi, dword ptr ds:[edi]
+004D1E55    mov eax, dword ptr ds:[esi+0x08]
+004D1E58    test eax, eax
+004D1E5A    jz 0x004D1E69
+004D1E5C    mov dword ptr ds:[edi], eax
+004D1E5E    mov eax, esi
+004D1E60    pop edi
+004D1E61    pop esi
+004D1E62    pop ebx
+004D1E63    mov esp, ebp
+004D1E65    pop ebp
+004D1E66    ret 0x04
+004D1E69    mov eax, dword ptr ds:[esi]
+004D1E6B    mov ecx, 0x5B2591
+004D1E70    test eax, eax
+004D1E72    cmovnz ecx, eax
+004D1E75    xor edx, edx
+004D1E77    call 0x004E1990
+004D1E7C    mov ebx, dword ptr ds:[ebx+0x04]
+004D1E7F    mov ecx, ebx
+004D1E81    and ecx, eax
+004D1E83    inc ecx
+004D1E84    cmp ecx, ebx
+004D1E86    jnbe 0x004D1E9E
+004D1E88    mov eax, dword ptr ss:[ebp-0x04]
+004D1E8B    mov eax, dword ptr ds:[eax]
+004D1E8D    lea eax, ds:[eax+ecx*4]
+004D1E90    mov edx, dword ptr ds:[eax]
+004D1E92    test edx, edx
+004D1E94    jnz 0x004D1EAF
+004D1E96    inc ecx
+004D1E97    add eax, 0x04
+004D1E9A    cmp ecx, ebx
+004D1E9C    jbe 0x004D1E90
+004D1E9E    mov dword ptr ds:[edi], 0x00
+004D1EA4    mov eax, esi
+004D1EA6    pop edi
+004D1EA7    pop esi
+004D1EA8    pop ebx
+004D1EA9    mov esp, ebp
+004D1EAB    pop ebp
+004D1EAC    ret 0x04
+004D1EAF    mov dword ptr ds:[edi], edx
+004D1EB1    mov eax, esi
+004D1EB3    pop edi
+004D1EB4    pop esi
+004D1EB5    pop ebx
+004D1EB6    mov esp, ebp
+004D1EB8    pop ebp
+004D1EB9    ret 0x04

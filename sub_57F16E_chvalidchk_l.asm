@@ -1,38 +1,17 @@
-0057F16E    ???
-0057F16F    ???
-0057F170    ???
-0057F171    ???
-0057F172    ???
-0057F173    ???
-0057F174    ???
-0057F175    ???
-0057F176    ???
-0057F177    ???
-0057F178    ???
-0057F179    ???
-0057F17A    ???
-0057F17B    ???
-0057F17C    ???
-0057F17D    ???
-0057F17E    ???
-0057F17F    ???
-0057F180    ???
-0057F181    ???
-0057F182    ???
-0057F183    ???
-0057F184    ???
-0057F185    ???
-0057F186    ???
-0057F187    ???
-0057F188    ???
-0057F189    ???
-0057F18A    ???
-0057F18B    ???
-0057F18C    ???
-0057F18D    ???
-0057F18E    ???
-0057F18F    ???
-0057F190    ???
-0057F191    ???
-0057F192    ???
-0057F193    ???
+0057F16E    mov edi, edi
+0057F170    push ebp
+0057F171    mov ebp, esp
+0057F173    mov eax, dword ptr ss:[ebp+0x10]
+0057F176    push esi
+0057F177    movzx esi, byte ptr ss:[ebp+0x08]
+0057F17B    test eax, eax
+0057F17D    jz 0x0057F185
+0057F17F    mov eax, dword ptr ds:[eax]
+0057F181    mov eax, dword ptr ds:[eax]
+0057F183    jmp 0x0057F18A
+0057F185    call 0x00589E17
+0057F18A    movzx eax, word ptr ds:[eax+esi*2]
+0057F18E    and eax, dword ptr ss:[ebp+0x0C]
+0057F191    pop esi
+0057F192    pop ebp
+0057F193    ret

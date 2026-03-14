@@ -1,38 +1,18 @@
-00589E17    ???
-00589E18    ???
-00589E19    ???
-00589E1A    ???
-00589E1B    ???
-00589E1C    ???
-00589E1D    ???
-00589E1E    ???
-00589E1F    ???
-00589E20    ???
-00589E21    ???
-00589E22    ???
-00589E23    ???
-00589E24    ???
-00589E25    ???
-00589E26    ???
-00589E27    ???
-00589E28    ???
-00589E29    ???
-00589E2A    ???
-00589E2B    ???
-00589E2C    ???
-00589E2D    ???
-00589E2E    ???
-00589E2F    ???
-00589E30    ???
-00589E31    ???
-00589E32    ???
-00589E33    ???
-00589E34    ???
-00589E35    ???
-00589E36    ???
-00589E37    ???
-00589E38    ???
-00589E39    ???
-00589E3A    ???
-00589E3B    ???
-00589E3C    ???
+00589E17    mov edi, edi
+00589E19    push ebp
+00589E1A    mov ebp, esp
+00589E1C    push ecx
+00589E1D    call 0x0058C1B2
+00589E22    mov ecx, dword ptr ds:[eax+0x4C]
+00589E25    mov dword ptr ss:[ebp-0x04], ecx
+00589E28    lea ecx, ss:[ebp-0x04]
+00589E2B    push ecx
+00589E2C    push eax
+00589E2D    call 0x0058C3F6
+00589E32    mov eax, dword ptr ss:[ebp-0x04]
+00589E35    pop ecx
+00589E36    pop ecx
+00589E37    mov eax, dword ptr ds:[eax]
+00589E39    mov esp, ebp
+00589E3B    pop ebp
+00589E3C    ret

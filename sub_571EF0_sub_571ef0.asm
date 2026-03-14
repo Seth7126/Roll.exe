@@ -1,111 +1,54 @@
-00571EF0    ???
-00571EF1    ???
-00571EF2    ???
-00571EF3    ???
-00571EF4    ???
-00571EF5    ???
-00571EF6    ???
-00571EF7    ???
-00571EF8    ???
-00571EF9    ???
-00571EFA    ???
-00571EFB    ???
-00571EFC    ???
-00571EFD    ???
-00571EFE    ???
-00571EFF    ???
-00571F00    ???
-00571F01    ???
-00571F02    ???
-00571F03    ???
-00571F04    ???
-00571F05    ???
-00571F06    ???
-00571F07    ???
-00571F08    ???
-00571F09    ???
-00571F0A    ???
-00571F0B    ???
-00571F0C    ???
-00571F0D    ???
-00571F0E    ???
-00571F0F    ???
-00571F10    ???
-00571F11    ???
-00571F12    ???
-00571F13    ???
-00571F14    ???
-00571F15    ???
-00571F16    ???
-00571F17    ???
-00571F18    ???
-00571F19    ???
-00571F1A    ???
-00571F1B    ???
-00571F1C    ???
-00571F1D    ???
-00571F1E    ???
-00571F1F    ???
-00571F20    ???
-00571F21    ???
-00571F22    ???
-00571F23    ???
-00571F24    ???
-00571F25    ???
-00571F26    ???
-00571F27    ???
-00571F28    ???
-00571F29    ???
-00571F2A    ???
-00571F2B    ???
-00571F2C    ???
-00571F2D    ???
-00571F2E    ???
-00571F2F    ???
-00571F30    ???
-00571F31    ???
-00571F32    ???
-00571F33    ???
-00571F34    ???
-00571F35    ???
-00571F36    ???
-00571F37    ???
-00571F38    ???
-00571F39    ???
-00571F3A    ???
-00571F3B    ???
-00571F3C    ???
-00571F3D    ???
-00571F3E    ???
-00571F3F    ???
-00571F40    ???
-00571F41    ???
-00571F42    ???
-00571F43    ???
-00571F44    ???
-00571F45    ???
-00571F46    ???
-00571F47    ???
-00571F48    ???
-00571F49    ???
-00571F4A    ???
-00571F4B    ???
-00571F4C    ???
-00571F4D    ???
-00571F4E    ???
-00571F4F    ???
-00571F50    ???
-00571F51    ???
-00571F52    ???
-00571F53    ???
-00571F54    ???
-00571F55    ???
-00571F56    ???
-00571F57    ???
-00571F58    ???
-00571F59    ???
-00571F5A    ???
-00571F5B    ???
-00571F5C    ???
-00571F5D    ???
-00571F5E    ???
+00571EF0    push ebp
+00571EF1    mov ebp, esp
+00571EF3    push ebx
+00571EF4    mov ebx, edx
+00571EF6    mov eax, 0x51EB851F
+00571EFB    mul ebx
+00571EFD    push esi
+00571EFE    shr edx, 0x05
+00571F01    mov esi, ebx
+00571F03    imul eax, edx, 0x64
+00571F06    push edi
+00571F07    sub esi, eax
+00571F09    mov esi, dword ptr ds:[ecx+esi*4+0x18]
+00571F0D    test esi, esi
+00571F0F    jz 0x00571F50
+00571F11    mov edi, dword ptr ds:[esi]
+00571F13    cmp dword ptr ds:[edi], ebx
+00571F15    jnz 0x00571F49
+00571F17    mov eax, dword ptr ss:[ebp+0x08]
+00571F1A    mov ecx, dword ptr ds:[edi+0x04]
+00571F1D    nop dword ptr ds:[eax], eax
+00571F20    mov dl, byte ptr ds:[ecx]
+00571F22    cmp dl, byte ptr ds:[eax]
+00571F24    jnz 0x00571F40
+00571F26    test dl, dl
+00571F28    jz 0x00571F3C
+00571F2A    mov dl, byte ptr ds:[ecx+0x01]
+00571F2D    cmp dl, byte ptr ds:[eax+0x01]
+00571F30    jnz 0x00571F40
+00571F32    add ecx, 0x02
+00571F35    add eax, 0x02
+00571F38    test dl, dl
+00571F3A    jnz 0x00571F20
+00571F3C    xor eax, eax
+00571F3E    jmp 0x00571F45
+00571F40    sbb eax, eax
+00571F42    or eax, 0x01
+00571F45    test eax, eax
+00571F47    jz 0x00571F57
+00571F49    mov esi, dword ptr ds:[esi+0x04]
+00571F4C    test esi, esi
+00571F4E    jnz 0x00571F11
+00571F50    pop edi
+00571F51    pop esi
+00571F52    xor eax, eax
+00571F54    pop ebx
+00571F55    pop ebp
+00571F56    ret
+00571F57    mov eax, dword ptr ds:[edi+0x08]
+00571F5A    pop edi
+00571F5B    pop esi
+00571F5C    pop ebx
+00571F5D    pop ebp
+00571F5E    ret

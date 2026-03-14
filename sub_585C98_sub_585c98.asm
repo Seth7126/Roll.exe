@@ -1,71 +1,30 @@
-00585C98    ???
-00585C99    ???
-00585C9A    ???
-00585C9B    ???
-00585C9C    ???
-00585C9D    ???
-00585C9E    ???
-00585C9F    ???
-00585CA0    ???
-00585CA1    ???
-00585CA2    ???
-00585CA3    ???
-00585CA4    ???
-00585CA5    ???
-00585CA6    ???
-00585CA7    ???
-00585CA8    ???
-00585CA9    ???
-00585CAA    ???
-00585CAB    ???
-00585CAC    ???
-00585CAD    ???
-00585CAE    ???
-00585CAF    ???
-00585CB0    ???
-00585CB1    ???
-00585CB2    ???
-00585CB3    ???
-00585CB4    ???
-00585CB5    ???
-00585CB6    ???
-00585CB7    ???
-00585CB8    ???
-00585CB9    ???
-00585CBA    ???
-00585CBB    ???
-00585CBC    ???
-00585CBD    ???
-00585CBE    ???
-00585CBF    ???
-00585CC0    ???
-00585CC1    ???
-00585CC2    ???
-00585CC3    ???
-00585CC4    ???
-00585CC5    ???
-00585CC6    ???
-00585CC7    ???
-00585CC8    ???
-00585CC9    ???
-00585CCA    ???
-00585CCB    ???
-00585CCC    ???
-00585CCD    ???
-00585CCE    ???
-00585CCF    ???
-00585CD0    ???
-00585CD1    ???
-00585CD2    ???
-00585CD3    ???
-00585CD4    ???
-00585CD5    ???
-00585CD6    ???
-00585CD7    ???
-00585CD8    ???
-00585CD9    ???
-00585CDA    ???
-00585CDB    ???
-00585CDC    ???
-00585CDD    ???
-00585CDE    ???
+00585C98    mov edi, edi
+00585C9A    push ebp
+00585C9B    mov ebp, esp
+00585C9D    mov edx, dword ptr ds:[ecx+0x10]
+00585CA0    mov eax, dword ptr ds:[ecx+0x08]
+00585CA3    add edx, 0xFFFFFFFF
+00585CA6    push esi
+00585CA7    mov esi, dword ptr ds:[ecx+0x14]
+00585CAA    adc esi, 0xFFFFFFFF
+00585CAD    mov dword ptr ds:[ecx+0x10], edx
+00585CB0    or eax, dword ptr ds:[ecx+0x0C]
+00585CB3    mov dword ptr ds:[ecx+0x14], esi
+00585CB6    jz 0x00585CC4
+00585CB8    cmp esi, dword ptr ds:[ecx+0x0C]
+00585CBB    jnbe 0x00585CDA
+00585CBD    jb 0x00585CC4
+00585CBF    cmp edx, dword ptr ds:[ecx+0x08]
+00585CC2    jnbe 0x00585CDA
+00585CC4    mov al, byte ptr ss:[ebp+0x08]
+00585CC7    test al, al
+00585CC9    jz 0x00585CDA
+00585CCB    cmp al, 0xFF
+00585CCD    jz 0x00585CDA
+00585CCF    mov ecx, dword ptr ds:[ecx]
+00585CD1    movsx eax, al
+00585CD4    push eax
+00585CD5    call 0x00585CFD
+00585CDA    pop esi
+00585CDB    pop ebp
+00585CDC    ret 0x04

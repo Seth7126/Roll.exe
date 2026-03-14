@@ -1,46 +1,17 @@
-004BEB00    ???
-004BEB01    ???
-004BEB02    ???
-004BEB03    ???
-004BEB04    ???
-004BEB05    ???
-004BEB06    ???
-004BEB07    ???
-004BEB08    ???
-004BEB09    ???
-004BEB0A    ???
-004BEB0B    ???
-004BEB0C    ???
-004BEB0D    ???
-004BEB0E    ???
-004BEB0F    ???
-004BEB10    ???
-004BEB11    ???
-004BEB12    ???
-004BEB13    ???
-004BEB14    ???
-004BEB15    ???
-004BEB16    ???
-004BEB17    ???
-004BEB18    ???
-004BEB19    ???
-004BEB1A    ???
-004BEB1B    ???
-004BEB1C    ???
-004BEB1D    ???
-004BEB1E    ???
-004BEB1F    ???
-004BEB20    ???
-004BEB21    ???
-004BEB22    ???
-004BEB23    ???
-004BEB24    ???
-004BEB25    ???
-004BEB26    ???
-004BEB27    ???
-004BEB28    ???
-004BEB29    ???
-004BEB2A    ???
-004BEB2B    ???
-004BEB2C    ???
-004BEB2D    ???
+004BEB00    mov eax, dword ptr ds:[ecx]
+004BEB02    mov dword ptr ds:[edx], eax
+004BEB04    mov eax, dword ptr ds:[ecx+0x04]
+004BEB07    mov dword ptr ds:[edx+0x04], eax
+004BEB0A    mov eax, dword ptr ds:[ecx+0x08]
+004BEB0D    mov dword ptr ds:[edx+0x08], eax
+004BEB10    mov eax, dword ptr ds:[ecx+0x04]
+004BEB13    mov dword ptr ds:[edx+0x0C], eax
+004BEB16    mov eax, dword ptr ds:[ecx]
+004BEB18    mov dword ptr ds:[edx+0x10], eax
+004BEB1B    mov eax, dword ptr ds:[ecx+0x0C]
+004BEB1E    mov dword ptr ds:[edx+0x14], eax
+004BEB21    mov eax, dword ptr ds:[ecx+0x08]
+004BEB24    mov dword ptr ds:[edx+0x18], eax
+004BEB27    mov eax, dword ptr ds:[ecx+0x0C]
+004BEB2A    mov dword ptr ds:[edx+0x1C], eax
+004BEB2D    ret

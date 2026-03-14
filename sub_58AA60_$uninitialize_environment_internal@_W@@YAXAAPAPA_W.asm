@@ -1,27 +1,12 @@
-0058AA60    ???
-0058AA61    ???
-0058AA62    ???
-0058AA63    ???
-0058AA64    ???
-0058AA65    ???
-0058AA66    ???
-0058AA67    ???
-0058AA68    ???
-0058AA69    ???
-0058AA6A    ???
-0058AA6B    ???
-0058AA6C    ???
-0058AA6D    ???
-0058AA6E    ???
-0058AA6F    ???
-0058AA70    ???
-0058AA71    ???
-0058AA72    ???
-0058AA73    ???
-0058AA74    ???
-0058AA75    ???
-0058AA76    ???
-0058AA77    ???
-0058AA78    ???
-0058AA79    ???
-0058AA7A    ???
+0058AA60    mov edi, edi
+0058AA62    push ebp
+0058AA63    mov ebp, esp
+0058AA65    mov eax, dword ptr ss:[ebp+0x08]
+0058AA68    mov eax, dword ptr ds:[eax]
+0058AA6A    cmp eax, dword ptr ds:[0x006CF9DC]
+0058AA70    jz 0x0058AA79
+0058AA72    push eax
+0058AA73    call 0x0058A9F1
+0058AA78    pop ecx
+0058AA79    pop ebp
+0058AA7A    ret

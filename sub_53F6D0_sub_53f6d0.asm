@@ -1,219 +1,95 @@
-0053F6D0    ???
-0053F6D1    ???
-0053F6D2    ???
-0053F6D3    ???
-0053F6D4    ???
-0053F6D5    ???
-0053F6D6    ???
-0053F6D7    ???
-0053F6D8    ???
-0053F6D9    ???
-0053F6DA    ???
-0053F6DB    ???
-0053F6DC    ???
-0053F6DD    ???
-0053F6DE    ???
-0053F6DF    ???
-0053F6E0    ???
-0053F6E1    ???
-0053F6E2    ???
-0053F6E3    ???
-0053F6E4    ???
-0053F6E5    ???
-0053F6E6    ???
-0053F6E7    ???
-0053F6E8    ???
-0053F6E9    ???
-0053F6EA    ???
-0053F6EB    ???
-0053F6EC    ???
-0053F6ED    ???
-0053F6EE    ???
-0053F6EF    ???
-0053F6F0    ???
-0053F6F1    ???
-0053F6F2    ???
-0053F6F3    ???
-0053F6F4    ???
-0053F6F5    ???
-0053F6F6    ???
-0053F6F7    ???
-0053F6F8    ???
-0053F6F9    ???
-0053F6FA    ???
-0053F6FB    ???
-0053F6FC    ???
-0053F6FD    ???
-0053F6FE    ???
-0053F6FF    ???
-0053F700    ???
-0053F701    ???
-0053F702    ???
-0053F703    ???
-0053F704    ???
-0053F705    ???
-0053F706    ???
-0053F707    ???
-0053F708    ???
-0053F709    ???
-0053F70A    ???
-0053F70B    ???
-0053F70C    ???
-0053F70D    ???
-0053F70E    ???
-0053F70F    ???
-0053F710    ???
-0053F711    ???
-0053F712    ???
-0053F713    ???
-0053F714    ???
-0053F715    ???
-0053F716    ???
-0053F717    ???
-0053F718    ???
-0053F719    ???
-0053F71A    ???
-0053F71B    ???
-0053F71C    ???
-0053F71D    ???
-0053F71E    ???
-0053F71F    ???
-0053F720    ???
-0053F721    ???
-0053F722    ???
-0053F723    ???
-0053F724    ???
-0053F725    ???
-0053F726    ???
-0053F727    ???
-0053F728    ???
-0053F729    ???
-0053F72A    ???
-0053F72B    ???
-0053F72C    ???
-0053F72D    ???
-0053F72E    ???
-0053F72F    ???
-0053F730    ???
-0053F731    ???
-0053F732    ???
-0053F733    ???
-0053F734    ???
-0053F735    ???
-0053F736    ???
-0053F737    ???
-0053F738    ???
-0053F739    ???
-0053F73A    ???
-0053F73B    ???
-0053F73C    ???
-0053F73D    ???
-0053F73E    ???
-0053F73F    ???
-0053F740    ???
-0053F741    ???
-0053F742    ???
-0053F743    ???
-0053F744    ???
-0053F745    ???
-0053F746    ???
-0053F747    ???
-0053F748    ???
-0053F749    ???
-0053F74A    ???
-0053F74B    ???
-0053F74C    ???
-0053F74D    ???
-0053F74E    ???
-0053F74F    ???
-0053F750    ???
-0053F751    ???
-0053F752    ???
-0053F753    ???
-0053F754    ???
-0053F755    ???
-0053F756    ???
-0053F757    ???
-0053F758    ???
-0053F759    ???
-0053F75A    ???
-0053F75B    ???
-0053F75C    ???
-0053F75D    ???
-0053F75E    ???
-0053F75F    ???
-0053F760    ???
-0053F761    ???
-0053F762    ???
-0053F763    ???
-0053F764    ???
-0053F765    ???
-0053F766    ???
-0053F767    ???
-0053F768    ???
-0053F769    ???
-0053F76A    ???
-0053F76B    ???
-0053F76C    ???
-0053F76D    ???
-0053F76E    ???
-0053F76F    ???
-0053F770    ???
-0053F771    ???
-0053F772    ???
-0053F773    ???
-0053F774    ???
-0053F775    ???
-0053F776    ???
-0053F777    ???
-0053F778    ???
-0053F779    ???
-0053F77A    ???
-0053F77B    ???
-0053F77C    ???
-0053F77D    ???
-0053F77E    ???
-0053F77F    ???
-0053F780    ???
-0053F781    ???
-0053F782    ???
-0053F783    ???
-0053F784    ???
-0053F785    ???
-0053F786    ???
-0053F787    ???
-0053F788    ???
-0053F789    ???
-0053F78A    ???
-0053F78B    ???
-0053F78C    ???
-0053F78D    ???
-0053F78E    ???
-0053F78F    ???
-0053F790    ???
-0053F791    ???
-0053F792    ???
-0053F793    ???
-0053F794    ???
-0053F795    ???
-0053F796    ???
-0053F797    ???
-0053F798    ???
-0053F799    ???
-0053F79A    ???
-0053F79B    ???
-0053F79C    ???
-0053F79D    ???
-0053F79E    ???
-0053F79F    ???
-0053F7A0    ???
-0053F7A1    ???
-0053F7A2    ???
-0053F7A3    ???
-0053F7A4    ???
-0053F7A5    ???
-0053F7A6    ???
-0053F7A7    ???
-0053F7A8    ???
-0053F7A9    ???
-0053F7AA    ???
+0053F6D0    push ebp
+0053F6D1    mov ebp, esp
+0053F6D3    sub esp, 0x0C
+0053F6D6    push ebx
+0053F6D7    mov ebx, edx
+0053F6D9    push esi
+0053F6DA    mov esi, ecx
+0053F6DC    mov dword ptr ss:[ebp-0x0C], ebx
+0053F6DF    push edi
+0053F6E0    push dword ptr ds:[ebx+0x30]
+0053F6E3    mov dword ptr ss:[ebp-0x04], esi
+0053F6E6    mov edx, dword ptr ds:[esi+0x04]
+0053F6E9    mov ecx, dword ptr ds:[esi]
+0053F6EB    call 0x005235A0
+0053F6F0    mov edi, dword ptr ds:[ebx+0x18]
+0053F6F3    add esp, 0x04
+0053F6F6    mov ecx, eax
+0053F6F8    mov dword ptr ss:[ebp-0x08], ecx
+0053F6FB    test edi, edi
+0053F6FD    jz 0x0053F770
+0053F6FF    mov eax, dword ptr ds:[esi]
+0053F701    mov ebx, edi
+0053F703    mov edi, dword ptr ds:[edi+0x14]
+0053F706    cmp eax, dword ptr ds:[ebx]
+0053F708    jnz 0x0053F769
+0053F70A    mov eax, dword ptr ds:[esi+0x04]
+0053F70D    cmp eax, dword ptr ds:[ebx+0x04]
+0053F710    jnz 0x0053F769
+0053F712    mov edx, dword ptr ds:[esi+0x08]
+0053F715    mov esi, ecx
+0053F717    mov eax, dword ptr ds:[ebx+0x08]
+0053F71A    sub esi, 0x04
+0053F71D    jb 0x0053F731
+0053F71F    nop
+0053F720    mov ecx, dword ptr ds:[edx]
+0053F722    cmp ecx, dword ptr ds:[eax]
+0053F724    jnz 0x0053F736
+0053F726    add edx, 0x04
+0053F729    add eax, 0x04
+0053F72C    sub esi, 0x04
+0053F72F    jnb 0x0053F720
+0053F731    cmp esi, 0xFFFFFFFC
+0053F734    jz 0x0053F793
+0053F736    mov cl, byte ptr ds:[edx]
+0053F738    cmp cl, byte ptr ds:[eax]
+0053F73A    jnz 0x0053F763
+0053F73C    cmp esi, 0xFFFFFFFD
+0053F73F    jz 0x0053F793
+0053F741    mov cl, byte ptr ds:[edx+0x01]
+0053F744    cmp cl, byte ptr ds:[eax+0x01]
+0053F747    jnz 0x0053F763
+0053F749    cmp esi, 0xFFFFFFFE
+0053F74C    jz 0x0053F793
+0053F74E    mov cl, byte ptr ds:[edx+0x02]
+0053F751    cmp cl, byte ptr ds:[eax+0x02]
+0053F754    jnz 0x0053F763
+0053F756    cmp esi, 0xFFFFFFFF
+0053F759    jz 0x0053F793
+0053F75B    mov cl, byte ptr ds:[edx+0x03]
+0053F75E    cmp cl, byte ptr ds:[eax+0x03]
+0053F761    jz 0x0053F793
+0053F763    mov ecx, dword ptr ss:[ebp-0x08]
+0053F766    mov esi, dword ptr ss:[ebp-0x04]
+0053F769    test edi, edi
+0053F76B    jnz 0x0053F6FF
+0053F76D    mov ebx, dword ptr ss:[ebp-0x0C]
+0053F770    mov edx, dword ptr ds:[esi+0x04]
+0053F773    lea eax, ds:[esi+0x0C]
+0053F776    mov ecx, dword ptr ds:[esi]
+0053F778    push eax
+0053F779    push ebx
+0053F77A    call 0x0053EF40
+0053F77F    xor ecx, ecx
+0053F781    add esp, 0x08
+0053F784    test al, al
+0053F786    setnz cl
+0053F789    lea eax, ds:[ecx+0x01]
+0053F78C    pop edi
+0053F78D    pop esi
+0053F78E    pop ebx
+0053F78F    mov esp, ebp
+0053F791    pop ebp
+0053F792    ret
+0053F793    mov ecx, dword ptr ss:[ebp-0x04]
+0053F796    mov eax, dword ptr ds:[ebx+0x0C]
+0053F799    pop edi
+0053F79A    pop esi
+0053F79B    mov dword ptr ds:[ecx+0x0C], eax
+0053F79E    mov eax, dword ptr ds:[ebx+0x10]
+0053F7A1    mov dword ptr ds:[ecx+0x10], eax
+0053F7A4    xor eax, eax
+0053F7A6    pop ebx
+0053F7A7    mov esp, ebp
+0053F7A9    pop ebp
+0053F7AA    ret

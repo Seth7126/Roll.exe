@@ -1,72 +1,33 @@
-004CEA80    ???
-004CEA81    ???
-004CEA82    ???
-004CEA83    ???
-004CEA84    ???
-004CEA85    ???
-004CEA86    ???
-004CEA87    ???
-004CEA88    ???
-004CEA89    ???
-004CEA8A    ???
-004CEA8B    ???
-004CEA8C    ???
-004CEA8D    ???
-004CEA8E    ???
-004CEA8F    ???
-004CEA90    ???
-004CEA91    ???
-004CEA92    ???
-004CEA93    ???
-004CEA94    ???
-004CEA95    ???
-004CEA96    ???
-004CEA97    ???
-004CEA98    ???
-004CEA99    ???
-004CEA9A    ???
-004CEA9B    ???
-004CEA9C    ???
-004CEA9D    ???
-004CEA9E    ???
-004CEA9F    ???
-004CEAA0    ???
-004CEAA1    ???
-004CEAA2    ???
-004CEAA3    ???
-004CEAA4    ???
-004CEAA5    ???
-004CEAA6    ???
-004CEAA7    ???
-004CEAA8    ???
-004CEAA9    ???
-004CEAAA    ???
-004CEAAB    ???
-004CEAAC    ???
-004CEAAD    ???
-004CEAAE    ???
-004CEAAF    ???
-004CEAB0    ???
-004CEAB1    ???
-004CEAB2    ???
-004CEAB3    ???
-004CEAB4    ???
-004CEAB5    ???
-004CEAB6    ???
-004CEAB7    ???
-004CEAB8    ???
-004CEAB9    ???
-004CEABA    ???
-004CEABB    ???
-004CEABC    ???
-004CEABD    ???
-004CEABE    ???
-004CEABF    ???
-004CEAC0    ???
-004CEAC1    ???
-004CEAC2    ???
-004CEAC3    ???
-004CEAC4    ???
-004CEAC5    ???
-004CEAC6    ???
-004CEAC7    ???
+004CEA80    push ebp
+004CEA81    mov ebp, esp
+004CEA83    and esp, 0xFFFFFFF8
+004CEA86    push ecx
+004CEA87    push ebx
+004CEA88    push esi
+004CEA89    push edi
+004CEA8A    mov edi, edx
+004CEA8C    mov ebx, ecx
+004CEA8E    cmp dword ptr ds:[edi+0x08], 0x00
+004CEA92    jz 0x004CEAC1
+004CEA94    xor esi, esi
+004CEA96    mov eax, dword ptr ds:[edi+0x04]
+004CEA99    mov ecx, esi
+004CEA9B    push dword ptr ss:[ebp+0x08]
+004CEA9E    shl ecx, 0x04
+004CEAA1    sub ecx, esi
+004CEAA3    inc esi
+004CEAA4    cmp esi, dword ptr ds:[edi+0x08]
+004CEAA7    lea edx, ds:[eax+ecx*4]
+004CEAAA    mov eax, 0xFFFFFFFF
+004CEAAF    mov ecx, ebx
+004CEAB1    cmovnl esi, eax
+004CEAB4    call 0x004CE910
+004CEAB9    add esp, 0x04
+004CEABC    cmp esi, 0xFFFFFFFF
+004CEABF    jnz 0x004CEA96
+004CEAC1    pop edi
+004CEAC2    pop esi
+004CEAC3    pop ebx
+004CEAC4    mov esp, ebp
+004CEAC6    pop ebp
+004CEAC7    ret

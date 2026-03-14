@@ -1,25 +1,11 @@
-00538D90    ???
-00538D91    ???
-00538D92    ???
-00538D93    ???
-00538D94    ???
-00538D95    ???
-00538D96    ???
-00538D97    ???
-00538D98    ???
-00538D99    ???
-00538D9A    ???
-00538D9B    ???
-00538D9C    ???
-00538D9D    ???
-00538D9E    ???
-00538D9F    ???
-00538DA0    ???
-00538DA1    ???
-00538DA2    ???
-00538DA3    ???
-00538DA4    ???
-00538DA5    ???
-00538DA6    ???
-00538DA7    ???
-00538DA8    ???
+00538D90    push esi
+00538D91    mov esi, ecx
+00538D93    mov edx, dword ptr ds:[esi+0x04]
+00538D96    test edx, edx
+00538D98    jz 0x00538DA7
+00538D9A    mov eax, dword ptr ds:[edx]
+00538D9C    push edx
+00538D9D    call dword ptr ds:[eax+0x08]
+00538DA0    mov dword ptr ds:[esi+0x04], 0x00
+00538DA7    pop esi
+00538DA8    ret

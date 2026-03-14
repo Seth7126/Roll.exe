@@ -1,61 +1,27 @@
-0058AE1E    ???
-0058AE1F    ???
-0058AE20    ???
-0058AE21    ???
-0058AE22    ???
-0058AE23    ???
-0058AE24    ???
-0058AE25    ???
-0058AE26    ???
-0058AE27    ???
-0058AE28    ???
-0058AE29    ???
-0058AE2A    ???
-0058AE2B    ???
-0058AE2C    ???
-0058AE2D    ???
-0058AE2E    ???
-0058AE2F    ???
-0058AE30    ???
-0058AE31    ???
-0058AE32    ???
-0058AE33    ???
-0058AE34    ???
-0058AE35    ???
-0058AE36    ???
-0058AE37    ???
-0058AE38    ???
-0058AE39    ???
-0058AE3A    ???
-0058AE3B    ???
-0058AE3C    ???
-0058AE3D    ???
-0058AE3E    ???
-0058AE3F    ???
-0058AE40    ???
-0058AE41    ???
-0058AE42    ???
-0058AE43    ???
-0058AE44    ???
-0058AE45    ???
-0058AE46    ???
-0058AE47    ???
-0058AE48    ???
-0058AE49    ???
-0058AE4A    ???
-0058AE4B    ???
-0058AE4C    ???
-0058AE4D    ???
-0058AE4E    ???
-0058AE4F    ???
-0058AE50    ???
-0058AE51    ???
-0058AE52    ???
-0058AE53    ???
-0058AE54    ???
-0058AE55    ???
-0058AE56    ???
-0058AE57    ???
-0058AE58    ???
-0058AE59    ???
-0058AE5A    ???
+0058AE1E    mov edi, edi
+0058AE20    push ebp
+0058AE21    mov ebp, esp
+0058AE23    push esi
+0058AE24    mov esi, dword ptr ss:[ebp+0x08]
+0058AE27    test esi, esi
+0058AE29    jnz 0x0058AE30
+0058AE2B    or eax, 0xFFFFFFFF
+0058AE2E    jmp 0x0058AE58
+0058AE30    mov eax, dword ptr ds:[esi]
+0058AE32    cmp eax, dword ptr ds:[esi+0x08]
+0058AE35    jnz 0x0058AE56
+0058AE37    mov eax, dword ptr ds:[0x0061F06C]
+0058AE3C    and eax, 0x1F
+0058AE3F    push 0x20
+0058AE41    pop ecx
+0058AE42    sub ecx, eax
+0058AE44    xor eax, eax
+0058AE46    ror eax, cl
+0058AE48    xor eax, dword ptr ds:[0x0061F06C]
+0058AE4E    mov dword ptr ds:[esi], eax
+0058AE50    mov dword ptr ds:[esi+0x04], eax
+0058AE53    mov dword ptr ds:[esi+0x08], eax
+0058AE56    xor eax, eax
+0058AE58    pop esi
+0058AE59    pop ebp
+0058AE5A    ret

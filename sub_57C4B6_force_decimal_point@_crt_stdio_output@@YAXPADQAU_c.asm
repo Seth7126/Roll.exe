@@ -1,92 +1,42 @@
-0057C4B6    ???
-0057C4B7    ???
-0057C4B8    ???
-0057C4B9    ???
-0057C4BA    ???
-0057C4BB    ???
-0057C4BC    ???
-0057C4BD    ???
-0057C4BE    ???
-0057C4BF    ???
-0057C4C0    ???
-0057C4C1    ???
-0057C4C2    ???
-0057C4C3    ???
-0057C4C4    ???
-0057C4C5    ???
-0057C4C6    ???
-0057C4C7    ???
-0057C4C8    ???
-0057C4C9    ???
-0057C4CA    ???
-0057C4CB    ???
-0057C4CC    ???
-0057C4CD    ???
-0057C4CE    ???
-0057C4CF    ???
-0057C4D0    ???
-0057C4D1    ???
-0057C4D2    ???
-0057C4D3    ???
-0057C4D4    ???
-0057C4D5    ???
-0057C4D6    ???
-0057C4D7    ???
-0057C4D8    ???
-0057C4D9    ???
-0057C4DA    ???
-0057C4DB    ???
-0057C4DC    ???
-0057C4DD    ???
-0057C4DE    ???
-0057C4DF    ???
-0057C4E0    ???
-0057C4E1    ???
-0057C4E2    ???
-0057C4E3    ???
-0057C4E4    ???
-0057C4E5    ???
-0057C4E6    ???
-0057C4E7    ???
-0057C4E8    ???
-0057C4E9    ???
-0057C4EA    ???
-0057C4EB    ???
-0057C4EC    ???
-0057C4ED    ???
-0057C4EE    ???
-0057C4EF    ???
-0057C4F0    ???
-0057C4F1    ???
-0057C4F2    ???
-0057C4F3    ???
-0057C4F4    ???
-0057C4F5    ???
-0057C4F6    ???
-0057C4F7    ???
-0057C4F8    ???
-0057C4F9    ???
-0057C4FA    ???
-0057C4FB    ???
-0057C4FC    ???
-0057C4FD    ???
-0057C4FE    ???
-0057C4FF    ???
-0057C500    ???
-0057C501    ???
-0057C502    ???
-0057C503    ???
-0057C504    ???
-0057C505    ???
-0057C506    ???
-0057C507    ???
-0057C508    ???
-0057C509    ???
-0057C50A    ???
-0057C50B    ???
-0057C50C    ???
-0057C50D    ???
-0057C50E    ???
-0057C50F    ???
-0057C510    ???
-0057C511    ???
+0057C4B6    mov edi, edi
+0057C4B8    push ebp
+0057C4B9    mov ebp, esp
+0057C4BB    push esi
+0057C4BC    mov esi, dword ptr ss:[ebp+0x08]
+0057C4BF    movsx eax, byte ptr ds:[esi]
+0057C4C2    push eax
+0057C4C3    call 0x005872C7
+0057C4C8    cmp eax, 0x65
+0057C4CB    jmp 0x0057C4D9
+0057C4CD    inc esi
+0057C4CE    movzx eax, byte ptr ds:[esi]
+0057C4D1    push eax
+0057C4D2    call 0x0057F427
+0057C4D7    test eax, eax
+0057C4D9    pop ecx
+0057C4DA    jnz 0x0057C4CD
+0057C4DC    movsx eax, byte ptr ds:[esi]
+0057C4DF    push eax
+0057C4E0    call 0x005872C7
+0057C4E5    pop ecx
+0057C4E6    cmp eax, 0x78
+0057C4E9    jnz 0x0057C4EE
+0057C4EB    add esi, 0x02
+0057C4EE    mov eax, dword ptr ss:[ebp+0x0C]
+0057C4F1    mov dl, byte ptr ds:[esi]
+0057C4F3    mov eax, dword ptr ds:[eax]
+0057C4F5    mov eax, dword ptr ds:[eax+0x88]
+0057C4FB    mov eax, dword ptr ds:[eax]
+0057C4FD    mov al, byte ptr ds:[eax]
+0057C4FF    mov byte ptr ds:[esi], al
+0057C501    inc esi
+0057C502    mov al, byte ptr ds:[esi]
+0057C504    mov cl, dl
+0057C506    mov byte ptr ds:[esi], dl
+0057C508    inc esi
+0057C509    mov dl, al
+0057C50B    test cl, cl
+0057C50D    jnz 0x0057C502
+0057C50F    pop esi
+0057C510    pop ebp
+0057C511    ret
